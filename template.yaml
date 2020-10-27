@@ -1,0 +1,127 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: A simple Lambda function
+
+Resources:
+
+  Producer:
+    Type: AWS::SQS::Queue
+    Properties:
+      QueueName: Producer
+      DelaySeconds: 0
+      VisibilityTimeout: 120
+
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: LambdaExecutionRole
+      AssumeRolePolicyDocument:
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: allowLambdaLogs
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+            - Effect: Allow
+              Action:
+              - logs:*
+              Resource: arn:aws:logs:*:*:*
+        - PolicyName: allowSqs
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+            - Effect: Allow
+              Action:
+              - sqs:ReceiveMessage
+              - sqs:DeleteMessage
+              - sqs:GetQueueAttributes
+              - sqs:ChangeMessageVisibility
+              Resource: !GetAtt Producer.Arn
+
+  ProducerAI:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: ProducerAI
+      Role: !GetAtt LambdaExecutionRole.Arn
+      Runtime: python3.7
+      Handler: index.my_handler
+      Code:
+        ZipFile: |
+          def my_handler(event, context):
+            message = 'Hello Lambda World!'
+            return message
+
+  ProducerAIEventSourceMapping:
+    Type: AWS::Lambda::EventSourceMapping
+    Properties:
+      BatchSize: 10
+      Enabled: true
+      EventSourceArn: !GetAtt Producer.Arn
+      FunctionName: !GetAtt ProducerAI.Arn
+
+  ServerlessProducer:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: ServerlessProducer
+      Role: !GetAtt LambdaExecutionRole.Arn
+      Runtime: python3.7
+      Handler: index.my_handler
+      Code:
+        ZipFile: |
+          def my_handler(event, context):
+            message = 'Hello Lambda World!'
+            return message
+            
+  fangsentimentdepp:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: fangsentiment-depp
+      AccessControl: PublicRead
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: error.html
+
+  fangTable: 
+    Type: AWS::DynamoDB::Table
+    Properties: 
+      AttributeDefinitions: 
+        - 
+          AttributeName: "name"
+          AttributeType: "S"
+      KeySchema: 
+        - 
+          AttributeName: "name"
+          KeyType: "HASH"
+      ProvisionedThroughput: 
+        ReadCapacityUnits: "5"
+        WriteCapacityUnits: "5"
+      TableName: "fang"
+
+  5MinuteTimer: 
+    Type: AWS::Events::Rule
+    Properties: 
+      Name: "5MinuteTimer"
+      Description: "This plays every 5 minutes"
+      ScheduleExpression: "rate(20 minutes)"
+      State: "ENABLED"
+      Targets: 
+        - 
+          Arn: 
+            Fn::GetAtt: 
+              - "ServerlessProducer"
+              - "Arn"
+          Id: "ServerlessProducer"
+
+  5MinuteTimerPermission2Lambda: 
+    Type: AWS::Lambda::Permission
+    Properties: 
+      FunctionName: !Ref "ServerlessProducer"
+      Action: "lambda:InvokeFunction"
+      Principal: "events.amazonaws.com"
+      SourceArn: 
+        Fn::GetAtt: 
+          - "5MinuteTimer"
+          - "Arn"

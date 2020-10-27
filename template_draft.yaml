@@ -1,0 +1,51 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+    HelloLambdaRole:
+      Type: AWS::IAM::Role
+      Properties:
+        RoleName: HelloLambdaRole
+        AssumeRolePolicyDocument:
+          Statement:
+            - Effect: Allow
+              Principal:
+                Service: lambda.amazonaws.com
+              Action: sts:AssumeRole
+                  
+  
+    ServerlessProducer:
+      Type: AWS::Lambda::Function
+      Properties:
+        FunctionName: ServerlessProducer
+        Role: !GetAtt HelloLambdaRole.Arn
+        Runtime: python3.7
+        Handler: index.my_handler
+        Code:
+          ZipFile: |
+            def my_handler(event, context):
+              message = 'Hello Lambda World!'
+              return message
+    
+    ScheduledRule:
+        Type: AWS::Events::Rule
+        Properties: 
+          Description: "1 minute timer"
+          ScheduleExpression: "rate(1 minutes)"
+          State: ENABLED
+          Targets: 
+            - 
+                Arn:
+                    Fn::GetAtt
+                    -   "ServerlessProducer"
+                    -   "Arn"
+                Id: "ServerlessProducer"
+                
+    PermissionForEventsToInvokeLambda: 
+        Type: AWS::Lambda::Permission
+        Properties: 
+            FunctionName: !Ref "ServerlessProducer"
+            Action: "lambda:InvokeFunction"
+            Principal: "events.amazonaws.com"
+            SourceArn: 
+                Fn::GetAtt: 
+                    - "ScheduledRule"
+                    - "Arn"
