@@ -56,7 +56,7 @@ Resources:
       QueueName: producer
       DelaySeconds: 0
       VisibilityTimeout: 120
-      
+
   LambdaExecutionRole:
     Type: AWS::IAM::Role
     Properties:
@@ -127,7 +127,7 @@ Resources:
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: error.html
-      
+
   5MinuteTimer:
     Type: AWS::Events::Rule
     Properties:
@@ -142,7 +142,7 @@ Resources:
               - "ServerlessProducer"
               - "Arn"
           Id: "ServerlessProducer"
-                    
+
   ProducerAIEventSourceMapping:
     Type: AWS::Lambda::EventSourceMapping
     Properties:
