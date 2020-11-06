@@ -18,7 +18,7 @@ Resources:
     Type: AWS::Serverless::LayerVersion
     Properties:
       LayerName: blank-python-libServerlessProducer
-      Description: Dependencies for the blank-python sample app.
+      Description: Dependencies for ServerlessProducer Lambda.
       ContentUri: packageServerlessProducer/.
       CompatibleRuntimes:
         - python3.6
@@ -39,7 +39,7 @@ Resources:
     Type: AWS::Serverless::LayerVersion
     Properties:
       LayerName: blank-python-libProducerAI
-      Description: Dependencies for the blank-python sample app.
+      Description: Dependencies for ProducerAI Lambda.
       ContentUri: packageProducerAI/.
       CompatibleRuntimes:
         - python3.6
