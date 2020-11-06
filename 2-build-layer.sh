@@ -5,7 +5,6 @@ rm -rf packageProducerAI
 pip install --target ./packageServerlessProducer/python -r ./ServerlessProducer/requirements.txt
 pip install --target ./packageProducerAI/python -r ./ProducerAI/requirements.txt
 
-
 rm -rf ./packageProducerAI/python/pandas
 rm -rf ./packageProducerAI/python/numpy
 
