@@ -12,6 +12,9 @@ Resources:
       CodeUri: ServerlessProducer/.
       Description: Call the AWS Lambda API
       Timeout: 10
+      # Function's execution role
+      Policies:
+        - AdministratorAccess
       Layers:
         - !Ref libsServerlessProducer
   libsServerlessProducer:
@@ -29,10 +32,13 @@ Resources:
       Handler: lambda_function.lambda_handler
       Runtime: python3.6
       FunctionName: ProducerAI
-      Role: !GetAtt LambdaExecutionRole.Arn
+      #Role: !GetAtt LambdaExecutionRole.Arn
       CodeUri: ProducerAI/.
       Description: Call the AWS Lambda API
       Timeout: 10
+      # Function's execution role
+      Policies:
+        - AdministratorAccess
       Layers:
         - !Ref libsProducerAI
   libsProducerAI:
@@ -62,13 +68,33 @@ Resources:
               Service: lambda.amazonaws.com
             Action: sts:AssumeRole
       Policies:
-        - PolicyName: AdministratorAccess
+        - PolicyName: AmazonDynamoDBFullAccess
           PolicyDocument:
             Version: '2012-10-17'
             Statement:
             - Effect: Allow
-              Action: "*"
-              Resource: "*"
+              Action:
+              - logs:*
+              Resource: arn:aws:logs:*:*:*
+        - PolicyName: allowLambdaLogs
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+            - Effect: Allow
+              Action:
+              - logs:*
+              Resource: arn:aws:logs:*:*:*
+        - PolicyName: allowSqs
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+            - Effect: Allow
+              Action:
+              - sqs:ReceiveMessage
+              - sqs:DeleteMessage
+              - sqs:GetQueueAttributes
+              - sqs:ChangeMessageVisibility
+              Resource: !GetAtt Producer.Arn
 
   fangTable:
     Type: AWS::DynamoDB::Table
@@ -135,3 +161,4 @@ Resources:
         Fn::GetAtt:
           - "5MinuteTimer"
           - "Arn"
+

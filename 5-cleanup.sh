@@ -11,6 +11,8 @@ FUNCTION1=$(aws cloudformation describe-stack-resource --stack-name $STACK --log
 
 FUNCTION2=$(aws cloudformation describe-stack-resource --stack-name $STACK --logical-resource-id ProducerAI --query 'StackResourceDetail.PhysicalResourceId' --output text)
 
+aws s3 rm s3://fangsentiment-depp --recursive
+
 aws cloudformation delete-stack --stack-name $STACK
 echo "Deleted $STACK stack."
 
@@ -35,7 +37,7 @@ rm -f function/*.pyc
 rm -f bucket-name.txt
 rm -rf packageProducerAI
 rm -rf packageServerlessProducer
-rm - rf function/__pycache__
+rm -rf function/__pycache__
 
 while true; do
     read -p "Delete function log group (/aws/lambda/$FUNCTION1)? (y/n)" response
