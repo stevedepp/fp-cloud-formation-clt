@@ -1,6 +1,6 @@
 to do:
-	add initialize ddb table 
-	add CLT framework
-	tighten up Lambda IAM role from AdminAccess
-	flask it?
+- [x] add initialize ddb table 
+- [x] add CLT framework
+- [x] tighten up Lambda IAM role from AdminAccess
+- [x] flask it?
 	
