@@ -1,4 +1,4 @@
 click
 pytest
 pylint
-sys
+ipython
