@@ -8,7 +8,7 @@ Resources:
       Handler: lambda_function.lambda_handler
       Runtime: python3.6
       FunctionName: ServerlessProducer
-      Role: !GetAtt LambdaExecutionRole.Arn
+      Role: !GetAtt LambdaExecutionRole2.Arn
       CodeUri: ServerlessProducer/.
       Description: Call the AWS Lambda API
       Timeout: 10
@@ -29,7 +29,7 @@ Resources:
       Handler: lambda_function.lambda_handler
       Runtime: python3.6
       FunctionName: ProducerAI
-      Role: !GetAtt LambdaExecutionRole.Arn
+      Role: !GetAtt LambdaExecutionRole3.Arn
       CodeUri: ProducerAI/.
       Description: Call the AWS Lambda API
       Timeout: 10
@@ -51,10 +51,10 @@ Resources:
       DelaySeconds: 0
       VisibilityTimeout: 120
 
-  LambdaExecutionRole:
+  LambdaExecutionRole3:
     Type: AWS::IAM::Role
     Properties:
-      RoleName: LambdaExecutionRole
+      RoleName: LambdaExecutionRole3
       AssumeRolePolicyDocument:
         Statement:
           - Effect: Allow
@@ -66,9 +66,67 @@ Resources:
           PolicyDocument:
             Version: '2012-10-17'
             Statement:
-            - Effect: Allow
-              Action: "*"
-              Resource: "*"
+              - Effect: Allow
+                Action:
+                  - 's3:PutObject'
+                  - 'cloudwatch:DescribeAlarmHistory'
+                  - 'cloudwatch:DescribeAlarmsForMetric'
+                  - 'cloudwatch:DescribeAlarms'
+                  - 'cloudwatch:GetMetricStatistics'
+                  - 'cloudwatch:ListMetrics'
+                  - 'logs:CreateLogGroup'
+                  - 'logs:CreateLogStream'
+                  - 'logs:PutLogEvents'
+                  - 'comprehend:*'
+                Resource: '*'
+              - Effect: Allow
+                Action:
+                  - 's3:PutObject'
+                Resource: 'arn:aws:s3:::fangsentiment-depp'
+              - Effect: Allow
+                Action:
+                  - 'sqs:DeleteMessage'
+                  - 'sqs:GetQueueUrl'
+                  - 'sqs:ReceiveMessage'
+                  - 'sqs:GetQueueAttributes'
+                Resource: 'arn:aws:sqs:us-east-1:606363841935:producer'
+
+  LambdaExecutionRole2:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: LambdaExecutionRole2
+      AssumeRolePolicyDocument:
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: AdministratorAccess2
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - 'cloudwatch:DescribeAlarmHistory'
+                  - 'cloudwatch:DescribeAlarmsForMetric'
+                  - 'cloudwatch:DescribeAlarms'
+                  - 'cloudwatch:GetMetricStatistics'
+                  - 'cloudwatch:ListMetrics'
+                  - 'logs:CreateLogGroup'
+                  - 'logs:CreateLogStream'
+                  - 'logs:PutLogEvents'
+                Resource: '*'
+              - Effect: Allow
+                Action:
+                  - 'sqs:GetQueueUrl'
+                  - 'sqs:SendMessage'
+                Resource:
+                - !GetAtt Producer.Arn
+              - Effect: Allow
+                Action: 'dynamodb:Scan'
+                Resource:
+                - !GetAtt fangTable.Arn
 
   fangTable:
     Type: AWS::DynamoDB::Table
@@ -97,7 +155,7 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: fangsentiment-depp
-      AccessControl: PublicRead
+      AccessControl: BucketOwnerFullControl
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: error.html
