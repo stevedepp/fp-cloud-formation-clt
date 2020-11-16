@@ -8,7 +8,6 @@ def add_batch(text_file):
     set_existing = set(list_existing)
     set_increment = set_new - set_existing
     return set_increment
-    print(set_increment)
     
 if __name__ == "__main__":
     add_batch(text_file)
