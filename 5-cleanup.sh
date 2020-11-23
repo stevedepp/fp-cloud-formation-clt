@@ -1,6 +1,6 @@
 #!/bin/bash
 set -eo pipefail
-STACK=blank-python
+STACK=depp-498-fp
 
 if [[ $# -eq 1 ]] ; then
     STACK=$1
