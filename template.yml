@@ -8,7 +8,7 @@ Resources:
       Handler: lambda_function.lambda_handler
       Runtime: python3.6
       FunctionName: ServerlessProducer
-      Role: !GetAtt LambdaExecutionRole2.Arn
+      Role: !GetAtt ServerlessProducerRole.Arn
       CodeUri: ServerlessProducer/.
       Description: Call the AWS Lambda API
       Timeout: 10
@@ -17,7 +17,7 @@ Resources:
   libsServerlessProducer:
     Type: AWS::Serverless::LayerVersion
     Properties:
-      LayerName: blank-python-libServerlessProducer
+      LayerName: libServerlessProducer
       Description: Dependencies for ServerlessProducer Lambda.
       ContentUri: packageServerlessProducer/.
       CompatibleRuntimes:
@@ -29,7 +29,7 @@ Resources:
       Handler: lambda_function.lambda_handler
       Runtime: python3.6
       FunctionName: ProducerAI
-      Role: !GetAtt LambdaExecutionRole3.Arn
+      Role: !GetAtt ProducerAIRole.Arn
       CodeUri: ProducerAI/.
       Description: Call the AWS Lambda API
       Timeout: 10
@@ -38,7 +38,7 @@ Resources:
   libsProducerAI:
     Type: AWS::Serverless::LayerVersion
     Properties:
-      LayerName: blank-python-libProducerAI
+      LayerName: libProducerAI
       Description: Dependencies for ProducerAI Lambda.
       ContentUri: packageProducerAI/.
       CompatibleRuntimes:
@@ -51,10 +51,10 @@ Resources:
       DelaySeconds: 0
       VisibilityTimeout: 120
 
-  LambdaExecutionRole3:
+  ProducerAIRole:
     Type: AWS::IAM::Role
     Properties:
-      RoleName: LambdaExecutionRole3
+      RoleName: ProducerAIRole
       AssumeRolePolicyDocument:
         Statement:
           - Effect: Allow
@@ -91,10 +91,10 @@ Resources:
                   - 'sqs:GetQueueAttributes'
                 Resource: 'arn:aws:sqs:us-east-1:606363841935:producer'
 
-  LambdaExecutionRole2:
+  ServerlessProducerRole:
     Type: AWS::IAM::Role
     Properties:
-      RoleName: LambdaExecutionRole2
+      RoleName: ServerlessProducerRole
       AssumeRolePolicyDocument:
         Statement:
           - Effect: Allow
