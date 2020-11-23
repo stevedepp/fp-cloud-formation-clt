@@ -3,6 +3,7 @@ to do:
 - [ ] logs
 - [ ] flask
 - [ ] rename CLI functions
+- [ ] add functionality to append names after cf complete
 - [x] rename CloudFormation from blank-python
 - [x] rename LambdaRoles to specific from generic names
 - [x] pip's  --use-feature=2020-resolver **
