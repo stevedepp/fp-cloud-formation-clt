@@ -38,10 +38,18 @@
 ### ```producerAI/lambda_function.py```
 
 ### ```make```
-
-#### setup
-#### install
-#### bucket
+-   setup
+-   env
+-   install
+-   bucket
+-   build
+-   deploy
+-   data
+-   infra
+-   teardown
+-   lint
+-   test
+-   all
 
 
 
