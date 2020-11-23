@@ -1,7 +1,7 @@
 ## to do:
 - [ ] add CLT framework
 - [ ] logs
-- [ ] flask
+- [ ] flask to see the output in a webpage with json pretty
 - [ ] rename CLI functions
 - [ ] add functionality to append names after cf complete
 - [x] rename CloudFormation from blank-python
@@ -12,8 +12,7 @@
 - [ ] if add flask, the note below about request lib may cause fail
 
 
-  
-    
+
 ## outline:
 
 ### ```1-create-bucket.sh```
@@ -38,17 +37,21 @@
 
 ### ```producerAI/lambda_function.py```
 
+### ```make```
 
-  
-    
+#### setup
+#### install
+#### bucket
+
+
+
 ## startup:
 
 ### source .venv/bin/activate
 ### follow order of scripts
 
 
-  
-    
+
 ## architecture:
 
 ### CLI Python modlue
@@ -74,10 +77,9 @@
 ### Comprehend
 
 ### S3 bucket
-  
-  
-    
-      
+
+
+
 ## notes:
 
 -   pip message: --use-feature=2020-resolver? error message with jupyter installation on ubuntu
