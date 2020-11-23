@@ -10,8 +10,11 @@
 - [x] makes sure IAM policies are deleted when teardown occurs
 - [ ] avoid screen popups and y/n when tearing down
 - [ ] if add flask, the note below about request lib may cause fail
-	
-## outline
+
+
+  
+    
+## outline:
 
 ### ```1-create-bucket.sh```
 
@@ -36,13 +39,17 @@
 ### ```producerAI/lambda_function.py```
 
 
-## startup
+  
+    
+## startup:
 
 ### source .venv/bin/activate
 ### follow order of scripts
 
 
-## architecture
+  
+    
+## architecture:
 
 ### CLI Python modlue
 
@@ -67,10 +74,11 @@
 ### Comprehend
 
 ### S3 bucket
-
-
-
-## notes
+  
+  
+    
+      
+## notes:
 
 -   pip message: --use-feature=2020-resolver? error message with jupyter installation on ubuntu
 https://stackoverflow.com/questions/63277123/what-is-use-feature-2020-resolver-error-message-with-jupyter-installation-on
