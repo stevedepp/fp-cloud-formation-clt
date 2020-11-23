@@ -69,14 +69,6 @@ to do:
 
 
 
-** 
-ERROR: After October 2020 you may experience errors when installing or updating packages. This is because pip will change the way that it resolves dependency conflicts.
-
-We recommend you use --use-feature=2020-resolver to test your packages with the new resolver before it becomes the default.
-
-requests 2.24.0 requires urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1, but you'll have urllib3 1.26.2 which is incompatible.
-
-
 ## notes
 
 -   pip message: --use-feature=2020-resolver? error message with jupyter installation on ubuntu
