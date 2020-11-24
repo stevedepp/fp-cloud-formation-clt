@@ -3,7 +3,8 @@
 - [ ] logs
 - [ ] flask to see the output in a webpage with json pretty
 - [ ] rename CLI functions
-- [ ] add functionality to append names after cf complete
+- [ ] use CF designer for presentation
+- [ ] add functionality to append names after cf complete https://stackoverflow.com/questions/47631914/how-to-pass-several-list-of-arguments-to-click-option
 - [x] rename CloudFormation from blank-python
 - [x] rename LambdaRoles to specific from generic names
 - [x] pip's  --use-feature=2020-resolver **
@@ -15,13 +16,29 @@
 
 ## outline:
 
+Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli/
+
 ### ```1-create-bucket.sh```
+-   random BUCKET_ID
+-   BUCKET_NAME = ```lambda-artifacts-[BUCKET_ID]```
+-   BUCKET_NAME saved to bucket-name.txt
+-   create bucket via ```aws s3 mb```
 
 ### ```2-build-layer.sh```
+-   remove old layer folders if any
+-   ```pip install``` dependencies for lambdas into their layer folders
+-   remove ```pandas``` and ```numpy``` from ```ProducerAI``` layer folder; AWS linux requires its flavor of ```pandas``` which is dependent on ```numpy```.
+-   curl to ```pandas-0.24.1``` and ```numpy 1.16.1``` for ```manylinux1_x86_64.whl and unzip to ```ProducerAI``` layer folder, deleting ```__pycache__``` and any ```*.dist-info``` files.
 
 ### ```3-deploy.sh```
-
+-   employ ```aws cloudformation package``` to package local artifacts of stack, e.g. lambda dependencies, into AWS bucket and via the macro template.yaml return a copy of template ```out.yml``` which replaces references to local artifacts with the S3 location.  
+-   employ ```aws cloudformation deploy``` to deploy the stack. 
 ### ```4-init-data.sh```
+-   ```ddb_items_init.py``` initializes ```fang``` table with a list of companies
+-   could this be called from python to python without shell script taking either list or file to initialize the fang table?
+-   then any list of additions simply adds to the set in dynamo db and we are not dependent on location of execution
+-   deletion is next step
+-   keep initialization possible in shell by keeing the if main caller at bottom.
 
 ### ```5-cleanip.sh```
 

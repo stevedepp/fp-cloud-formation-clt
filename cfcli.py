@@ -3,8 +3,7 @@ import click
 import lib
 import sys
 import subprocess
-#from ddb_items import add_batch
-#from ddb_items import add_item
+from ddb_new_items import add_batch
 
 @click.version_option(lib.__version__)
 @click.group()
@@ -22,28 +21,19 @@ def hello():
 def hello(file, name):
     if not file and not name:
         click.echo("--file or --name is required")
+    elif file and name:
+        click.echo("--file or --name but not both please")
     elif file:
         with open(file) as fin:
-            read_data = fin.read()
-        ret = "add_batch(file)"
-        click.echo(f"Processing batch @ {file}. \n--> adding: \n{read_data}")
+            list_from_file = fin.read().splitlines()
+        all_items, new_items = add_batch(list_from_file)
+        click.echo(f"Processing batch from {file}. \n-> adding: {new_items}")
+        click.echo(f"full list will be {all_items}")
     elif name:
-        ret = "add_batch(file)"
-        click.echo('\n'.join(name))
-
-
-'''
-def names(file, name):
-    if not file and not name:
-        click.echo("--file or --name is required")
-        sys.exit(1)
-    elif file:
-        ret = add_batch(file)
-        click.echo(f"Processing batch {batch} --> adding {ret}")
-    elif name:
-        ret = add_item(name)
-        click.echo(f"Processing item {item} --> adding {ret}")
-'''
+        list_from_user = list(name)
+        all_items, new_items = add_batch(list_from_user)
+        click.echo(f"Processing batch from user. \n-> adding: {new_items}")
+        click.echo(f"full list will be {all_items}")
 
 if __name__ == "__main__":
     cli()
