@@ -1,0 +1,9 @@
+facebook
+amazon
+netflix
+google
+microsoft
+ibm
+oracle
+spotify
+nvidia

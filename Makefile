@@ -21,9 +21,9 @@ deploy:
 	./3-deploy.sh
 
 data:
-	./4-init-data.sh
+	./unused_code/4-init-data.sh
 
-infra: bucket build deploy data
+infra: install bucket build deploy
 
 teardown:
 	./5-cleanup.sh
@@ -34,4 +34,4 @@ lint:
 test:
 	@cd tests; pytest -vv --cov-report term-missing --cov=web --cov=nlib test_*.py
 
-all: install lint test
+all: install infra lint test

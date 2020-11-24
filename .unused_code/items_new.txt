@@ -1,0 +1,16 @@
+facebook
+amazon
+tesla
+gm
+ford
+
+
+facebook
+amazon
+netflix
+google
+microsoft
+ibm
+oracle
+spotify
+nvidia
