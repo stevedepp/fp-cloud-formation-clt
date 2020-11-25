@@ -133,11 +133,11 @@ Resources:
     Properties:
       AttributeDefinitions:
         -
-          AttributeName: "company"
+          AttributeName: "name"
           AttributeType: "S"
       KeySchema:
         -
-          AttributeName: "company"
+          AttributeName: "name"
           KeyType: "HASH"
       ProvisionedThroughput:
         ReadCapacityUnits: "5"

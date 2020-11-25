@@ -6,35 +6,43 @@ import boto3
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('fang')
 
-def hello():
+def table_timestamp():
     table_time = table.creation_date_time
     return table_time
-    
-def item_add(item):
-    response = table.put_item(Item={'company': item,})
-    return response
-
-list_items = ['facebook','amazon','netflix', 'google']
-
-def batch_add(list_items=list_items):
-    with table.batch_writer() as batch:
-        for i in list_items:
-            batch.put_item(Item={'company': str(i),})
-
-def item_delete(item):
-    table.delete_item(Key={'company': item,})
-
-def item_update(old_item, new_item):
-    response_delete = item_delete(old_item)
-    response_add = item_add(new_item)
-    return response_delete, response_add
     
 def items_list():
     items_list = []
     response = table.scan()
-    for i in response['Items']:
-        items_list.append(i['company'])
-    return items_list, response
-    
+    if response['Items'] != []:
+        for i in response['Items']:
+            items_list.append(i['name'])
+        return items_list
+    else:
+        return "Empty list"
+
+list_items = ['facebook','amazon','netflix', 'google']
+
+def items_add(list_items=list_items):
+    if list_items == ['']:
+        print("empty")
+    else:
+        with table.batch_writer() as batch:
+            for i in list_items:
+                batch.put_item(Item={'name': str(i),})
+
+def items_delete(list_items):
+    for i in list_items:
+        table.delete_item(Key={'name': i,})
+
+def item_add(item):
+    response = table.put_item(Item={'name': item,})
+    return response
+
+def item_update(old_item, new_item):
+    old_item = [old_item]
+    response_delete = items_delete(old_item)
+    response_add = item_add(new_item)
+    #return response_delete, response_add
+
 if __name__ == '__main__':
-    hello()
+    cf_timestamp()
