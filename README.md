@@ -2,9 +2,9 @@
 - [ ] add CLT framework
 - [ ] logs
 - [ ] flask to see the output in a webpage with json pretty
-- [ ] rename CLI functions
+- [x] rename CLI functions
 - [ ] use CF designer for presentation
-- [ ] add functionality to append names after cf complete https://stackoverflow.com/questions/47631914/how-to-pass-several-list-of-arguments-to-click-option
+- [x] add functionality to append names after cf complete https://stackoverflow.com/questions/47631914/how-to-pass-several-list-of-arguments-to-click-option
 - [x] rename CloudFormation from blank-python
 - [x] rename LambdaRoles to specific from generic names
 - [x] pip's  --use-feature=2020-resolver **
