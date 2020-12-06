@@ -100,34 +100,29 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 	`echo $BUCKET_NAME > bucket-name.txt`  
 	`aws s3 mb s3://$BUCKET_NAME`  
 
-
-### ```2-build-layer.sh```
 -   remove old layer folders if any
 -   ```pip install``` dependencies for lambdas into their layer folders
 -   remove ```pandas``` and ```numpy``` from ```ProducerAI``` layer folder; AWS linux requires its flavor of ```pandas``` which is dependent on ```numpy```.
 -   curl to ```pandas-0.24.1``` and ```numpy 1.16.1``` for ```manylinux1_x86_64.whl and unzip to ```ProducerAI``` layer folder, deleting ```__pycache__``` and any ```*.dist-info``` files.
 
+
+### ```2-build-layer.sh```
+
+
 	`#!/bin/bash`  
 	`set -eo pipefail`  
-
 	`rm -rf packageServerlessProducer`  
 	`rm -rf packageProducerAI`  
-
 	`pip install --target ./packageServerlessProducer/python -r ./ServerlessProducer/requirements.txt --use-feature=2020-resolver`  
 	`pip install --target ./packageProducerAI/python -r ./ProducerAI/requirements.txt --use-feature=2020-resolver`  
-
 	`rm -rf ./packageProducerAI/python/pandas`  
 	`rm -rf ./packageProducerAI/python/numpy`  
-
 	`curl -O https://files.pythonhosted.org/packages/e6/de/a0d3defd8f338eaf53ef716e40ef6d6c277c35d50e09b586e170169cdf0d/pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl`  
 	`curl -O https://files.pythonhosted.org/packages/f5/bf/4981bcbee43934f0adb8f764a1e70ab0ee5a448f6505bd04a87a2fda2a8b/numpy-1.16.1-cp36-cp36m-manylinux1_x86_64.whl`  
-
 	`unzip pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl -d packageProducerAI/python/`  
 	`unzip numpy-1.16.1-cp36-cp36m-manylinux1_x86_64.whl -d packageProducerAI/python/`  
-
 	`rm -r packageProducerAI/python/__pycache__`  
 	`rm -r packageProducerAI/python/*.dist-info`  
-
 	`rm pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl`  
 	`rm numpy-1.16.1-cp36-cp36m-manylinux1_x86_64.whl`  
 
