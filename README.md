@@ -56,31 +56,6 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 - [ ] if add flask, the note below about request lib may cause fail
 - [ ] total cost of ownership estimate
 
-
-Success criteria 
-
--	DV production standard
--	GitHub professional quality
--	Handoff memoration 
-		Presents the project
-		Enables 100% client handoff
--	Cohesive quality
-		Source code
-		Architecture 
-		Functionality 
--	MVP checklist
-		Application 
-		Separate development / production environments
-		Comprehensive monitoring and alerts
-		Correct Datastore
-		Principle of least security enforced
-		Data encryption in transit
-
-Deliverables
--	Completed production release in 10 weeks
--	Portfolio of 10 DV 
--	Handoff memorandum
-
 ## outline:
 
 Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli/
