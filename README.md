@@ -25,9 +25,10 @@ building ser...
   - [x] success: lambda layers for dependencies
   - [x] challenge: 
   
-- [x] **week 9** CLT for db operations
-  - [x] CLT adds, deletes, updates in item or batch format
-  - [x] AWS comprehend has carte blanche priveleges 
+- [x] **week 9** CLT for db operations and IAM policy tightening
+  - [x] success: CLT adds, deletes, updates in item or batch format
+  - [x] success: all IAM roles' policies tightened to minimum priv
+  - [x] challenge: AWS comprehend has carte blanche privileges 
 
 ## architecture diagram
 
