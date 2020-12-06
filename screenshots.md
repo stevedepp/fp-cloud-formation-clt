@@ -38,14 +38,14 @@
     ./cfcli.py remove -i amazon
     ./cfcli.py remove -item amazon
 
-(but amazon isn't there so it is ignored)
+(but amazon isn't there so amazon is ignored)
 
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/38410965/101272523-fdd34d80-375a-11eb-8adc-91fe5ac44245.png">
 
 ./cfcli.py update -old amazon -new Amazon
 ./cfcli.py update -o amazon -n Amazon
 
-(since amazon isn't there so it is added)
+(since amazon isn't there, amazon is added)
 
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/38410965/101272549-3410cd00-375b-11eb-876e-ed171e5f4001.png">
 
