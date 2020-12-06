@@ -5,6 +5,8 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 
 ### quickstart commands
 
+### evolution of development
+
 - [x] **week 4:** cloud9 + aws management console for: 
   - [x] success: sqs queue, dynamo db, lambda, iam policies, s3 bucket 
   - [x] 24 mins 35 seconds
