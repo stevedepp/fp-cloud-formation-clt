@@ -1,6 +1,51 @@
+# title
+building ser...
+
+<img width="423" alt="Al Data Engineering" src="https://user-images.githubusercontent.com/38410965/101269508-893de600-373d-11eb-9d52-a393e4070d67.png">
+
+### quickstart commands
+
+- [x] **week 4:** cloud9 + aws management console for: 
+  - [x] success: sqs queue, dynamo db, lambda, iam policies, s3 bucket 
+  - [x] 24 mins 35 seconds
+  - [x] challenge is time to build slowing evolution 
+  
+- [x] **week 5:** AWS serverless application model (SAM) 
+  - [x] python SDK for cloud formation
+  - [x] sqs queue, dynamo db, lambda, iam policies, s3 bucket 
+  - [x] succes: 3 minutes 17 seconds to build
+  - [x] challenge: getting one resource to see another
+  
+- [x] **week 7:** cloud formation via templates
+  - [x] success: easier to code and visualize solution structure
+  - [x] challenge: lambda dependencies
+
+- [x] **week 8:** lambda layers
+  - [x] 4 minutes 45 seconds to build  
+  - [x] success: lambda layers for dependencies
+  - [x] challenge: 
+  
+- [x] **week 9** CLT for db operations
+  - [x] CLT adds, deletes, updates in item or batch format
+  - [x] AWS comprehend has carte blanche priveleges 
+
+## architecture diagram
+
+## evolution
+- [x]
+
 ## to do:
-- [ ] add CLT framework
-- [ ] logs
+- [x] encryption in transit
+- [x] code in github
+- [x] automate dependencies
+- [x] principle of least privelege via tightened IAM roles' policies
+- [ ] email notifications
+- [x] cicd via infrastructure as code
+- [x] infrastructure as code logging via aws
+- [x] CLT framework
+- [x] CF logging via lambda monitoring and cloud watch
+- [x] CLT logging via click
+- [x] db operations logging via python-json-logger
 - [ ] flask to see the output in a webpage with json pretty
 - [x] rename CLI functions
 - [ ] use CF designer for presentation
@@ -11,8 +56,32 @@
 - [x] makes sure IAM policies are deleted when teardown occurs
 - [ ] avoid screen popups and y/n when tearing down
 - [ ] if add flask, the note below about request lib may cause fail
+- [ ] total cost of ownership estimate
 
 
+Success criteria 
+
+-	DV production standard
+-	GitHub professional quality
+-	Handoff memoration 
+		Presents the project
+		Enables 100% client handoff
+-	Cohesive quality
+		Source code
+		Architecture 
+		Functionality 
+-	MVP checklist
+		Application 
+		Separate development / production environments
+		Comprehensive monitoring and alerts
+		Correct Datastore
+		Principle of least security enforced
+		Data encryption in transit
+
+Deliverables
+-	Completed production release in 10 weeks
+-	Portfolio of 10 DV 
+-	Handoff memorandum
 
 ## outline:
 
