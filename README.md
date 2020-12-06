@@ -5,7 +5,7 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 
 ### quickstart commands
 
-- [x] getting coing:
+- [x] getting coing
 
         mkdir folder_name
         cd folder_name
@@ -39,7 +39,7 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
         ./cfcli.py update -old netflix -new Netflix
         ./cfcli.py update -o netflix -n Netflix
 
-- [x] tearing it down:
+- [x] tearing it down
 
         ./cfcli.py teardown 
         
