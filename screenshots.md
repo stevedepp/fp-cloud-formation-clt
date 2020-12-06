@@ -24,7 +24,7 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/38410965/101272426-0414fa00-375a-11eb-99da-bc3ad2ea2673.png">
 
-`./cos.txt` contains a column of names
+`nano ./cos.txt` contains a column of names
 
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/38410965/101272455-40485a80-375a-11eb-8944-c5f86e70a1ad.png">
 
