@@ -7,6 +7,8 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 
 <img width="423" alt="Al Data Engineering" src="https://user-images.githubusercontent.com/38410965/101269508-893de600-373d-11eb-9d52-a393e4070d67.png">
 
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/38410965/101273547-5529eb80-3764-11eb-9cfa-40ff738a857c.png">
+
 #
 
 ## quickstart commands
