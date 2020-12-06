@@ -3,21 +3,21 @@ import click
 import lib
 import sys
 import subprocess
+
 from ddb_ops import table_timestamp, item_add, items_add, items_delete, item_update, items_list
 
 @click.version_option(lib.__version__)
 @click.group()
 def cli():
-    '''blah blah'''
+    '''greetings'''
 
 @cli.command("make-infra")
 def hello():
-    print('hello')
     # change to make infra and save/publish time
-    subprocess.run(['make', 'env'])
+    subprocess.run(['make', 'infra'])
 
 @cli.command("add")
-@click.option('--file', help='File containig a column of names')
+@click.option('--file', '-f', help='File containig a column of names')
 @click.option('--item', '-i', multiple=True, help='One item via --item or several separated by -i')
 def add(file, item):
     if not file and not item:
@@ -41,7 +41,7 @@ def add(file, item):
         click.echo(f"full list will be {items_list_after}")
 
 @cli.command("remove")
-@click.option('--file', help='File containig a column of names')
+@click.option('--file', '-f', help='File containig a column of names')
 @click.option('--item', '-i', multiple=True, help='One item via --item or several separated by -i')
 def delete(file, item):
     if not file and not item:

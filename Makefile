@@ -9,7 +9,7 @@ env:
 
 install:
 	python3 -m pip install --upgrade pip
-	pip install -r requirements.txt --use-feature=2020-resolver
+	pip3 install -r requirements.txt
 
 bucket:
 	./1-create-bucket.sh

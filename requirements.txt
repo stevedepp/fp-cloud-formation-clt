@@ -1,3 +1,4 @@
+python-json-logger
 click
 pytest
 pylint
