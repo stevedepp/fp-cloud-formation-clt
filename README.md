@@ -3,13 +3,13 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 
 #
 
-### architecture diagram
+## architecture diagram
 
 <img width="423" alt="Al Data Engineering" src="https://user-images.githubusercontent.com/38410965/101269508-893de600-373d-11eb-9d52-a393e4070d67.png">
 
 #
 
-### quickstart commands
+## quickstart commands
 (annotated screenshots of all are provided [here](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/screenshots.md#screenshots))
 
 #
@@ -52,10 +52,10 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 
         ./cfcli.py teardown 
         
-### features
+## features
 
 
-### developer comments are [here](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/developer_notes.md#developer-notes)
+## developer comments are [here](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/developer_notes.md#developer-notes)
 
 
 
