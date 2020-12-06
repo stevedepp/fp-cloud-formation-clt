@@ -142,11 +142,12 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 
 ### ```3-deploy.sh```
 
-	`#!/bin/bash`  
-	`set -eo pipefail`  
-	`ARTIFACT_BUCKET=$(cat bucket-name.txt)`  
-	`aws cloudformation package --template-file template.yml --s3-bucket $ARTIFACT_BUCKET --output-template-file out.yml`  
-	`aws cloudformation deploy --template-file out.yml --stack-name depp-498-fp --capabilities CAPABILITY_NAMED_IAM`  
+	#!/bin/bash
+	set -eo pipefail
+	ARTIFACT_BUCKET=$(cat bucket-name.txt)
+	aws cloudformation package --template-file template.yml --s3-bucket $ARTIFACT_BUCKET --output-template-file out.yml
+	aws cloudformation deploy --template-file out.yml --stack-name depp-498-fp --capabilities CAPABILITY_NAMED_IAM
+
 
 -   employ ```aws cloudformation package``` to package local artifacts of stack, e.g. lambda dependencies, into AWS bucket and via the macro template.yaml return a copy of template ```out.yml``` which replaces references to local artifacts with the S3 location.  
 -   employ ```aws cloudformation deploy``` to deploy the stack. 
