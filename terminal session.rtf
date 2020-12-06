@@ -1,0 +1,3030 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2576
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red47\green180\blue29;\red46\green174\blue187;
+\red64\green11\blue217;\red180\green36\blue25;\red159\green160\blue28;\red45\green150\blue30;\red47\green231\blue26;
+\red49\green139\blue238;\red161\green36\blue26;\red252\green33\blue24;\red193\green101\blue28;\red189\green97\blue143;
+\red153\green153\blue153;\red230\green230\blue230;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c20238\c73898\c14947;\cssrgb\c20196\c73240\c78250;
+\cssrgb\c32308\c18668\c88227;\cssrgb\c76409\c21698\c12524;\cssrgb\c68468\c68012\c14208;\cssrgb\c20459\c63760\c15349;\cssrgb\c17862\c90513\c12810;
+\cssrgb\c23653\c62456\c94776;\cssrgb\c69952\c21066\c13204;\cssrgb\c100000\c23177\c11601;\cssrgb\c80553\c47366\c13835;\cssrgb\c79514\c47206\c63023;
+\csgenericrgb\c60000\c60000\c60000;\csgenericrgb\c90000\c90000\c90000;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Tue Nov 24 20:12:04 on ttys004\
+
+\f1\b \cf3 \uc0\u10140   \cf4 ~
+\f0\b0 \cf2  cd Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt \
+
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  make setup\
+python3 -m venv .venv\
+
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  source .venv/bin/activate\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  nano Makefile \
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  make instal\
+make: *** No rule to make target `instal'.  Stop.\
+(.venv) 
+\f1\b \cf6 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  make install\
+python3 -m pip install --upgrade pip\
+Requirement already up-to-date: pip in ./.venv/lib/python3.8/site-packages (20.2.4)\
+pip install -r requirements.txt --use-feature=2020-resolver\
+Requirement already satisfied: click in ./.venv/lib/python3.8/site-packages (from -r requirements.txt (line 1)) (7.1.2)\
+Requirement already satisfied: pytest in ./.venv/lib/python3.8/site-packages (from -r requirements.txt (line 2)) (6.1.2)\
+Requirement already satisfied: pylint in ./.venv/lib/python3.8/site-packages (from -r requirements.txt (line 3)) (2.6.0)\
+Requirement already satisfied: ipython in ./.venv/lib/python3.8/site-packages (from -r requirements.txt (line 4)) (7.19.0)\
+Requirement already satisfied: boto3 in ./.venv/lib/python3.8/site-packages (from -r requirements.txt (line 5)) (1.16.25)\
+Requirement already satisfied: pluggy<1.0,>=0.12 in ./.venv/lib/python3.8/site-packages (from pytest->-r requirements.txt (line 2)) (0.13.1)\
+Requirement already satisfied: packaging in ./.venv/lib/python3.8/site-packages (from pytest->-r requirements.txt (line 2)) (20.4)\
+Requirement already satisfied: toml in ./.venv/lib/python3.8/site-packages (from pytest->-r requirements.txt (line 2)) (0.10.2)\
+Requirement already satisfied: iniconfig in ./.venv/lib/python3.8/site-packages (from pytest->-r requirements.txt (line 2)) (1.1.1)\
+Requirement already satisfied: attrs>=17.4.0 in ./.venv/lib/python3.8/site-packages (from pytest->-r requirements.txt (line 2)) (20.3.0)\
+Requirement already satisfied: py>=1.8.2 in ./.venv/lib/python3.8/site-packages (from pytest->-r requirements.txt (line 2)) (1.9.0)\
+Requirement already satisfied: isort<6,>=4.2.5 in ./.venv/lib/python3.8/site-packages (from pylint->-r requirements.txt (line 3)) (5.6.4)\
+Requirement already satisfied: astroid<=2.5,>=2.4.0 in ./.venv/lib/python3.8/site-packages (from pylint->-r requirements.txt (line 3)) (2.4.2)\
+Requirement already satisfied: mccabe<0.7,>=0.6 in ./.venv/lib/python3.8/site-packages (from pylint->-r requirements.txt (line 3)) (0.6.1)\
+Requirement already satisfied: toml in ./.venv/lib/python3.8/site-packages (from pytest->-r requirements.txt (line 2)) (0.10.2)\
+Requirement already satisfied: pexpect>4.3 in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (4.8.0)\
+Requirement already satisfied: traitlets>=4.2 in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (5.0.5)\
+Requirement already satisfied: setuptools>=18.5 in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (49.2.1)\
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (3.0.8)\
+Requirement already satisfied: appnope in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (0.1.0)\
+Requirement already satisfied: pygments in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (2.7.2)\
+Requirement already satisfied: decorator in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (4.4.2)\
+Requirement already satisfied: jedi>=0.10 in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (0.17.2)\
+Requirement already satisfied: pickleshare in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (0.7.5)\
+Requirement already satisfied: backcall in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (0.2.0)\
+Requirement already satisfied: jmespath<1.0.0,>=0.7.1 in ./.venv/lib/python3.8/site-packages (from boto3->-r requirements.txt (line 5)) (0.10.0)\
+Requirement already satisfied: s3transfer<0.4.0,>=0.3.0 in ./.venv/lib/python3.8/site-packages (from boto3->-r requirements.txt (line 5)) (0.3.3)\
+Requirement already satisfied: botocore<1.20.0,>=1.19.25 in ./.venv/lib/python3.8/site-packages (from boto3->-r requirements.txt (line 5)) (1.19.25)\
+Requirement already satisfied: six in ./.venv/lib/python3.8/site-packages (from packaging->pytest->-r requirements.txt (line 2)) (1.15.0)\
+Requirement already satisfied: pyparsing>=2.0.2 in ./.venv/lib/python3.8/site-packages (from packaging->pytest->-r requirements.txt (line 2)) (2.4.7)\
+Requirement already satisfied: six in ./.venv/lib/python3.8/site-packages (from packaging->pytest->-r requirements.txt (line 2)) (1.15.0)\
+Requirement already satisfied: lazy-object-proxy==1.4.* in ./.venv/lib/python3.8/site-packages (from astroid<=2.5,>=2.4.0->pylint->-r requirements.txt (line 3)) (1.4.3)\
+Requirement already satisfied: wrapt~=1.11 in ./.venv/lib/python3.8/site-packages (from astroid<=2.5,>=2.4.0->pylint->-r requirements.txt (line 3)) (1.12.1)\
+Requirement already satisfied: ptyprocess>=0.5 in ./.venv/lib/python3.8/site-packages (from pexpect>4.3->ipython->-r requirements.txt (line 4)) (0.6.0)\
+Requirement already satisfied: ipython-genutils in ./.venv/lib/python3.8/site-packages (from traitlets>=4.2->ipython->-r requirements.txt (line 4)) (0.2.0)\
+Requirement already satisfied: wcwidth in ./.venv/lib/python3.8/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython->-r requirements.txt (line 4)) (0.2.5)\
+Requirement already satisfied: parso<0.8.0,>=0.7.0 in ./.venv/lib/python3.8/site-packages (from jedi>=0.10->ipython->-r requirements.txt (line 4)) (0.7.1)\
+Requirement already satisfied: botocore<1.20.0,>=1.19.25 in ./.venv/lib/python3.8/site-packages (from boto3->-r requirements.txt (line 5)) (1.19.25)\
+Requirement already satisfied: urllib3<1.27,>=1.25.4 in ./.venv/lib/python3.8/site-packages (from botocore<1.20.0,>=1.19.25->boto3->-r requirements.txt (line 5)) (1.26.2)\
+Requirement already satisfied: jmespath<1.0.0,>=0.7.1 in ./.venv/lib/python3.8/site-packages (from boto3->-r requirements.txt (line 5)) (0.10.0)\
+Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in ./.venv/lib/python3.8/site-packages (from botocore<1.20.0,>=1.19.25->boto3->-r requirements.txt (line 5)) (2.8.1)\
+Requirement already satisfied: six in ./.venv/lib/python3.8/site-packages (from packaging->pytest->-r requirements.txt (line 2)) (1.15.0)\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  nano Makefile \
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  make infra \
+python3 -m pip install --upgrade pip\
+Requirement already up-to-date: pip in ./.venv/lib/python3.8/site-packages (20.2.4)\
+pip install -r requirements.txt --use-feature=2020-resolver\
+Requirement already satisfied: click in ./.venv/lib/python3.8/site-packages (from -r requirements.txt (line 1)) (7.1.2)\
+Requirement already satisfied: pytest in ./.venv/lib/python3.8/site-packages (from -r requirements.txt (line 2)) (6.1.2)\
+Requirement already satisfied: pylint in ./.venv/lib/python3.8/site-packages (from -r requirements.txt (line 3)) (2.6.0)\
+Requirement already satisfied: ipython in ./.venv/lib/python3.8/site-packages (from -r requirements.txt (line 4)) (7.19.0)\
+Requirement already satisfied: boto3 in ./.venv/lib/python3.8/site-packages (from -r requirements.txt (line 5)) (1.16.25)\
+Requirement already satisfied: toml in ./.venv/lib/python3.8/site-packages (from pytest->-r requirements.txt (line 2)) (0.10.2)\
+Requirement already satisfied: packaging in ./.venv/lib/python3.8/site-packages (from pytest->-r requirements.txt (line 2)) (20.4)\
+Requirement already satisfied: pluggy<1.0,>=0.12 in ./.venv/lib/python3.8/site-packages (from pytest->-r requirements.txt (line 2)) (0.13.1)\
+Requirement already satisfied: py>=1.8.2 in ./.venv/lib/python3.8/site-packages (from pytest->-r requirements.txt (line 2)) (1.9.0)\
+Requirement already satisfied: attrs>=17.4.0 in ./.venv/lib/python3.8/site-packages (from pytest->-r requirements.txt (line 2)) (20.3.0)\
+Requirement already satisfied: iniconfig in ./.venv/lib/python3.8/site-packages (from pytest->-r requirements.txt (line 2)) (1.1.1)\
+Requirement already satisfied: toml in ./.venv/lib/python3.8/site-packages (from pytest->-r requirements.txt (line 2)) (0.10.2)\
+Requirement already satisfied: astroid<=2.5,>=2.4.0 in ./.venv/lib/python3.8/site-packages (from pylint->-r requirements.txt (line 3)) (2.4.2)\
+Requirement already satisfied: mccabe<0.7,>=0.6 in ./.venv/lib/python3.8/site-packages (from pylint->-r requirements.txt (line 3)) (0.6.1)\
+Requirement already satisfied: isort<6,>=4.2.5 in ./.venv/lib/python3.8/site-packages (from pylint->-r requirements.txt (line 3)) (5.6.4)\
+Requirement already satisfied: decorator in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (4.4.2)\
+Requirement already satisfied: appnope in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (0.1.0)\
+Requirement already satisfied: backcall in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (0.2.0)\
+Requirement already satisfied: pickleshare in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (0.7.5)\
+Requirement already satisfied: traitlets>=4.2 in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (5.0.5)\
+Requirement already satisfied: pexpect>4.3 in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (4.8.0)\
+Requirement already satisfied: jedi>=0.10 in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (0.17.2)\
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (3.0.8)\
+Requirement already satisfied: pygments in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (2.7.2)\
+Requirement already satisfied: setuptools>=18.5 in ./.venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 4)) (49.2.1)\
+Requirement already satisfied: s3transfer<0.4.0,>=0.3.0 in ./.venv/lib/python3.8/site-packages (from boto3->-r requirements.txt (line 5)) (0.3.3)\
+Requirement already satisfied: botocore<1.20.0,>=1.19.25 in ./.venv/lib/python3.8/site-packages (from boto3->-r requirements.txt (line 5)) (1.19.25)\
+Requirement already satisfied: jmespath<1.0.0,>=0.7.1 in ./.venv/lib/python3.8/site-packages (from boto3->-r requirements.txt (line 5)) (0.10.0)\
+Requirement already satisfied: six in ./.venv/lib/python3.8/site-packages (from packaging->pytest->-r requirements.txt (line 2)) (1.15.0)\
+Requirement already satisfied: pyparsing>=2.0.2 in ./.venv/lib/python3.8/site-packages (from packaging->pytest->-r requirements.txt (line 2)) (2.4.7)\
+Requirement already satisfied: wrapt~=1.11 in ./.venv/lib/python3.8/site-packages (from astroid<=2.5,>=2.4.0->pylint->-r requirements.txt (line 3)) (1.12.1)\
+Requirement already satisfied: six in ./.venv/lib/python3.8/site-packages (from packaging->pytest->-r requirements.txt (line 2)) (1.15.0)\
+Requirement already satisfied: lazy-object-proxy==1.4.* in ./.venv/lib/python3.8/site-packages (from astroid<=2.5,>=2.4.0->pylint->-r requirements.txt (line 3)) (1.4.3)\
+Requirement already satisfied: ipython-genutils in ./.venv/lib/python3.8/site-packages (from traitlets>=4.2->ipython->-r requirements.txt (line 4)) (0.2.0)\
+Requirement already satisfied: ptyprocess>=0.5 in ./.venv/lib/python3.8/site-packages (from pexpect>4.3->ipython->-r requirements.txt (line 4)) (0.6.0)\
+Requirement already satisfied: parso<0.8.0,>=0.7.0 in ./.venv/lib/python3.8/site-packages (from jedi>=0.10->ipython->-r requirements.txt (line 4)) (0.7.1)\
+Requirement already satisfied: wcwidth in ./.venv/lib/python3.8/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython->-r requirements.txt (line 4)) (0.2.5)\
+Requirement already satisfied: botocore<1.20.0,>=1.19.25 in ./.venv/lib/python3.8/site-packages (from boto3->-r requirements.txt (line 5)) (1.19.25)\
+Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in ./.venv/lib/python3.8/site-packages (from botocore<1.20.0,>=1.19.25->boto3->-r requirements.txt (line 5)) (2.8.1)\
+Requirement already satisfied: urllib3<1.27,>=1.25.4 in ./.venv/lib/python3.8/site-packages (from botocore<1.20.0,>=1.19.25->boto3->-r requirements.txt (line 5)) (1.26.2)\
+Requirement already satisfied: jmespath<1.0.0,>=0.7.1 in ./.venv/lib/python3.8/site-packages (from boto3->-r requirements.txt (line 5)) (0.10.0)\
+Requirement already satisfied: six in ./.venv/lib/python3.8/site-packages (from packaging->pytest->-r requirements.txt (line 2)) (1.15.0)\
+./1-create-bucket.sh\
+make_bucket: lambda-artifacts-1cb1eedf26327698\
+./2-build-layer.sh\
+Collecting boto3\
+  Using cached boto3-1.16.25-py2.py3-none-any.whl (129 kB)\
+Processing /Users/stevedepp/Library/Caches/pip/wheels/17/25/e2/bc6585122b6e1b5b2bce42a9756143e0d85c317874abb5623e/python_json_logger-2.0.1-py34-none-any.whl\
+Collecting s3transfer<0.4.0,>=0.3.0\
+  Using cached s3transfer-0.3.3-py2.py3-none-any.whl (69 kB)\
+Collecting botocore<1.20.0,>=1.19.25\
+  Using cached botocore-1.19.25-py2.py3-none-any.whl (6.9 MB)\
+Collecting jmespath<1.0.0,>=0.7.1\
+  Using cached jmespath-0.10.0-py2.py3-none-any.whl (24 kB)\
+Collecting python-dateutil<3.0.0,>=2.1\
+  Using cached python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)\
+Collecting urllib3<1.27,>=1.25.4\
+  Using cached urllib3-1.26.2-py2.py3-none-any.whl (136 kB)\
+Collecting six>=1.5\
+  Using cached six-1.15.0-py2.py3-none-any.whl (10 kB)\
+Installing collected packages: six, urllib3, python-dateutil, jmespath, botocore, s3transfer, python-json-logger, boto3\
+Successfully installed boto3-1.16.25 botocore-1.19.25 jmespath-0.10.0 python-dateutil-2.8.1 python-json-logger-2.0.1 s3transfer-0.3.3 six-1.15.0 urllib3-1.26.2\
+Collecting pandas\
+  Using cached pandas-1.1.4-cp38-cp38-macosx_10_9_x86_64.whl (10.1 MB)\
+Collecting boto3\
+  Using cached boto3-1.16.25-py2.py3-none-any.whl (129 kB)\
+Processing /Users/stevedepp/Library/Caches/pip/wheels/17/25/e2/bc6585122b6e1b5b2bce42a9756143e0d85c317874abb5623e/python_json_logger-2.0.1-py34-none-any.whl\
+Processing /Users/stevedepp/Library/Caches/pip/wheels/07/93/05/72c05349177dca2e0ba31a33ba4f7907606f7ddef303517c6a/wikipedia-1.4.0-py3-none-any.whl\
+Collecting numpy>=1.15.4\
+  Using cached numpy-1.19.4-cp38-cp38-macosx_10_9_x86_64.whl (15.3 MB)\
+Collecting python-dateutil>=2.7.3\
+  Using cached python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)\
+Collecting pytz>=2017.2\
+  Using cached pytz-2020.4-py2.py3-none-any.whl (509 kB)\
+Collecting jmespath<1.0.0,>=0.7.1\
+  Using cached jmespath-0.10.0-py2.py3-none-any.whl (24 kB)\
+Collecting s3transfer<0.4.0,>=0.3.0\
+  Using cached s3transfer-0.3.3-py2.py3-none-any.whl (69 kB)\
+Collecting botocore<1.20.0,>=1.19.25\
+  Using cached botocore-1.19.25-py2.py3-none-any.whl (6.9 MB)\
+Collecting requests<3.0.0,>=2.0.0\
+  Using cached requests-2.25.0-py2.py3-none-any.whl (61 kB)\
+Collecting beautifulsoup4\
+  Using cached beautifulsoup4-4.9.3-py3-none-any.whl (115 kB)\
+Collecting six>=1.5\
+  Using cached six-1.15.0-py2.py3-none-any.whl (10 kB)\
+Collecting urllib3<1.27,>=1.25.4\
+  Using cached urllib3-1.26.2-py2.py3-none-any.whl (136 kB)\
+Collecting idna<3,>=2.5\
+  Using cached idna-2.10-py2.py3-none-any.whl (58 kB)\
+Collecting certifi>=2017.4.17\
+  Using cached certifi-2020.11.8-py2.py3-none-any.whl (155 kB)\
+Collecting chardet<4,>=3.0.2\
+  Using cached chardet-3.0.4-py2.py3-none-any.whl (133 kB)\
+Collecting soupsieve>1.2\
+  Using cached soupsieve-2.0.1-py3-none-any.whl (32 kB)\
+Installing collected packages: six, urllib3, python-dateutil, jmespath, soupsieve, idna, chardet, certifi, botocore, s3transfer, requests, pytz, numpy, beautifulsoup4, wikipedia, python-json-logger, pandas, boto3\
+Successfully installed beautifulsoup4-4.9.3 boto3-1.16.25 botocore-1.19.25 certifi-2020.11.8 chardet-3.0.4 idna-2.10 jmespath-0.10.0 numpy-1.19.4 pandas-1.1.4 python-dateutil-2.8.1 python-json-logger-2.0.1 pytz-2020.4 requests-2.25.0 s3transfer-0.3.3 six-1.15.0 soupsieve-2.0.1 urllib3-1.26.2 wikipedia-1.4.0\
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\
+                                 Dload  Upload   Total   Spent    Left  Speed\
+100 9851k  100 9851k    0     0  3068k      0  0:00:03  0:00:03 --:--:-- 3068k\
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\
+                                 Dload  Upload   Total   Spent    Left  Speed\
+100 16.5M  100 16.5M    0     0  3092k      0  0:00:05  0:00:05 --:--:-- 3152k\
+Archive:  pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl\
+  inflating: packageProducerAI/python/pandas-0.24.1.dist-info/METADATA  \
+  inflating: packageProducerAI/python/pandas-0.24.1.dist-info/RECORD  \
+  inflating: packageProducerAI/python/pandas-0.24.1.dist-info/WHEEL  \
+  inflating: packageProducerAI/python/pandas-0.24.1.dist-info/top_level.txt  \
+  inflating: packageProducerAI/python/pandas/testing.py  \
+  inflating: packageProducerAI/python/pandas/_version.py  \
+  inflating: packageProducerAI/python/pandas/__init__.py  \
+  inflating: packageProducerAI/python/pandas/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tseries/frequencies.py  \
+  inflating: packageProducerAI/python/pandas/tseries/offsets.py  \
+  inflating: packageProducerAI/python/pandas/tseries/converter.py  \
+  inflating: packageProducerAI/python/pandas/tseries/plotting.py  \
+  inflating: packageProducerAI/python/pandas/tseries/api.py  \
+  inflating: packageProducerAI/python/pandas/tseries/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tseries/holiday.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_join.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_downstream.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_config.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_strings.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_panel.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_lib.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_window.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_base.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_multilevel.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_nanops.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_common.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_errors.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_algos.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_sorting.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_take.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_register_accessor.py  \
+  inflating: packageProducerAI/python/pandas/tests/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_compat.py  \
+  inflating: packageProducerAI/python/pandas/tests/test_expressions.py  \
+  inflating: packageProducerAI/python/pandas/tests/computation/test_eval.py  \
+  inflating: packageProducerAI/python/pandas/tests/computation/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/computation/test_compat.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/common.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimelike.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/test_numeric.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/test_frozen.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/test_base.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/test_common.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/test_category.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/test_range.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_get_set.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_drop.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_reshape.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_join.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_duplicates.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_monotonic.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_reindex.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_missing.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_analytics.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_indexing.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_format.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_set_ops.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_equivalence.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_conversion.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_copy.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_sorting.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_names.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_partial_indexing.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_integrity.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_contains.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_compat.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_constructor.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/multi/test_astype.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/period/test_period_range.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/period/test_scalar_compat.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/period/test_setops.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/period/test_period.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/period/test_formats.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/period/test_asfreq.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/period/test_indexing.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/period/test_tools.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/period/test_ops.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/period/test_partial_slicing.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/period/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/period/test_construction.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/period/test_arithmetic.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/period/test_astype.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimes/test_scalar_compat.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimes/test_setops.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimes/test_datetimelike.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimes/test_formats.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimes/test_timezones.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimes/test_misc.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimes/test_missing.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimes/test_indexing.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimes/test_tools.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimes/test_date_range.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimes/test_ops.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimes/test_datetime.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimes/test_partial_slicing.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimes/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimes/test_construction.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimes/test_arithmetic.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/datetimes/test_astype.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/interval/test_interval_range.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/interval/test_interval_tree.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/interval/test_interval.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/interval/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/interval/test_construction.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/interval/test_interval_new.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/interval/test_astype.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/timedeltas/test_scalar_compat.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/timedeltas/test_setops.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/timedeltas/test_timedelta_range.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/timedeltas/test_formats.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/timedeltas/test_indexing.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/timedeltas/test_tools.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/timedeltas/test_ops.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/timedeltas/test_timedelta.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/timedeltas/test_partial_slicing.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/timedeltas/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/timedeltas/test_construction.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/timedeltas/test_arithmetic.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexes/timedeltas/test_astype.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/common.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_reshape.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_join.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_convert_to.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_combine_concat.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_sort_values_level_as_str.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_duplicates.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_axis_select_reindex.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_rank.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_subclass.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_period.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_replace.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_timezones.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_nonunique_indexes.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_missing.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_analytics.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_indexing.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_apply.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_constructors.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_dtypes.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_query_eval.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_sorting.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_to_csv.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_api.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_asof.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_quantile.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_repr_info.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_operators.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_timeseries.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_arithmetic.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_alter_axes.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_mutate_columns.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_block_internals.py  \
+  inflating: packageProducerAI/python/pandas/tests/frame/test_validate.py  \
+  inflating: packageProducerAI/python/pandas/tests/tseries/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/tseries/test_frequencies.py  \
+  inflating: packageProducerAI/python/pandas/tests/tseries/test_holiday.py  \
+  inflating: packageProducerAI/python/pandas/tests/tseries/offsets/test_offsets_properties.py  \
+  inflating: packageProducerAI/python/pandas/tests/tseries/offsets/common.py  \
+  inflating: packageProducerAI/python/pandas/tests/tseries/offsets/test_yqm_offsets.py  \
+  inflating: packageProducerAI/python/pandas/tests/tseries/offsets/test_fiscal.py  \
+  inflating: packageProducerAI/python/pandas/tests/tseries/offsets/test_offsets.py  \
+  inflating: packageProducerAI/python/pandas/tests/tseries/offsets/test_ticks.py  \
+  inflating: packageProducerAI/python/pandas/tests/tseries/offsets/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/tseries/offsets/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/resample/test_resampler_grouper.py  \
+  inflating: packageProducerAI/python/pandas/tests/resample/test_base.py  \
+  inflating: packageProducerAI/python/pandas/tests/resample/test_time_grouper.py  \
+  inflating: packageProducerAI/python/pandas/tests/resample/test_period_index.py  \
+  inflating: packageProducerAI/python/pandas/tests/resample/test_datetime_index.py  \
+  inflating: packageProducerAI/python/pandas/tests/resample/test_timedelta.py  \
+  inflating: packageProducerAI/python/pandas/tests/resample/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/resample/test_resample_api.py  \
+  inflating: packageProducerAI/python/pandas/tests/resample/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/arithmetic/test_numeric.py  \
+  inflating: packageProducerAI/python/pandas/tests/arithmetic/test_period.py  \
+  inflating: packageProducerAI/python/pandas/tests/arithmetic/test_datetime64.py  \
+  inflating: packageProducerAI/python/pandas/tests/arithmetic/test_object.py  \
+  inflating: packageProducerAI/python/pandas/tests/arithmetic/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/arithmetic/test_timedelta64.py  \
+  inflating: packageProducerAI/python/pandas/tests/arithmetic/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/tslibs/test_timedeltas.py  \
+  inflating: packageProducerAI/python/pandas/tests/tslibs/test_liboffsets.py  \
+  inflating: packageProducerAI/python/pandas/tests/tslibs/test_timezones.py  \
+  inflating: packageProducerAI/python/pandas/tests/tslibs/test_ccalendar.py  \
+  inflating: packageProducerAI/python/pandas/tests/tslibs/test_libfrequencies.py  \
+  inflating: packageProducerAI/python/pandas/tests/tslibs/test_parsing.py  \
+  inflating: packageProducerAI/python/pandas/tests/tslibs/test_conversion.py  \
+  inflating: packageProducerAI/python/pandas/tests/tslibs/test_parse_iso8601.py  \
+  inflating: packageProducerAI/python/pandas/tests/tslibs/test_api.py  \
+  inflating: packageProducerAI/python/pandas/tests/tslibs/test_array_to_datetime.py  \
+  inflating: packageProducerAI/python/pandas/tests/tslibs/test_period_asfreq.py  \
+  inflating: packageProducerAI/python/pandas/tests/tslibs/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/tslibs/test_normalize_date.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/test_s3.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/test_parquet.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/test_pytables.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/test_html.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/test_pickle.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/test_clipboard.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/test_stata.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/test_common.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/test_compression.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/generate_legacy_storage_files.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/test_excel.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/test_packers.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/test_feather.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/test_gcs.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/test_gbq.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/test_sql.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/test_date_converters.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/formats/test_to_html.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/formats/test_css.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/formats/test_eng_formatting.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/formats/test_format.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/formats/test_to_excel.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/formats/test_to_csv.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/formats/test_console.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/formats/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/formats/test_printing.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/formats/test_to_latex.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/formats/test_style.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/msgpack/common.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/msgpack/test_read_size.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/msgpack/test_newspec.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/msgpack/test_limits.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/msgpack/test_obj.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/msgpack/test_extension.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/msgpack/test_format.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/msgpack/test_pack.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/msgpack/test_seq.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/msgpack/test_buffer.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/msgpack/test_unpack_raw.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/msgpack/test_unpack.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/msgpack/test_subtype.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/msgpack/test_sequnpack.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/msgpack/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/msgpack/test_except.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/msgpack/test_case.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/sas/test_sas7bdat.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/sas/test_xport.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/sas/test_sas.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/sas/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/json/test_pandas.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/json/test_json_table_schema.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/json/test_ujson.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/json/test_compression.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/json/test_readlines.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/json/test_normalize.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/json/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_na_values.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_usecols.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_c_parser_only.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_parse_dates.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_quoting.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_multi_thread.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_skiprows.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_read_fwf.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_common.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_network.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_compression.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_dtypes.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_mangle_dupes.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_index_col.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_textreader.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_unsupported.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_converters.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_comment.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_header.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_python_parser_only.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/io/parser/test_dialect.py  \
+  inflating: packageProducerAI/python/pandas/tests/api/test_types.py  \
+  inflating: packageProducerAI/python/pandas/tests/api/test_api.py  \
+  inflating: packageProducerAI/python/pandas/tests/api/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/reshape/test_union_categoricals.py  \
+  inflating: packageProducerAI/python/pandas/tests/reshape/test_reshape.py  \
+  inflating: packageProducerAI/python/pandas/tests/reshape/test_pivot.py  \
+  inflating: packageProducerAI/python/pandas/tests/reshape/test_concat.py  \
+  inflating: packageProducerAI/python/pandas/tests/reshape/test_qcut.py  \
+  inflating: packageProducerAI/python/pandas/tests/reshape/test_util.py  \
+  inflating: packageProducerAI/python/pandas/tests/reshape/test_melt.py  \
+  inflating: packageProducerAI/python/pandas/tests/reshape/test_cut.py  \
+  inflating: packageProducerAI/python/pandas/tests/reshape/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/reshape/merge/test_join.py  \
+  inflating: packageProducerAI/python/pandas/tests/reshape/merge/test_merge.py  \
+  inflating: packageProducerAI/python/pandas/tests/reshape/merge/test_merge_ordered.py  \
+  inflating: packageProducerAI/python/pandas/tests/reshape/merge/test_merge_asof.py  \
+  inflating: packageProducerAI/python/pandas/tests/reshape/merge/test_merge_index_as_string.py  \
+  inflating: packageProducerAI/python/pandas/tests/reshape/merge/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/reshape/merge/test_multi.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/common.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/test_loc.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/test_chaining_and_caching.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/test_coercion.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/test_panel.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/test_indexing_slow.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/test_scalar.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/test_iloc.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/test_indexing_engines.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/test_indexing.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/test_partial.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/test_floats.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/test_timedelta.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/test_ix.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/test_datetime.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/test_callable.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/test_categorical.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/multiindex/test_loc.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/multiindex/test_chaining_and_caching.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/multiindex/test_sorted.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/multiindex/test_slice.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/multiindex/test_panel.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/multiindex/test_multiindex.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/multiindex/test_xs.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/multiindex/test_indexing_slow.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/multiindex/test_iloc.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/multiindex/test_partial.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/multiindex/test_set_ops.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/multiindex/test_getitem.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/multiindex/test_ix.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/multiindex/test_datetime.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/multiindex/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/multiindex/test_setitem.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/multiindex/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/interval/test_interval.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/interval/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/indexing/interval/test_interval_new.py  \
+  inflating: packageProducerAI/python/pandas/tests/dtypes/test_inference.py  \
+  inflating: packageProducerAI/python/pandas/tests/dtypes/test_generic.py  \
+  inflating: packageProducerAI/python/pandas/tests/dtypes/test_missing.py  \
+  inflating: packageProducerAI/python/pandas/tests/dtypes/test_concat.py  \
+  inflating: packageProducerAI/python/pandas/tests/dtypes/test_common.py  \
+  inflating: packageProducerAI/python/pandas/tests/dtypes/test_dtypes.py  \
+  inflating: packageProducerAI/python/pandas/tests/dtypes/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/dtypes/cast/test_convert_objects.py  \
+  inflating: packageProducerAI/python/pandas/tests/dtypes/cast/test_construct_from_scalar.py  \
+  inflating: packageProducerAI/python/pandas/tests/dtypes/cast/test_downcast.py  \
+  inflating: packageProducerAI/python/pandas/tests/dtypes/cast/test_find_common_type.py  \
+  inflating: packageProducerAI/python/pandas/tests/dtypes/cast/test_infer_datetimelike.py  \
+  inflating: packageProducerAI/python/pandas/tests/dtypes/cast/test_infer_dtype.py  \
+  inflating: packageProducerAI/python/pandas/tests/dtypes/cast/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/dtypes/cast/test_construct_object_arr.py  \
+  inflating: packageProducerAI/python/pandas/tests/dtypes/cast/test_construct_ndarray.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/test_nat.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/period/test_period.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/period/test_asfreq.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/period/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/interval/test_ops.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/interval/test_interval.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/interval/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/timedelta/test_formats.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/timedelta/test_timedelta.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/timedelta/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/timedelta/test_construction.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/timedelta/test_arithmetic.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/timestamp/test_timezones.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/timestamp/test_unary_ops.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/timestamp/test_comparisons.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/timestamp/test_rendering.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/timestamp/test_timestamp.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/timestamp/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/scalar/timestamp/test_arithmetic.py  \
+  inflating: packageProducerAI/python/pandas/tests/generic/test_label_or_level_utils.py  \
+  inflating: packageProducerAI/python/pandas/tests/generic/test_series.py  \
+  inflating: packageProducerAI/python/pandas/tests/generic/test_panel.py  \
+  inflating: packageProducerAI/python/pandas/tests/generic/test_generic.py  \
+  inflating: packageProducerAI/python/pandas/tests/generic/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/generic/test_frame.py  \
+  inflating: packageProducerAI/python/pandas/tests/plotting/common.py  \
+  inflating: packageProducerAI/python/pandas/tests/plotting/test_hist_method.py  \
+  inflating: packageProducerAI/python/pandas/tests/plotting/test_datetimelike.py  \
+  inflating: packageProducerAI/python/pandas/tests/plotting/test_series.py  \
+  inflating: packageProducerAI/python/pandas/tests/plotting/test_misc.py  \
+  inflating: packageProducerAI/python/pandas/tests/plotting/test_groupby.py  \
+  inflating: packageProducerAI/python/pandas/tests/plotting/test_boxplot_method.py  \
+  inflating: packageProducerAI/python/pandas/tests/plotting/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/plotting/test_converter.py  \
+  inflating: packageProducerAI/python/pandas/tests/plotting/test_frame.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/test_value_counts.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/test_timegrouper.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/test_rank.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/test_bin_groupby.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/test_groupby.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/test_nth.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/test_function.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/test_apply.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/test_whitelist.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/test_filters.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/test_counting.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/test_grouping.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/test_index_as_string.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/test_transform.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/test_categorical.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/aggregate/test_cython.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/aggregate/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/aggregate/test_aggregate.py  \
+  inflating: packageProducerAI/python/pandas/tests/groupby/aggregate/test_other.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/common.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/test_reshape.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/test_pivot.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/test_combine_concat.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/test_groupby.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/test_indexing.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/test_format.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/frame/test_analytics.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/frame/test_indexing.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/frame/test_apply.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/frame/test_to_csv.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/frame/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/frame/test_frame.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/frame/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/frame/test_to_from_scipy.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/series/test_series.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/series/test_indexing.py  \
+  inflating: packageProducerAI/python/pandas/tests/sparse/series/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/common.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_combine_concat.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_duplicates.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_datetime_values.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_rank.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_subclass.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_period.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_replace.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_timezones.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_io.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_internals.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_missing.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_analytics.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_apply.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_constructors.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_dtypes.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_sorting.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_api.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_repr.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_asof.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_quantile.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_operators.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_timeseries.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_arithmetic.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_alter_axes.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_block_internals.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/test_validate.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/indexing/test_loc.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/indexing/test_numeric.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/indexing/test_iloc.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/indexing/test_indexing.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/indexing/test_datetime.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/indexing/test_boolean.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/indexing/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/indexing/test_alter_index.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/indexing/test_callable.py  \
+  inflating: packageProducerAI/python/pandas/tests/series/indexing/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/tools/test_numeric.py  \
+  inflating: packageProducerAI/python/pandas/tests/tools/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/reductions/test_reductions.py  \
+  inflating: packageProducerAI/python/pandas/tests/reductions/test_stat_reductions.py  \
+  inflating: packageProducerAI/python/pandas/tests/reductions/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_assert_interval_array_equal.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_safe_import.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_assert_numpy_array_equal.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_locale.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_validate_kwargs.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_hashing.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_deprecate_kwarg.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_move.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_assert_extension_array_equal.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_assert_categorical_equal.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_util.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_deprecate.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_validate_args.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_assert_almost_equal.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_assert_frame_equal.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_assert_series_equal.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_assert_index_equal.py  \
+  inflating: packageProducerAI/python/pandas/tests/util/test_validate_args_and_kwargs.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/test_period.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/test_integer.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/test_sparse.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/test_common.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/test_external_block.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/test_interval.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/test_datetime.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/test_categorical.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/base/interface.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/base/reshaping.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/base/methods.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/base/getitem.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/base/casting.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/base/dtype.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/base/setitem.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/base/missing.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/base/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/base/groupby.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/base/printing.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/base/constructors.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/base/ops.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/base/io.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/base/reduce.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/base/base.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/numpy_/test_numpy.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/numpy_/test_numpy_nested.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/numpy_/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/numpy_/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/decimal/test_decimal.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/decimal/array.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/decimal/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/arrow/bool.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/arrow/test_bool.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/arrow/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/json/test_json.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/json/array.py  \
+  inflating: packageProducerAI/python/pandas/tests/extension/json/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/test_numpy.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/test_datetimelike.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/test_timedeltas.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/test_period.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/test_array.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/test_integer.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/test_datetimes.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/categorical/common.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/categorical/test_subclass.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/categorical/test_missing.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/categorical/test_analytics.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/categorical/test_indexing.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/categorical/test_constructors.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/categorical/test_algos.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/categorical/test_dtypes.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/categorical/test_sorting.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/categorical/test_api.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/categorical/test_repr.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/categorical/test_warnings.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/categorical/test_operators.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/categorical/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/categorical/conftest.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/interval/test_ops.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/interval/test_interval.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/interval/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/sparse/test_dtype.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/sparse/test_libsparse.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/sparse/test_array.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/sparse/__init__.py  \
+  inflating: packageProducerAI/python/pandas/tests/arrays/sparse/test_arithmetics.py  \
+  inflating: packageProducerAI/python/pandas/tests/internals/test_internals.py  \
+  inflating: packageProducerAI/python/pandas/tests/internals/__init__.py  \
+  inflating: packageProducerAI/python/pandas/io/common.py  \
+  inflating: packageProducerAI/python/pandas/io/pytables.py  \
+  inflating: packageProducerAI/python/pandas/io/s3.py  \
+  inflating: packageProducerAI/python/pandas/io/pickle.py  \
+  inflating: packageProducerAI/python/pandas/io/excel.py  \
+  inflating: packageProducerAI/python/pandas/io/feather_format.py  \
+  inflating: packageProducerAI/python/pandas/io/sql.py  \
+  inflating: packageProducerAI/python/pandas/io/packers.py  \
+  inflating: packageProducerAI/python/pandas/io/gcs.py  \
+  inflating: packageProducerAI/python/pandas/io/clipboards.py  \
+  inflating: packageProducerAI/python/pandas/io/gbq.py  \
+  inflating: packageProducerAI/python/pandas/io/stata.py  \
+  inflating: packageProducerAI/python/pandas/io/api.py  \
+  inflating: packageProducerAI/python/pandas/io/__init__.py  \
+  inflating: packageProducerAI/python/pandas/io/parquet.py  \
+  inflating: packageProducerAI/python/pandas/io/html.py  \
+  inflating: packageProducerAI/python/pandas/io/parsers.py  \
+  inflating: packageProducerAI/python/pandas/io/date_converters.py  \
+  inflating: packageProducerAI/python/pandas/io/formats/latex.py  \
+  inflating: packageProducerAI/python/pandas/io/formats/css.py  \
+  inflating: packageProducerAI/python/pandas/io/formats/style.py  \
+  inflating: packageProducerAI/python/pandas/io/formats/excel.py  \
+  inflating: packageProducerAI/python/pandas/io/formats/format.py  \
+  inflating: packageProducerAI/python/pandas/io/formats/console.py  \
+  inflating: packageProducerAI/python/pandas/io/formats/csvs.py  \
+  inflating: packageProducerAI/python/pandas/io/formats/__init__.py  \
+  inflating: packageProducerAI/python/pandas/io/formats/printing.py  \
+  inflating: packageProducerAI/python/pandas/io/formats/html.py  \
+  inflating: packageProducerAI/python/pandas/io/formats/terminal.py  \
+  inflating: packageProducerAI/python/pandas/io/formats/templates/html.tpl  \
+  inflating: packageProducerAI/python/pandas/io/msgpack/exceptions.py  \
+  inflating: packageProducerAI/python/pandas/io/msgpack/_unpacker.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/io/msgpack/_version.py  \
+  inflating: packageProducerAI/python/pandas/io/msgpack/_packer.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/io/msgpack/__init__.py  \
+  inflating: packageProducerAI/python/pandas/io/sas/sas7bdat.py  \
+  inflating: packageProducerAI/python/pandas/io/sas/sas_xport.py  \
+  inflating: packageProducerAI/python/pandas/io/sas/sas_constants.py  \
+  inflating: packageProducerAI/python/pandas/io/sas/_sas.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/io/sas/__init__.py  \
+  inflating: packageProducerAI/python/pandas/io/sas/sasreader.py  \
+  inflating: packageProducerAI/python/pandas/io/json/normalize.py  \
+  inflating: packageProducerAI/python/pandas/io/json/json.py  \
+  inflating: packageProducerAI/python/pandas/io/json/table_schema.py  \
+  inflating: packageProducerAI/python/pandas/io/json/__init__.py  \
+  inflating: packageProducerAI/python/pandas/io/clipboard/exceptions.py  \
+  inflating: packageProducerAI/python/pandas/io/clipboard/clipboards.py  \
+  inflating: packageProducerAI/python/pandas/io/clipboard/__init__.py  \
+  inflating: packageProducerAI/python/pandas/io/clipboard/windows.py  \
+  inflating: packageProducerAI/python/pandas/compat/chainmap_impl.py  \
+  inflating: packageProducerAI/python/pandas/compat/pickle_compat.py  \
+  inflating: packageProducerAI/python/pandas/compat/__init__.py  \
+  inflating: packageProducerAI/python/pandas/compat/chainmap.py  \
+  inflating: packageProducerAI/python/pandas/compat/numpy/function.py  \
+  inflating: packageProducerAI/python/pandas/compat/numpy/__init__.py  \
+  inflating: packageProducerAI/python/pandas/api/__init__.py  \
+  inflating: packageProducerAI/python/pandas/api/extensions/__init__.py  \
+  inflating: packageProducerAI/python/pandas/api/types/__init__.py  \
+  inflating: packageProducerAI/python/pandas/core/common.py  \
+  inflating: packageProducerAI/python/pandas/core/nanops.py  \
+  inflating: packageProducerAI/python/pandas/core/accessor.py  \
+  inflating: packageProducerAI/python/pandas/core/window.py  \
+  inflating: packageProducerAI/python/pandas/core/categorical.py  \
+  inflating: packageProducerAI/python/pandas/core/generic.py  \
+  inflating: packageProducerAI/python/pandas/core/sorting.py  \
+  inflating: packageProducerAI/python/pandas/core/algorithms.py  \
+  inflating: packageProducerAI/python/pandas/core/indexing.py  \
+  inflating: packageProducerAI/python/pandas/core/config_init.py  \
+  inflating: packageProducerAI/python/pandas/core/config.py  \
+  inflating: packageProducerAI/python/pandas/core/apply.py  \
+  inflating: packageProducerAI/python/pandas/core/strings.py  \
+  inflating: packageProducerAI/python/pandas/core/frame.py  \
+  inflating: packageProducerAI/python/pandas/core/panel.py  \
+  inflating: packageProducerAI/python/pandas/core/api.py  \
+  inflating: packageProducerAI/python/pandas/core/missing.py  \
+  inflating: packageProducerAI/python/pandas/core/series.py  \
+  inflating: packageProducerAI/python/pandas/core/__init__.py  \
+  inflating: packageProducerAI/python/pandas/core/resample.py  \
+  inflating: packageProducerAI/python/pandas/core/index.py  \
+  inflating: packageProducerAI/python/pandas/core/ops.py  \
+  inflating: packageProducerAI/python/pandas/core/base.py  \
+  inflating: packageProducerAI/python/pandas/core/computation/common.py  \
+  inflating: packageProducerAI/python/pandas/core/computation/pytables.py  \
+  inflating: packageProducerAI/python/pandas/core/computation/check.py  \
+  inflating: packageProducerAI/python/pandas/core/computation/expressions.py  \
+  inflating: packageProducerAI/python/pandas/core/computation/engines.py  \
+  inflating: packageProducerAI/python/pandas/core/computation/align.py  \
+  inflating: packageProducerAI/python/pandas/core/computation/expr.py  \
+  inflating: packageProducerAI/python/pandas/core/computation/eval.py  \
+  inflating: packageProducerAI/python/pandas/core/computation/api.py  \
+  inflating: packageProducerAI/python/pandas/core/computation/scope.py  \
+  inflating: packageProducerAI/python/pandas/core/computation/__init__.py  \
+  inflating: packageProducerAI/python/pandas/core/computation/ops.py  \
+  inflating: packageProducerAI/python/pandas/core/indexes/datetimelike.py  \
+  inflating: packageProducerAI/python/pandas/core/indexes/range.py  \
+  inflating: packageProducerAI/python/pandas/core/indexes/timedeltas.py  \
+  inflating: packageProducerAI/python/pandas/core/indexes/period.py  \
+  inflating: packageProducerAI/python/pandas/core/indexes/accessors.py  \
+  inflating: packageProducerAI/python/pandas/core/indexes/category.py  \
+  inflating: packageProducerAI/python/pandas/core/indexes/numeric.py  \
+  inflating: packageProducerAI/python/pandas/core/indexes/multi.py  \
+  inflating: packageProducerAI/python/pandas/core/indexes/api.py  \
+  inflating: packageProducerAI/python/pandas/core/indexes/interval.py  \
+  inflating: packageProducerAI/python/pandas/core/indexes/frozen.py  \
+  inflating: packageProducerAI/python/pandas/core/indexes/__init__.py  \
+  inflating: packageProducerAI/python/pandas/core/indexes/base.py  \
+  inflating: packageProducerAI/python/pandas/core/indexes/datetimes.py  \
+  inflating: packageProducerAI/python/pandas/core/reshape/concat.py  \
+  inflating: packageProducerAI/python/pandas/core/reshape/reshape.py  \
+  inflating: packageProducerAI/python/pandas/core/reshape/tile.py  \
+  inflating: packageProducerAI/python/pandas/core/reshape/api.py  \
+  inflating: packageProducerAI/python/pandas/core/reshape/__init__.py  \
+  inflating: packageProducerAI/python/pandas/core/reshape/pivot.py  \
+  inflating: packageProducerAI/python/pandas/core/reshape/merge.py  \
+  inflating: packageProducerAI/python/pandas/core/reshape/melt.py  \
+  inflating: packageProducerAI/python/pandas/core/reshape/util.py  \
+  inflating: packageProducerAI/python/pandas/core/dtypes/common.py  \
+  inflating: packageProducerAI/python/pandas/core/dtypes/concat.py  \
+  inflating: packageProducerAI/python/pandas/core/dtypes/inference.py  \
+  inflating: packageProducerAI/python/pandas/core/dtypes/dtypes.py  \
+  inflating: packageProducerAI/python/pandas/core/dtypes/generic.py  \
+  inflating: packageProducerAI/python/pandas/core/dtypes/api.py  \
+  inflating: packageProducerAI/python/pandas/core/dtypes/missing.py  \
+  inflating: packageProducerAI/python/pandas/core/dtypes/__init__.py  \
+  inflating: packageProducerAI/python/pandas/core/dtypes/cast.py  \
+  inflating: packageProducerAI/python/pandas/core/dtypes/base.py  \
+  inflating: packageProducerAI/python/pandas/core/groupby/categorical.py  \
+  inflating: packageProducerAI/python/pandas/core/groupby/generic.py  \
+  inflating: packageProducerAI/python/pandas/core/groupby/grouper.py  \
+  inflating: packageProducerAI/python/pandas/core/groupby/__init__.py  \
+  inflating: packageProducerAI/python/pandas/core/groupby/groupby.py  \
+  inflating: packageProducerAI/python/pandas/core/groupby/ops.py  \
+  inflating: packageProducerAI/python/pandas/core/groupby/base.py  \
+  inflating: packageProducerAI/python/pandas/core/sparse/frame.py  \
+  inflating: packageProducerAI/python/pandas/core/sparse/scipy_sparse.py  \
+  inflating: packageProducerAI/python/pandas/core/sparse/api.py  \
+  inflating: packageProducerAI/python/pandas/core/sparse/series.py  \
+  inflating: packageProducerAI/python/pandas/core/sparse/__init__.py  \
+  inflating: packageProducerAI/python/pandas/core/tools/timedeltas.py  \
+  inflating: packageProducerAI/python/pandas/core/tools/numeric.py  \
+  inflating: packageProducerAI/python/pandas/core/tools/__init__.py  \
+  inflating: packageProducerAI/python/pandas/core/tools/datetimes.py  \
+  inflating: packageProducerAI/python/pandas/core/util/hashing.py  \
+  inflating: packageProducerAI/python/pandas/core/util/__init__.py  \
+  inflating: packageProducerAI/python/pandas/core/arrays/sparse.py  \
+  inflating: packageProducerAI/python/pandas/core/arrays/datetimelike.py  \
+  inflating: packageProducerAI/python/pandas/core/arrays/integer.py  \
+  inflating: packageProducerAI/python/pandas/core/arrays/categorical.py  \
+  inflating: packageProducerAI/python/pandas/core/arrays/timedeltas.py  \
+  inflating: packageProducerAI/python/pandas/core/arrays/period.py  \
+  inflating: packageProducerAI/python/pandas/core/arrays/_ranges.py  \
+  inflating: packageProducerAI/python/pandas/core/arrays/array_.py  \
+  inflating: packageProducerAI/python/pandas/core/arrays/numpy_.py  \
+  inflating: packageProducerAI/python/pandas/core/arrays/interval.py  \
+  inflating: packageProducerAI/python/pandas/core/arrays/__init__.py  \
+  inflating: packageProducerAI/python/pandas/core/arrays/base.py  \
+  inflating: packageProducerAI/python/pandas/core/arrays/datetimes.py  \
+  inflating: packageProducerAI/python/pandas/core/internals/concat.py  \
+  inflating: packageProducerAI/python/pandas/core/internals/blocks.py  \
+  inflating: packageProducerAI/python/pandas/core/internals/construction.py  \
+  inflating: packageProducerAI/python/pandas/core/internals/arrays.py  \
+  inflating: packageProducerAI/python/pandas/core/internals/__init__.py  \
+  inflating: packageProducerAI/python/pandas/core/internals/managers.py  \
+  inflating: packageProducerAI/python/pandas/errors/__init__.py  \
+  inflating: packageProducerAI/python/pandas/plotting/_timeseries.py  \
+  inflating: packageProducerAI/python/pandas/plotting/_compat.py  \
+  inflating: packageProducerAI/python/pandas/plotting/_style.py  \
+  inflating: packageProducerAI/python/pandas/plotting/_tools.py  \
+  inflating: packageProducerAI/python/pandas/plotting/_misc.py  \
+  inflating: packageProducerAI/python/pandas/plotting/__init__.py  \
+  inflating: packageProducerAI/python/pandas/plotting/_core.py  \
+  inflating: packageProducerAI/python/pandas/plotting/_converter.py  \
+  inflating: packageProducerAI/python/pandas/_libs/json.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/hashtable.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/tslib.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/groupby.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/ops.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/internals.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/indexing.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/algos.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/interval.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/index.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/parsers.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/hashing.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/join.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/properties.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/lib.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/missing.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/testing.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/reshape.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/writers.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/sparse.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/skiplist.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/window.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/reduction.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/__init__.py  \
+  inflating: packageProducerAI/python/pandas/_libs/tslibs/fields.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/tslibs/nattype.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/tslibs/period.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/tslibs/frequencies.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/tslibs/timedeltas.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/tslibs/offsets.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/tslibs/timezones.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/tslibs/conversion.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/tslibs/ccalendar.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/tslibs/strptime.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/tslibs/timestamps.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/tslibs/np_datetime.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/tslibs/resolution.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/_libs/tslibs/__init__.py  \
+  inflating: packageProducerAI/python/pandas/_libs/tslibs/parsing.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/util/_depr_module.py  \
+  inflating: packageProducerAI/python/pandas/util/_exceptions.py  \
+  inflating: packageProducerAI/python/pandas/util/_print_versions.py  \
+  inflating: packageProducerAI/python/pandas/util/_tester.py  \
+  inflating: packageProducerAI/python/pandas/util/_validators.py  \
+  inflating: packageProducerAI/python/pandas/util/_test_decorators.py  \
+  inflating: packageProducerAI/python/pandas/util/_doctools.py  \
+  inflating: packageProducerAI/python/pandas/util/_move.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/pandas/util/testing.py  \
+  inflating: packageProducerAI/python/pandas/util/__init__.py  \
+  inflating: packageProducerAI/python/pandas/util/_decorators.py  \
+  inflating: packageProducerAI/python/pandas/arrays/__init__.py  \
+Archive:  numpy-1.16.1-cp36-cp36m-manylinux1_x86_64.whl\
+  inflating: packageProducerAI/python/numpy-1.16.1.dist-info/WHEEL  \
+  inflating: packageProducerAI/python/numpy-1.16.1.dist-info/top_level.txt  \
+  inflating: packageProducerAI/python/numpy-1.16.1.dist-info/METADATA  \
+  inflating: packageProducerAI/python/numpy-1.16.1.dist-info/RECORD  \
+  inflating: packageProducerAI/python/numpy-1.16.1.dist-info/entry_points.txt  \
+  inflating: packageProducerAI/python/numpy/LICENSE.txt  \
+  inflating: packageProducerAI/python/numpy/_distributor_init.py  \
+  inflating: packageProducerAI/python/numpy/setup.py  \
+  inflating: packageProducerAI/python/numpy/__config__.py  \
+  inflating: packageProducerAI/python/numpy/__init__.py  \
+  inflating: packageProducerAI/python/numpy/version.py  \
+  inflating: packageProducerAI/python/numpy/ctypeslib.py  \
+  inflating: packageProducerAI/python/numpy/_globals.py  \
+  inflating: packageProducerAI/python/numpy/dual.py  \
+  inflating: packageProducerAI/python/numpy/_pytesttester.py  \
+  inflating: packageProducerAI/python/numpy/matlib.py  \
+  inflating: packageProducerAI/python/numpy/conftest.py  \
+  inflating: packageProducerAI/python/numpy/matrixlib/setup.py  \
+  inflating: packageProducerAI/python/numpy/matrixlib/__init__.py  \
+  inflating: packageProducerAI/python/numpy/matrixlib/defmatrix.py  \
+  inflating: packageProducerAI/python/numpy/matrixlib/tests/test_numeric.py  \
+  inflating: packageProducerAI/python/numpy/matrixlib/tests/test_matrix_linalg.py  \
+  inflating: packageProducerAI/python/numpy/matrixlib/tests/__init__.py  \
+  inflating: packageProducerAI/python/numpy/matrixlib/tests/test_multiarray.py  \
+  inflating: packageProducerAI/python/numpy/matrixlib/tests/test_masked_matrix.py  \
+  inflating: packageProducerAI/python/numpy/matrixlib/tests/test_interaction.py  \
+  inflating: packageProducerAI/python/numpy/matrixlib/tests/test_defmatrix.py  \
+  inflating: packageProducerAI/python/numpy/matrixlib/tests/test_regression.py  \
+  inflating: packageProducerAI/python/numpy/doc/subclassing.py  \
+  inflating: packageProducerAI/python/numpy/doc/constants.py  \
+  inflating: packageProducerAI/python/numpy/doc/__init__.py  \
+  inflating: packageProducerAI/python/numpy/doc/ufuncs.py  \
+  inflating: packageProducerAI/python/numpy/doc/creation.py  \
+  inflating: packageProducerAI/python/numpy/doc/byteswapping.py  \
+  inflating: packageProducerAI/python/numpy/doc/structured_arrays.py  \
+  inflating: packageProducerAI/python/numpy/doc/misc.py  \
+  inflating: packageProducerAI/python/numpy/doc/broadcasting.py  \
+  inflating: packageProducerAI/python/numpy/doc/internals.py  \
+  inflating: packageProducerAI/python/numpy/doc/indexing.py  \
+  inflating: packageProducerAI/python/numpy/doc/basics.py  \
+  inflating: packageProducerAI/python/numpy/doc/glossary.py  \
+  inflating: packageProducerAI/python/numpy/linalg/linalg.py  \
+  inflating: packageProducerAI/python/numpy/linalg/info.py  \
+  inflating: packageProducerAI/python/numpy/linalg/setup.py  \
+  inflating: packageProducerAI/python/numpy/linalg/__init__.py  \
+  inflating: packageProducerAI/python/numpy/linalg/lapack_lite.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/numpy/linalg/_umath_linalg.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/numpy/linalg/tests/__init__.py  \
+  inflating: packageProducerAI/python/numpy/linalg/tests/test_build.py  \
+  inflating: packageProducerAI/python/numpy/linalg/tests/test_linalg.py  \
+  inflating: packageProducerAI/python/numpy/linalg/tests/test_regression.py  \
+  inflating: packageProducerAI/python/numpy/linalg/tests/test_deprecations.py  \
+  inflating: packageProducerAI/python/numpy/fft/info.py  \
+  inflating: packageProducerAI/python/numpy/fft/fftpack.py  \
+  inflating: packageProducerAI/python/numpy/fft/setup.py  \
+  inflating: packageProducerAI/python/numpy/fft/helper.py  \
+  inflating: packageProducerAI/python/numpy/fft/__init__.py  \
+  inflating: packageProducerAI/python/numpy/fft/fftpack_lite.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/numpy/fft/tests/__init__.py  \
+  inflating: packageProducerAI/python/numpy/fft/tests/test_helper.py  \
+  inflating: packageProducerAI/python/numpy/fft/tests/test_fftpack.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/setup.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/legendre.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/polyutils.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/chebyshev.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/__init__.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/_polybase.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/hermite.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/hermite_e.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/laguerre.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/polynomial.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/tests/test_polynomial.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/tests/test_printing.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/tests/test_legendre.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/tests/test_laguerre.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/tests/__init__.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/tests/test_polyutils.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/tests/test_classes.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/tests/test_hermite.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/tests/test_hermite_e.py  \
+  inflating: packageProducerAI/python/numpy/polynomial/tests/test_chebyshev.py  \
+  inflating: packageProducerAI/python/numpy/ma/bench.py  \
+  inflating: packageProducerAI/python/numpy/ma/setup.py  \
+  inflating: packageProducerAI/python/numpy/ma/extras.py  \
+  inflating: packageProducerAI/python/numpy/ma/__init__.py  \
+  inflating: packageProducerAI/python/numpy/ma/version.py  \
+  inflating: packageProducerAI/python/numpy/ma/timer_comparison.py  \
+  inflating: packageProducerAI/python/numpy/ma/core.py  \
+  inflating: packageProducerAI/python/numpy/ma/mrecords.py  \
+  inflating: packageProducerAI/python/numpy/ma/testutils.py  \
+  inflating: packageProducerAI/python/numpy/ma/tests/test_old_ma.py  \
+  inflating: packageProducerAI/python/numpy/ma/tests/test_subclassing.py  \
+  inflating: packageProducerAI/python/numpy/ma/tests/test_core.py  \
+  inflating: packageProducerAI/python/numpy/ma/tests/__init__.py  \
+  inflating: packageProducerAI/python/numpy/ma/tests/test_extras.py  \
+  inflating: packageProducerAI/python/numpy/ma/tests/test_mrecords.py  \
+  inflating: packageProducerAI/python/numpy/ma/tests/test_regression.py  \
+  inflating: packageProducerAI/python/numpy/ma/tests/test_deprecations.py  \
+  inflating: packageProducerAI/python/numpy/.libs/libopenblasp-r0-382c8f3a.3.5.dev.so  \
+  inflating: packageProducerAI/python/numpy/.libs/libgfortran-ed201abd.so.3.0.0  \
+  inflating: packageProducerAI/python/numpy/tests/test_scripts.py  \
+  inflating: packageProducerAI/python/numpy/tests/test_matlib.py  \
+  inflating: packageProducerAI/python/numpy/tests/__init__.py  \
+  inflating: packageProducerAI/python/numpy/tests/test_reloading.py  \
+  inflating: packageProducerAI/python/numpy/tests/test_numpy_version.py  \
+  inflating: packageProducerAI/python/numpy/tests/test_warnings.py  \
+  inflating: packageProducerAI/python/numpy/tests/test_ctypeslib.py  \
+  inflating: packageProducerAI/python/numpy/tests/test_public_api.py  \
+  inflating: packageProducerAI/python/numpy/random/info.py  \
+  inflating: packageProducerAI/python/numpy/random/setup.py  \
+  inflating: packageProducerAI/python/numpy/random/__init__.py  \
+  inflating: packageProducerAI/python/numpy/random/randomkit.h  \
+  inflating: packageProducerAI/python/numpy/random/mtrand.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/numpy/random/tests/__init__.py  \
+  inflating: packageProducerAI/python/numpy/random/tests/test_random.py  \
+  inflating: packageProducerAI/python/numpy/random/tests/test_regression.py  \
+  inflating: packageProducerAI/python/numpy/core/umath.py  \
+  inflating: packageProducerAI/python/numpy/core/_dummy.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/numpy/core/info.py  \
+  inflating: packageProducerAI/python/numpy/core/machar.py  \
+  inflating: packageProducerAI/python/numpy/core/setup.py  \
+  inflating: packageProducerAI/python/numpy/core/_internal.py  \
+  inflating: packageProducerAI/python/numpy/core/fromnumeric.py  \
+  inflating: packageProducerAI/python/numpy/core/umath_tests.py  \
+  inflating: packageProducerAI/python/numpy/core/_dtype.py  \
+  inflating: packageProducerAI/python/numpy/core/getlimits.py  \
+  inflating: packageProducerAI/python/numpy/core/overrides.py  \
+  inflating: packageProducerAI/python/numpy/core/_multiarray_umath.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/numpy/core/_type_aliases.py  \
+  inflating: packageProducerAI/python/numpy/core/multiarray.py  \
+  inflating: packageProducerAI/python/numpy/core/setup_common.py  \
+  inflating: packageProducerAI/python/numpy/core/_methods.py  \
+  inflating: packageProducerAI/python/numpy/core/_aliased_types.py  \
+  inflating: packageProducerAI/python/numpy/core/__init__.py  \
+  inflating: packageProducerAI/python/numpy/core/_multiarray_module_test.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/numpy/core/_struct_ufunc_tests.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/numpy/core/shape_base.py  \
+  inflating: packageProducerAI/python/numpy/core/_dtype_ctypes.py  \
+  inflating: packageProducerAI/python/numpy/core/_umath_tests.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/numpy/core/_string_helpers.py  \
+  inflating: packageProducerAI/python/numpy/core/numerictypes.py  \
+  inflating: packageProducerAI/python/numpy/core/einsumfunc.py  \
+  inflating: packageProducerAI/python/numpy/core/cversions.py  \
+  inflating: packageProducerAI/python/numpy/core/_multiarray_tests.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/numpy/core/_add_newdocs.py  \
+  inflating: packageProducerAI/python/numpy/core/numeric.py  \
+  inflating: packageProducerAI/python/numpy/core/records.py  \
+  inflating: packageProducerAI/python/numpy/core/_operand_flag_tests.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/numpy/core/function_base.py  \
+  inflating: packageProducerAI/python/numpy/core/defchararray.py  \
+  inflating: packageProducerAI/python/numpy/core/generate_numpy_api.py  \
+  inflating: packageProducerAI/python/numpy/core/memmap.py  \
+  inflating: packageProducerAI/python/numpy/core/arrayprint.py  \
+  inflating: packageProducerAI/python/numpy/core/_rational_tests.cpython-36m-x86_64-linux-gnu.so  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/__ufunc_api.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/npy_interrupt.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/npy_common.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/old_defines.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/ndarrayobject.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/npy_os.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/ufunc_api.txt  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/npy_1_7_deprecated_api.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/numpyconfig.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/ndarraytypes.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/npy_no_deprecated_api.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/noprefix.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/npy_3kcompat.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/arrayscalars.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/_neighborhood_iterator_imp.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/oldnumeric.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/utils.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/npy_math.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/__multiarray_api.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/multiarray_api.txt  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/npy_endian.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/arrayobject.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/ufuncobject.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/_numpyconfig.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/npy_cpu.h  \
+  inflating: packageProducerAI/python/numpy/core/include/numpy/halffloat.h  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_scalarbuffer.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_shape_base.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_umath.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_datetime.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_machar.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_scalarprint.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_einsum.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_extint128.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_function_base.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_numerictypes.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_numeric.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_memmap.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_scalarmath.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/_locales.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_overrides.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_mem_overlap.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_dtype.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_arrayprint.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_half.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/__init__.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_multiarray.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_getlimits.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_indexing.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_errstate.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_unicode.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_abc.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_print.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_scalarinherit.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_api.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_ufunc.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_umath_complex.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_defchararray.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_scalar_ctors.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_longdouble.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_item_selection.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_regression.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_deprecations.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_nditer.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_records.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/test_indexerrors.py  \
+  inflating: packageProducerAI/python/numpy/core/tests/data/astype_copy.pkl  \
+  inflating: packageProducerAI/python/numpy/core/tests/data/recarray_from_file.fits  \
+  inflating: packageProducerAI/python/numpy/core/lib/libnpymath.a  \
+  inflating: packageProducerAI/python/numpy/core/lib/npy-pkg-config/mlib.ini  \
+  inflating: packageProducerAI/python/numpy/core/lib/npy-pkg-config/npymath.ini  \
+  inflating: packageProducerAI/python/numpy/lib/_iotools.py  \
+  inflating: packageProducerAI/python/numpy/lib/type_check.py  \
+  inflating: packageProducerAI/python/numpy/lib/mixins.py  \
+  inflating: packageProducerAI/python/numpy/lib/info.py  \
+  inflating: packageProducerAI/python/numpy/lib/setup.py  \
+  inflating: packageProducerAI/python/numpy/lib/arraypad.py  \
+  inflating: packageProducerAI/python/numpy/lib/scimath.py  \
+  inflating: packageProducerAI/python/numpy/lib/user_array.py  \
+  inflating: packageProducerAI/python/numpy/lib/ufunclike.py  \
+  inflating: packageProducerAI/python/numpy/lib/_datasource.py  \
+  inflating: packageProducerAI/python/numpy/lib/__init__.py  \
+  inflating: packageProducerAI/python/numpy/lib/format.py  \
+  inflating: packageProducerAI/python/numpy/lib/recfunctions.py  \
+  inflating: packageProducerAI/python/numpy/lib/shape_base.py  \
+  inflating: packageProducerAI/python/numpy/lib/index_tricks.py  \
+  inflating: packageProducerAI/python/numpy/lib/npyio.py  \
+  inflating: packageProducerAI/python/numpy/lib/arraysetops.py  \
+  inflating: packageProducerAI/python/numpy/lib/arrayterator.py  \
+  inflating: packageProducerAI/python/numpy/lib/histograms.py  \
+  inflating: packageProducerAI/python/numpy/lib/nanfunctions.py  \
+  inflating: packageProducerAI/python/numpy/lib/_version.py  \
+  inflating: packageProducerAI/python/numpy/lib/utils.py  \
+  inflating: packageProducerAI/python/numpy/lib/function_base.py  \
+  inflating: packageProducerAI/python/numpy/lib/stride_tricks.py  \
+  inflating: packageProducerAI/python/numpy/lib/twodim_base.py  \
+  inflating: packageProducerAI/python/numpy/lib/financial.py  \
+  inflating: packageProducerAI/python/numpy/lib/polynomial.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_shape_base.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_recfunctions.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_type_check.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_arrayterator.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_polynomial.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_function_base.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_stride_tricks.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_ufunclike.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_histograms.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_arraysetops.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_format.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_index_tricks.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_io.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test__iotools.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/__init__.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_utils.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_financial.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_twodim_base.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test__version.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_arraypad.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_nanfunctions.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_mixins.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_regression.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test__datasource.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/test_packbits.py  \
+  inflating: packageProducerAI/python/numpy/lib/tests/data/py3-objarr.npy  \
+  inflating: packageProducerAI/python/numpy/lib/tests/data/py2-objarr.npy  \
+  inflating: packageProducerAI/python/numpy/lib/tests/data/win64python2.npy  \
+  inflating: packageProducerAI/python/numpy/lib/tests/data/py2-objarr.npz  \
+  inflating: packageProducerAI/python/numpy/lib/tests/data/python3.npy  \
+  inflating: packageProducerAI/python/numpy/lib/tests/data/py3-objarr.npz  \
+  inflating: packageProducerAI/python/numpy/distutils/conv_template.py  \
+  inflating: packageProducerAI/python/numpy/distutils/system_info.py  \
+  inflating: packageProducerAI/python/numpy/distutils/msvc9compiler.py  \
+  inflating: packageProducerAI/python/numpy/distutils/info.py  \
+  inflating: packageProducerAI/python/numpy/distutils/setup.py  \
+  inflating: packageProducerAI/python/numpy/distutils/log.py  \
+  inflating: packageProducerAI/python/numpy/distutils/extension.py  \
+  inflating: packageProducerAI/python/numpy/distutils/ccompiler.py  \
+  inflating: packageProducerAI/python/numpy/distutils/line_endings.py  \
+  inflating: packageProducerAI/python/numpy/distutils/npy_pkg_config.py  \
+  inflating: packageProducerAI/python/numpy/distutils/__config__.py  \
+  inflating: packageProducerAI/python/numpy/distutils/intelccompiler.py  \
+  inflating: packageProducerAI/python/numpy/distutils/__init__.py  \
+  inflating: packageProducerAI/python/numpy/distutils/msvccompiler.py  \
+  inflating: packageProducerAI/python/numpy/distutils/exec_command.py  \
+  inflating: packageProducerAI/python/numpy/distutils/pathccompiler.py  \
+  inflating: packageProducerAI/python/numpy/distutils/mingw32ccompiler.py  \
+  inflating: packageProducerAI/python/numpy/distutils/__version__.py  \
+  inflating: packageProducerAI/python/numpy/distutils/from_template.py  \
+  inflating: packageProducerAI/python/numpy/distutils/core.py  \
+  inflating: packageProducerAI/python/numpy/distutils/cpuinfo.py  \
+  inflating: packageProducerAI/python/numpy/distutils/lib2def.py  \
+  inflating: packageProducerAI/python/numpy/distutils/misc_util.py  \
+  inflating: packageProducerAI/python/numpy/distutils/unixccompiler.py  \
+  inflating: packageProducerAI/python/numpy/distutils/numpy_distribution.py  \
+  inflating: packageProducerAI/python/numpy/distutils/compat.py  \
+  inflating: packageProducerAI/python/numpy/distutils/tests/test_fcompiler.py  \
+  inflating: packageProducerAI/python/numpy/distutils/tests/__init__.py  \
+  inflating: packageProducerAI/python/numpy/distutils/tests/test_from_template.py  \
+  inflating: packageProducerAI/python/numpy/distutils/tests/test_npy_pkg_config.py  \
+  inflating: packageProducerAI/python/numpy/distutils/tests/test_fcompiler_nagfor.py  \
+  inflating: packageProducerAI/python/numpy/distutils/tests/test_system_info.py  \
+  inflating: packageProducerAI/python/numpy/distutils/tests/test_fcompiler_intel.py  \
+  inflating: packageProducerAI/python/numpy/distutils/tests/test_fcompiler_gnu.py  \
+  inflating: packageProducerAI/python/numpy/distutils/tests/test_misc_util.py  \
+  inflating: packageProducerAI/python/numpy/distutils/tests/test_exec_command.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/egg_info.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/install_headers.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/build_py.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/build_ext.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/build.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/config_compiler.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/__init__.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/bdist_rpm.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/config.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/build_src.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/build_scripts.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/sdist.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/install_data.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/install.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/build_clib.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/develop.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/autodist.py  \
+  inflating: packageProducerAI/python/numpy/distutils/command/install_clib.py  \
+  inflating: packageProducerAI/python/numpy/distutils/mingw/gfortran_vs2003_hack.c  \
+  inflating: packageProducerAI/python/numpy/distutils/fcompiler/lahey.py  \
+  inflating: packageProducerAI/python/numpy/distutils/fcompiler/nag.py  \
+  inflating: packageProducerAI/python/numpy/distutils/fcompiler/g95.py  \
+  inflating: packageProducerAI/python/numpy/distutils/fcompiler/none.py  \
+  inflating: packageProducerAI/python/numpy/distutils/fcompiler/pathf95.py  \
+  inflating: packageProducerAI/python/numpy/distutils/fcompiler/__init__.py  \
+  inflating: packageProducerAI/python/numpy/distutils/fcompiler/compaq.py  \
+  inflating: packageProducerAI/python/numpy/distutils/fcompiler/ibm.py  \
+  inflating: packageProducerAI/python/numpy/distutils/fcompiler/hpux.py  \
+  inflating: packageProducerAI/python/numpy/distutils/fcompiler/vast.py  \
+  inflating: packageProducerAI/python/numpy/distutils/fcompiler/environment.py  \
+  inflating: packageProducerAI/python/numpy/distutils/fcompiler/mips.py  \
+  inflating: packageProducerAI/python/numpy/distutils/fcompiler/sun.py  \
+  inflating: packageProducerAI/python/numpy/distutils/fcompiler/gnu.py  \
+  inflating: packageProducerAI/python/numpy/distutils/fcompiler/pg.py  \
+  inflating: packageProducerAI/python/numpy/distutils/fcompiler/intel.py  \
+  inflating: packageProducerAI/python/numpy/distutils/fcompiler/absoft.py  \
+  inflating: packageProducerAI/python/numpy/compat/setup.py  \
+  inflating: packageProducerAI/python/numpy/compat/__init__.py  \
+  inflating: packageProducerAI/python/numpy/compat/py3k.py  \
+  inflating: packageProducerAI/python/numpy/compat/_inspect.py  \
+  inflating: packageProducerAI/python/numpy/compat/tests/test_compat.py  \
+  inflating: packageProducerAI/python/numpy/compat/tests/__init__.py  \
+  inflating: packageProducerAI/python/numpy/f2py/capi_maps.py  \
+  inflating: packageProducerAI/python/numpy/f2py/info.py  \
+  inflating: packageProducerAI/python/numpy/f2py/setup.py  \
+  inflating: packageProducerAI/python/numpy/f2py/diagnose.py  \
+  inflating: packageProducerAI/python/numpy/f2py/cfuncs.py  \
+  inflating: packageProducerAI/python/numpy/f2py/cb_rules.py  \
+  inflating: packageProducerAI/python/numpy/f2py/__main__.py  \
+  inflating: packageProducerAI/python/numpy/f2py/__init__.py  \
+  inflating: packageProducerAI/python/numpy/f2py/common_rules.py  \
+  inflating: packageProducerAI/python/numpy/f2py/f2py2e.py  \
+  inflating: packageProducerAI/python/numpy/f2py/__version__.py  \
+  inflating: packageProducerAI/python/numpy/f2py/auxfuncs.py  \
+  inflating: packageProducerAI/python/numpy/f2py/func2subr.py  \
+  inflating: packageProducerAI/python/numpy/f2py/crackfortran.py  \
+  inflating: packageProducerAI/python/numpy/f2py/f90mod_rules.py  \
+  inflating: packageProducerAI/python/numpy/f2py/f2py_testing.py  \
+  inflating: packageProducerAI/python/numpy/f2py/rules.py  \
+  inflating: packageProducerAI/python/numpy/f2py/use_rules.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_size.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_return_integer.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_string.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_return_logical.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_array_from_pyobj.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_return_complex.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_assumed_shape.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_quoted_character.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_return_character.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/__init__.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_common.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_mixed.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_return_real.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_callback.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/util.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_parameter.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_block_docstring.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_regression.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_compile_function.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_semicolon_split.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/test_kind.py  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/common/block.f  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/regression/inout.f90  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/size/foo.f90  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/string/char.f90  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/parameter/constant_compound.f90  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/parameter/constant_both.f90  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/parameter/constant_integer.f90  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/parameter/constant_real.f90  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/parameter/constant_non_compound.f90  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/mixed/foo_fixed.f90  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/mixed/foo.f  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/mixed/foo_free.f90  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/array_from_pyobj/wrapmodule.c  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/assumed_shape/foo_use.f90  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/assumed_shape/precision.f90  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/assumed_shape/.f2py_f2cmap  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/assumed_shape/foo_mod.f90  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/assumed_shape/foo_free.f90  \
+  inflating: packageProducerAI/python/numpy/f2py/tests/src/kind/foo.f90  \
+  inflating: packageProducerAI/python/numpy/f2py/src/fortranobject.c  \
+  inflating: packageProducerAI/python/numpy/f2py/src/fortranobject.h  \
+  inflating: packageProducerAI/python/numpy/testing/setup.py  \
+  inflating: packageProducerAI/python/numpy/testing/decorators.py  \
+  inflating: packageProducerAI/python/numpy/testing/noseclasses.py  \
+  inflating: packageProducerAI/python/numpy/testing/__init__.py  \
+  inflating: packageProducerAI/python/numpy/testing/print_coercion_tables.py  \
+  inflating: packageProducerAI/python/numpy/testing/utils.py  \
+  inflating: packageProducerAI/python/numpy/testing/nosetester.py  \
+  inflating: packageProducerAI/python/numpy/testing/_private/decorators.py  \
+  inflating: packageProducerAI/python/numpy/testing/_private/noseclasses.py  \
+  inflating: packageProducerAI/python/numpy/testing/_private/__init__.py  \
+  inflating: packageProducerAI/python/numpy/testing/_private/utils.py  \
+  inflating: packageProducerAI/python/numpy/testing/_private/nosetester.py  \
+  inflating: packageProducerAI/python/numpy/testing/_private/parameterized.py  \
+  inflating: packageProducerAI/python/numpy/testing/tests/test_decorators.py  \
+  inflating: packageProducerAI/python/numpy/testing/tests/__init__.py  \
+  inflating: packageProducerAI/python/numpy/testing/tests/test_doctesting.py  \
+  inflating: packageProducerAI/python/numpy/testing/tests/test_utils.py  \
+./3-deploy.sh\
+Uploading to f97f0602f8f2af57612a5baaa524de70  37023495 / 37023495.0  (100.00%)\
+Successfully packaged artifacts and wrote output template to file out.yml.\
+Execute the following command to deploy the packaged template\
+aws cloudformation deploy --template-file /Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/out.yml --stack-name <YOUR STACK NAME>\
+\
+Waiting for changeset to be created..\
+Waiting for stack create/update to complete\
+Successfully created/updated stack - depp-498-fp\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py add --file cos.txt\
+Current items in DynamoDB are: Empty list\
+Adding these items from cos.txt to DynamoDB: ['facebook', 'google']\
+Net, processing batch from cos.txt. \
+-> adding: ['google', 'facebook']\
+full list will be ['facebook', 'google']\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py add -t netflix -t ibm\
+Usage: cfcli.py add [OPTIONS]\
+Try 'cfcli.py add --help' for help.\
+\
+Error: no such option: -t\
+(.venv) 
+\f1\b \cf6 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py add -i netflix -i ibm\
+Current items in DynamoDB are: ['facebook', 'google']\
+Adding these items from list to DynamoDB: ['netflix', 'ibm']\
+Net, processing batch from list. \
+-> adding: ['netflix', 'ibm']\
+full list will be ['ibm', 'netflix', 'facebook', 'google']\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py remove -i netflix -i ibm\
+  File "./cfcli.py", line 46\
+    def del(file, item):\
+        ^\
+SyntaxError: invalid syntax\
+(.venv) 
+\f1\b \cf6 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py remove -i netflix -i ibm\
+Current items in DynamoDB are: ['ibm', 'netflix', 'facebook', 'google']\
+Deleting these items from list from DynamoDB: ['netflix', 'ibm']\
+Net, processing batch from list. \
+-> deleting: ['ibm', 'netflix']\
+full list will be ['facebook', 'google']\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  aws s3 rm s3://fangsentiment-depp --recursive\
+delete: s3://fangsentiment-depp/['netflix']_sentiment.csv\
+delete: s3://fangsentiment-depp/['facebook']_sentiment.csv\
+delete: s3://fangsentiment-depp/['ibm']_sentiment.csv\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py add -i netflix -i ibm\
+Traceback (most recent call last):\
+  File "./cfcli.py", line 6, in <module>\
+    from ddb_ops import table_timestamp, item_add, items_add, items_delete, item_update, items_list\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py", line 36\
+    !aws s3 rm s3://fangsentiment-depp --recursive\
+    ^\
+SyntaxError: invalid syntax\
+(.venv) 
+\f1\b \cf6 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py add -i netflix -i ibm\
+  File "./cfcli.py", line 66\
+    subprocess.run([aws, s3, rm, s3://fangsentiment-depp, --recursive])\
+                                   ^\
+SyntaxError: invalid syntax\
+(.venv) 
+\f1\b \cf6 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py add -i netflix -i ibm\
+Current items in DynamoDB are: ['facebook', 'google']\
+Adding these items from list to DynamoDB: ['netflix', 'ibm']\
+Net, processing batch from list. \
+-> adding: ['netflix', 'ibm']\
+full list will be ['ibm', 'netflix', 'facebook', 'google']\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py remove -i netflix -i ibm\
+Current items in DynamoDB are: ['ibm', 'netflix', 'facebook', 'google']\
+Deleting these items from list from DynamoDB: ['netflix', 'ibm']\
+Net, processing batch from list. \
+-> deleting: ['netflix', 'ibm']\
+full list will be ['facebook', 'google']\
+delete: s3://fangsentiment-depp/['facebook']_sentiment.csv\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py add -i netflix -i ibm\
+Current items in DynamoDB are: ['facebook', 'google']\
+Adding these items from list to DynamoDB: ['netflix', 'ibm']\
+Net, processing batch from list. \
+-> adding: ['netflix', 'ibm']\
+full list will be ['ibm', 'netflix', 'facebook', 'google']\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py remove -i netflix -i ibm\
+Current items in DynamoDB are: ['ibm', 'netflix', 'facebook', 'google']\
+Deleting these items from list from DynamoDB: ['netflix', 'ibm']\
+Net, processing batch from list. \
+-> deleting: ['netflix', 'ibm']\
+full list will be ['facebook', 'google']\
+delete: s3://fangsentiment-depp/['netflix']_sentiment.csv\
+delete: s3://fangsentiment-depp/['ibm']_sentiment.csv\
+delete: s3://fangsentiment-depp/['facebook']_sentiment.csv\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py update -o google -n Google\
+Traceback (most recent call last):\
+  File "./cfcli.py", line 85, in <module>\
+    cli()\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 829, in __call__\
+    return self.main(*args, **kwargs)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 782, in main\
+    rv = self.invoke(ctx)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 1259, in invoke\
+    return _process_result(sub_ctx.command.invoke(sub_ctx))\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 1066, in invoke\
+    return ctx.invoke(self.callback, **ctx.params)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 610, in invoke\
+    return callback(*args, **kwargs)\
+  File "./cfcli.py", line 72, in update\
+    if not file and not item:\
+NameError: name 'file' is not defined\
+(.venv) 
+\f1\b \cf6 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py update -o google -n Google\
+Current items in DynamoDB are: ['facebook', 'google']\
+Update from \{old\} to \{new\}\
+Traceback (most recent call last):\
+  File "./cfcli.py", line 85, in <module>\
+    cli()\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 829, in __call__\
+    return self.main(*args, **kwargs)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 782, in main\
+    rv = self.invoke(ctx)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 1259, in invoke\
+    return _process_result(sub_ctx.command.invoke(sub_ctx))\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 1066, in invoke\
+    return ctx.invoke(self.callback, **ctx.params)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 610, in invoke\
+    return callback(*args, **kwargs)\
+  File "./cfcli.py", line 78, in update\
+    item_update(old, new)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py", line 38, in item_update\
+    response_delete = item_delete(old_item)\
+NameError: name 'item_delete' is not defined\
+(.venv) 
+\f1\b \cf6 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py update -o google -n Google\
+Current items in DynamoDB are: ['facebook', 'google']\
+Update from \{old\} to \{new\}\
+Traceback (most recent call last):\
+  File "./cfcli.py", line 85, in <module>\
+    cli()\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 829, in __call__\
+    return self.main(*args, **kwargs)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 782, in main\
+    rv = self.invoke(ctx)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 1259, in invoke\
+    return _process_result(sub_ctx.command.invoke(sub_ctx))\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 1066, in invoke\
+    return ctx.invoke(self.callback, **ctx.params)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 610, in invoke\
+    return callback(*args, **kwargs)\
+  File "./cfcli.py", line 78, in update\
+    item_update(old, new)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py", line 39, in item_update\
+    response_add = items_add(new_item)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py", line 31, in items_add\
+    batch.put_item(Item=\{'name': str(i),\})\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py", line 156, in __exit__\
+    self._flush()\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py", line 136, in _flush\
+    response = self._client.batch_write_item(\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py", line 357, in _api_call\
+    return self._make_api_call(operation_name, kwargs)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py", line 676, in _make_api_call\
+    raise error_class(parsed_response, operation_name)\
+botocore.exceptions.ClientError: An error occurred (ValidationException) when calling the BatchWriteItem operation: Provided list of item keys contains duplicates\
+(.venv) 
+\f1\b \cf6 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ipython\
+Python 3.8.6 (v3.8.6:db455296be, Sep 23 2020, 13:31:39) \
+Type 'copyright', 'credits' or 'license' for more information\
+IPython 7.19.0 -- An enhanced Interactive Python. Type '?' for help.\
+\
+\cf8 In [
+\f1\b \cf9 1
+\f0\b0 \cf8 ]: 
+\f1\b import
+\f0\b0 \cf2  
+\f1\b \cf10 subprocess
+\f0\b0 \cf2 \
+\cf8    ...: 
+\f1\b from
+\f0\b0 \cf2  
+\f1\b \cf10 ddb_ops
+\f0\b0 \cf2  
+\f1\b \cf8 import
+\f0\b0 \cf2  table_timestamp, item_add, items_add, items_delete,\
+\cf8    ...: \cf2 item_update, items_list\
+\
+\cf8 In [
+\f1\b \cf9 2
+\f0\b0 \cf8 ]: \cf2 items_list_before = items_list()\
+\
+\cf8 In [
+\f1\b \cf9 3
+\f0\b0 \cf8 ]: \cf2 items_list_before\
+\cf11 Out[
+\f1\b \cf12 3
+\f0\b0 \cf11 ]: \cf2 ['facebook', 'google']\
+\
+\cf8 In [
+\f1\b \cf9 4
+\f0\b0 \cf8 ]: \cf13 f"Current items in DynamoDB are: 
+\f1\b \cf14 \{
+\f0\b0 \cf2 items_list_before
+\f1\b \cf14 \}
+\f0\b0 \cf13 "\cf2 \
+\cf11 Out[
+\f1\b \cf12 4
+\f0\b0 \cf11 ]: \cf2 "Current items in DynamoDB are: ['facebook', 'google']"\
+\
+\cf8 In [
+\f1\b \cf9 5
+\f0\b0 \cf8 ]: \cf13 f"Update from 
+\f1\b \cf14 \{
+\f0\b0 \cf2 old
+\f1\b \cf14 \}
+\f0\b0 \cf13  to 
+\f1\b \cf14 \{
+\f0\b0 \cf2 new
+\f1\b \cf14 \}
+\f0\b0 \cf13 "\cf2 \
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 NameError\cf2                                  Traceback (most recent call last)\
+\cf3 <ipython-input-5-c7fbf9c55396>\cf2  in \cf4 <module>\cf2 \
+\cf3 ----> 1\cf6  \cf5 f"Update from \{old\} to \{new\}"\cf2 \
+\
+\cf6 NameError\cf2 : name 'old' is not defined\
+\
+\cf8 In [
+\f1\b \cf9 6
+\f0\b0 \cf8 ]: \cf2 old = \cf13 'google'\cf2 \
+\
+\cf8 In [
+\f1\b \cf9 7
+\f0\b0 \cf8 ]: \cf2 new = \cf13 'Google'\cf2 \
+\
+\cf8 In [
+\f1\b \cf9 8
+\f0\b0 \cf8 ]: \cf13 f"Update from 
+\f1\b \cf14 \{
+\f0\b0 \cf2 old
+\f1\b \cf14 \}
+\f0\b0 \cf13  to 
+\f1\b \cf14 \{
+\f0\b0 \cf2 new
+\f1\b \cf14 \}
+\f0\b0 \cf13 "\cf2 \
+\cf11 Out[
+\f1\b \cf12 8
+\f0\b0 \cf11 ]: \cf2 'Update from google to Google'\
+\
+\cf8 In [
+\f1\b \cf9 9
+\f0\b0 \cf8 ]: \cf2 item_update(old, new)\
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 ClientError\cf2                                Traceback (most recent call last)\
+\cf3 <ipython-input-9-ff8d39097320>\cf2  in \cf4 <module>\cf2 \
+\cf3 ----> 1\cf6  \cf2 item_update\cf5 (\cf2 old\cf5 ,\cf2  new\cf5 )\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py\cf2  in \cf4 item_update\cf5 (old_item, new_item)\cf2 \
+
+\f1\b \cf3      37
+\f0\b0 \cf2  \cf3 def\cf2  item_update\cf5 (\cf2 old_item\cf5 ,\cf2  new_item\cf5 ):\cf2 \
+
+\f1\b \cf3      38
+\f0\b0 \cf2      response_delete \cf5 =\cf2  items_delete\cf5 (\cf2 old_item\cf5 )\cf2 \
+\cf3 ---> 39\cf6      \cf2 response_add \cf5 =\cf2  items_add\cf5 (\cf2 new_item\cf5 )\cf2 \
+
+\f1\b \cf3      40
+\f0\b0 \cf2      \cf3 return\cf2  response_delete\cf5 ,\cf2  response_add\
+
+\f1\b \cf3      41
+\f0\b0 \cf2  \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py\cf2  in \cf4 items_add\cf5 (list_items)\cf2 \
+
+\f1\b \cf3      29
+\f0\b0 \cf2          \cf3 with\cf2  table\cf5 .\cf2 batch_writer\cf5 ()\cf2  \cf3 as\cf2  batch\cf5 :\cf2 \
+
+\f1\b \cf3      30
+\f0\b0 \cf2              \cf3 for\cf2  i \cf3 in\cf2  list_items\cf5 :\cf2 \
+\cf3 ---> 31\cf6                  \cf2 batch\cf5 .\cf2 put_item\cf5 (\cf2 Item\cf5 =\{'name':\cf2  str\cf5 (\cf2 i\cf5 ),\})\cf2 \
+
+\f1\b \cf3      32
+\f0\b0 \cf2  \
+
+\f1\b \cf3      33
+\f0\b0 \cf2  \cf3 def\cf2  items_delete\cf5 (\cf2 list_items\cf5 ):\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py\cf2  in \cf4 __exit__\cf5 (self, exc_type, exc_value, tb)\cf2 \
+
+\f1\b \cf3     154
+\f0\b0 \cf2          \cf6 # until there's nothing left in our items buffer.\cf2 \
+
+\f1\b \cf3     155
+\f0\b0 \cf2          \cf3 while\cf2  self\cf5 .\cf2 _items_buffer\cf5 :\cf2 \
+\cf3 --> 156\cf6              \cf2 self\cf5 .\cf2 _flush\cf5 ()\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py\cf2  in \cf4 _flush\cf5 (self)\cf2 \
+
+\f1\b \cf3     134
+\f0\b0 \cf2          items_to_send \cf5 =\cf2  self\cf5 .\cf2 _items_buffer\cf5 [:\cf2 self\cf5 .\cf2 _flush_amount\cf5 ]\cf2 \
+
+\f1\b \cf3     135
+\f0\b0 \cf2          self\cf5 .\cf2 _items_buffer \cf5 =\cf2  self\cf5 .\cf2 _items_buffer\cf5 [\cf2 self\cf5 .\cf2 _flush_amount\cf5 :]\cf2 \
+\cf3 --> 136\cf6          response = self._client.batch_write_item(\cf2 \
+
+\f1\b \cf3     137
+\f0\b0 \cf2              RequestItems=\{self._table_name: items_to_send\})\
+
+\f1\b \cf3     138
+\f0\b0 \cf2          unprocessed_items \cf5 =\cf2  response\cf5 ['UnprocessedItems']\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py\cf2  in \cf4 _api_call\cf5 (self, *args, **kwargs)\cf2 \
+
+\f1\b \cf3     355
+\f0\b0 \cf2                      "%s() only accepts keyword arguments." % py_operation_name)\
+
+\f1\b \cf3     356
+\f0\b0 \cf2              \cf6 # The "self" in this scope is referring to the BaseClient.\cf2 \
+\cf3 --> 357\cf6              \cf3 return\cf2  self\cf5 .\cf2 _make_api_call\cf5 (\cf2 operation_name\cf5 ,\cf2  kwargs\cf5 )\cf2 \
+
+\f1\b \cf3     358
+\f0\b0 \cf2  \
+
+\f1\b \cf3     359
+\f0\b0 \cf2          _api_call\cf5 .\cf2 __name__ \cf5 =\cf2  str\cf5 (\cf2 py_operation_name\cf5 )\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py\cf2  in \cf4 _make_api_call\cf5 (self, operation_name, api_params)\cf2 \
+
+\f1\b \cf3     674
+\f0\b0 \cf2              error_code \cf5 =\cf2  parsed_response\cf5 .\cf2 get\cf5 ("Error",\cf2  \cf5 \{\}).\cf2 get\cf5 ("Code")\cf2 \
+
+\f1\b \cf3     675
+\f0\b0 \cf2              error_class \cf5 =\cf2  self\cf5 .\cf2 exceptions\cf5 .\cf2 from_code\cf5 (\cf2 error_code\cf5 )\cf2 \
+\cf3 --> 676\cf6              \cf3 raise\cf2  error_class\cf5 (\cf2 parsed_response\cf5 ,\cf2  operation_name\cf5 )\cf2 \
+
+\f1\b \cf3     677
+\f0\b0 \cf2          \cf3 else\cf5 :\cf2 \
+
+\f1\b \cf3     678
+\f0\b0 \cf2              \cf3 return\cf2  parsed_response\
+\
+\cf6 ClientError\cf2 : An error occurred (ValidationException) when calling the BatchWriteItem operation: Provided list of item keys contains duplicates\
+\
+\cf8 In [
+\f1\b \cf9 10
+\f0\b0 \cf8 ]: \cf2 ddb_ops.items_delete(old)\
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 NameError\cf2                                  Traceback (most recent call last)\
+\cf3 <ipython-input-10-3eca503cb983>\cf2  in \cf4 <module>\cf2 \
+\cf3 ----> 1\cf6  \cf2 ddb_ops\cf5 .\cf2 items_delete\cf5 (\cf2 old\cf5 )\cf2 \
+\
+\cf6 NameError\cf2 : name 'ddb_ops' is not defined\
+\
+\cf8 In [
+\f1\b \cf9 11
+\f0\b0 \cf8 ]: 
+\f1\b import
+\f0\b0 \cf2  
+\f1\b \cf10 ddb_ops
+\f0\b0 \cf2 \
+\
+\cf8 In [
+\f1\b \cf9 12
+\f0\b0 \cf8 ]: \cf2 ddb_ops.item_delete(old)\
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 AttributeError\cf2                             Traceback (most recent call last)\
+\cf3 <ipython-input-12-12cc67513449>\cf2  in \cf4 <module>\cf2 \
+\cf3 ----> 1\cf6  \cf2 ddb_ops\cf5 .\cf2 item_delete\cf5 (\cf2 old\cf5 )\cf2 \
+\
+\cf6 AttributeError\cf2 : module 'ddb_ops' has no attribute 'item_delete'\
+\
+\cf8 In [
+\f1\b \cf9 13
+\f0\b0 \cf8 ]: \cf2 ddb_ops.items_delete(old)\
+\
+\cf8 In [
+\f1\b \cf9 14
+\f0\b0 \cf8 ]: \cf2 items_add(new)\
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 ClientError\cf2                                Traceback (most recent call last)\
+\cf3 <ipython-input-14-8fe23d95f65c>\cf2  in \cf4 <module>\cf2 \
+\cf3 ----> 1\cf6  \cf2 items_add\cf5 (\cf2 new\cf5 )\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py\cf2  in \cf4 items_add\cf5 (list_items)\cf2 \
+
+\f1\b \cf3      29
+\f0\b0 \cf2          \cf3 with\cf2  table\cf5 .\cf2 batch_writer\cf5 ()\cf2  \cf3 as\cf2  batch\cf5 :\cf2 \
+
+\f1\b \cf3      30
+\f0\b0 \cf2              \cf3 for\cf2  i \cf3 in\cf2  list_items\cf5 :\cf2 \
+\cf3 ---> 31\cf6                  \cf2 batch\cf5 .\cf2 put_item\cf5 (\cf2 Item\cf5 =\{'name':\cf2  str\cf5 (\cf2 i\cf5 ),\})\cf2 \
+
+\f1\b \cf3      32
+\f0\b0 \cf2  \
+
+\f1\b \cf3      33
+\f0\b0 \cf2  \cf3 def\cf2  items_delete\cf5 (\cf2 list_items\cf5 ):\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py\cf2  in \cf4 __exit__\cf5 (self, exc_type, exc_value, tb)\cf2 \
+
+\f1\b \cf3     154
+\f0\b0 \cf2          \cf6 # until there's nothing left in our items buffer.\cf2 \
+
+\f1\b \cf3     155
+\f0\b0 \cf2          \cf3 while\cf2  self\cf5 .\cf2 _items_buffer\cf5 :\cf2 \
+\cf3 --> 156\cf6              \cf2 self\cf5 .\cf2 _flush\cf5 ()\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py\cf2  in \cf4 _flush\cf5 (self)\cf2 \
+
+\f1\b \cf3     134
+\f0\b0 \cf2          items_to_send \cf5 =\cf2  self\cf5 .\cf2 _items_buffer\cf5 [:\cf2 self\cf5 .\cf2 _flush_amount\cf5 ]\cf2 \
+
+\f1\b \cf3     135
+\f0\b0 \cf2          self\cf5 .\cf2 _items_buffer \cf5 =\cf2  self\cf5 .\cf2 _items_buffer\cf5 [\cf2 self\cf5 .\cf2 _flush_amount\cf5 :]\cf2 \
+\cf3 --> 136\cf6          response = self._client.batch_write_item(\cf2 \
+
+\f1\b \cf3     137
+\f0\b0 \cf2              RequestItems=\{self._table_name: items_to_send\})\
+
+\f1\b \cf3     138
+\f0\b0 \cf2          unprocessed_items \cf5 =\cf2  response\cf5 ['UnprocessedItems']\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py\cf2  in \cf4 _api_call\cf5 (self, *args, **kwargs)\cf2 \
+
+\f1\b \cf3     355
+\f0\b0 \cf2                      "%s() only accepts keyword arguments." % py_operation_name)\
+
+\f1\b \cf3     356
+\f0\b0 \cf2              \cf6 # The "self" in this scope is referring to the BaseClient.\cf2 \
+\cf3 --> 357\cf6              \cf3 return\cf2  self\cf5 .\cf2 _make_api_call\cf5 (\cf2 operation_name\cf5 ,\cf2  kwargs\cf5 )\cf2 \
+
+\f1\b \cf3     358
+\f0\b0 \cf2  \
+
+\f1\b \cf3     359
+\f0\b0 \cf2          _api_call\cf5 .\cf2 __name__ \cf5 =\cf2  str\cf5 (\cf2 py_operation_name\cf5 )\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py\cf2  in \cf4 _make_api_call\cf5 (self, operation_name, api_params)\cf2 \
+
+\f1\b \cf3     674
+\f0\b0 \cf2              error_code \cf5 =\cf2  parsed_response\cf5 .\cf2 get\cf5 ("Error",\cf2  \cf5 \{\}).\cf2 get\cf5 ("Code")\cf2 \
+
+\f1\b \cf3     675
+\f0\b0 \cf2              error_class \cf5 =\cf2  self\cf5 .\cf2 exceptions\cf5 .\cf2 from_code\cf5 (\cf2 error_code\cf5 )\cf2 \
+\cf3 --> 676\cf6              \cf3 raise\cf2  error_class\cf5 (\cf2 parsed_response\cf5 ,\cf2  operation_name\cf5 )\cf2 \
+
+\f1\b \cf3     677
+\f0\b0 \cf2          \cf3 else\cf5 :\cf2 \
+
+\f1\b \cf3     678
+\f0\b0 \cf2              \cf3 return\cf2  parsed_response\
+\
+\cf6 ClientError\cf2 : An error occurred (ValidationException) when calling the BatchWriteItem operation: Provided list of item keys contains duplicates\
+\
+\cf8 In [
+\f1\b \cf9 15
+\f0\b0 \cf8 ]: \cf2 items_add(new)\
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 ClientError\cf2                                Traceback (most recent call last)\
+\cf3 <ipython-input-15-8fe23d95f65c>\cf2  in \cf4 <module>\cf2 \
+\cf3 ----> 1\cf6  \cf2 items_add\cf5 (\cf2 new\cf5 )\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py\cf2  in \cf4 items_add\cf5 (list_items)\cf2 \
+
+\f1\b \cf3      29
+\f0\b0 \cf2          \cf3 with\cf2  table\cf5 .\cf2 batch_writer\cf5 ()\cf2  \cf3 as\cf2  batch\cf5 :\cf2 \
+
+\f1\b \cf3      30
+\f0\b0 \cf2              \cf3 for\cf2  i \cf3 in\cf2  list_items\cf5 :\cf2 \
+\cf3 ---> 31\cf6                  \cf2 batch\cf5 .\cf2 put_item\cf5 (\cf2 Item\cf5 =\{'name':\cf2  str\cf5 (\cf2 i\cf5 ),\})\cf2 \
+
+\f1\b \cf3      32
+\f0\b0 \cf2  \
+
+\f1\b \cf3      33
+\f0\b0 \cf2  \cf3 def\cf2  items_delete\cf5 (\cf2 list_items\cf5 ):\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py\cf2  in \cf4 __exit__\cf5 (self, exc_type, exc_value, tb)\cf2 \
+
+\f1\b \cf3     154
+\f0\b0 \cf2          \cf6 # until there's nothing left in our items buffer.\cf2 \
+
+\f1\b \cf3     155
+\f0\b0 \cf2          \cf3 while\cf2  self\cf5 .\cf2 _items_buffer\cf5 :\cf2 \
+\cf3 --> 156\cf6              \cf2 self\cf5 .\cf2 _flush\cf5 ()\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py\cf2  in \cf4 _flush\cf5 (self)\cf2 \
+
+\f1\b \cf3     134
+\f0\b0 \cf2          items_to_send \cf5 =\cf2  self\cf5 .\cf2 _items_buffer\cf5 [:\cf2 self\cf5 .\cf2 _flush_amount\cf5 ]\cf2 \
+
+\f1\b \cf3     135
+\f0\b0 \cf2          self\cf5 .\cf2 _items_buffer \cf5 =\cf2  self\cf5 .\cf2 _items_buffer\cf5 [\cf2 self\cf5 .\cf2 _flush_amount\cf5 :]\cf2 \
+\cf3 --> 136\cf6          response = self._client.batch_write_item(\cf2 \
+
+\f1\b \cf3     137
+\f0\b0 \cf2              RequestItems=\{self._table_name: items_to_send\})\
+
+\f1\b \cf3     138
+\f0\b0 \cf2          unprocessed_items \cf5 =\cf2  response\cf5 ['UnprocessedItems']\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py\cf2  in \cf4 _api_call\cf5 (self, *args, **kwargs)\cf2 \
+
+\f1\b \cf3     355
+\f0\b0 \cf2                      "%s() only accepts keyword arguments." % py_operation_name)\
+
+\f1\b \cf3     356
+\f0\b0 \cf2              \cf6 # The "self" in this scope is referring to the BaseClient.\cf2 \
+\cf3 --> 357\cf6              \cf3 return\cf2  self\cf5 .\cf2 _make_api_call\cf5 (\cf2 operation_name\cf5 ,\cf2  kwargs\cf5 )\cf2 \
+
+\f1\b \cf3     358
+\f0\b0 \cf2  \
+
+\f1\b \cf3     359
+\f0\b0 \cf2          _api_call\cf5 .\cf2 __name__ \cf5 =\cf2  str\cf5 (\cf2 py_operation_name\cf5 )\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py\cf2  in \cf4 _make_api_call\cf5 (self, operation_name, api_params)\cf2 \
+
+\f1\b \cf3     674
+\f0\b0 \cf2              error_code \cf5 =\cf2  parsed_response\cf5 .\cf2 get\cf5 ("Error",\cf2  \cf5 \{\}).\cf2 get\cf5 ("Code")\cf2 \
+
+\f1\b \cf3     675
+\f0\b0 \cf2              error_class \cf5 =\cf2  self\cf5 .\cf2 exceptions\cf5 .\cf2 from_code\cf5 (\cf2 error_code\cf5 )\cf2 \
+\cf3 --> 676\cf6              \cf3 raise\cf2  error_class\cf5 (\cf2 parsed_response\cf5 ,\cf2  operation_name\cf5 )\cf2 \
+
+\f1\b \cf3     677
+\f0\b0 \cf2          \cf3 else\cf5 :\cf2 \
+
+\f1\b \cf3     678
+\f0\b0 \cf2              \cf3 return\cf2  parsed_response\
+\
+\cf6 ClientError\cf2 : An error occurred (ValidationException) when calling the BatchWriteItem operation: Provided list of item keys contains duplicates\
+\
+\cf8 In [
+\f1\b \cf9 16
+\f0\b0 \cf8 ]: \cf2 item_add(new)\
+\cf11 Out[
+\f1\b \cf12 16
+\f0\b0 \cf11 ]: \cf2 \
+\{'ResponseMetadata': \{'RequestId': 'HCGP1SG5G526M0APRL3INN52M3VV4KQNSO5AEMVJF66Q9ASUAAJG',\
+  'HTTPStatusCode': 200,\
+  'HTTPHeaders': \{'server': 'Server',\
+   'date': 'Wed, 25 Nov 2020 05:26:10 GMT',\
+   'content-type': 'application/x-amz-json-1.0',\
+   'content-length': '2',\
+   'connection': 'keep-alive',\
+   'x-amzn-requestid': 'HCGP1SG5G526M0APRL3INN52M3VV4KQNSO5AEMVJF66Q9ASUAAJG',\
+   'x-amz-crc32': '2745614147'\},\
+  'RetryAttempts': 0\}\}\
+\
+\cf8 In [
+\f1\b \cf9 17
+\f0\b0 \cf8 ]: \cf2 ddb_ops.item_delete(old)\
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 AttributeError\cf2                             Traceback (most recent call last)\
+\cf3 <ipython-input-17-12cc67513449>\cf2  in \cf4 <module>\cf2 \
+\cf3 ----> 1\cf6  \cf2 ddb_ops\cf5 .\cf2 item_delete\cf5 (\cf2 old\cf5 )\cf2 \
+\
+\cf6 AttributeError\cf2 : module 'ddb_ops' has no attribute 'item_delete'\
+\
+\cf8 In [
+\f1\b \cf9 18
+\f0\b0 \cf8 ]: \cf2 ddb_ops.items_delete(old)\
+\
+\cf8 In [
+\f1\b \cf9 19
+\f0\b0 \cf8 ]: \cf2 ddb_ops.item_add(new)\
+\cf11 Out[
+\f1\b \cf12 19
+\f0\b0 \cf11 ]: \cf2 \
+\{'ResponseMetadata': \{'RequestId': '2D8PAJ0JH86V2TG41HIAK79H0VVV4KQNSO5AEMVJF66Q9ASUAAJG',\
+  'HTTPStatusCode': 200,\
+  'HTTPHeaders': \{'server': 'Server',\
+   'date': 'Wed, 25 Nov 2020 05:28:53 GMT',\
+   'content-type': 'application/x-amz-json-1.0',\
+   'content-length': '2',\
+   'connection': 'keep-alive',\
+   'x-amzn-requestid': '2D8PAJ0JH86V2TG41HIAK79H0VVV4KQNSO5AEMVJF66Q9ASUAAJG',\
+   'x-amz-crc32': '2745614147'\},\
+  'RetryAttempts': 0\}\}\
+\
+\cf8 In [
+\f1\b \cf9 20
+\f0\b0 \cf8 ]: \cf2 old = \cf13 'google'\cf2 \
+\
+\cf8 In [
+\f1\b \cf9 21
+\f0\b0 \cf8 ]: \cf2 ddb_ops.items_delete(old)\
+\
+\cf8 In [
+\f1\b \cf9 22
+\f0\b0 \cf8 ]: \cf2 ddb_ops.items_delete([old])\
+\
+\cf8 In [
+\f1\b \cf9 23
+\f0\b0 \cf8 ]: \cf2 exit\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py update -o Google -n google\
+Current items in DynamoDB are: ['facebook', 'Google']\
+Update from Google to google\
+Traceback (most recent call last):\
+  File "./cfcli.py", line 87, in <module>\
+    cli()\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 829, in __call__\
+    return self.main(*args, **kwargs)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 782, in main\
+    rv = self.invoke(ctx)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 1259, in invoke\
+    return _process_result(sub_ctx.command.invoke(sub_ctx))\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 1066, in invoke\
+    return ctx.invoke(self.callback, **ctx.params)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 610, in invoke\
+    return callback(*args, **kwargs)\
+  File "./cfcli.py", line 80, in update\
+    item_update(old, new)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py", line 43, in item_update\
+    response_add = items_add(new_item)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py", line 31, in items_add\
+    batch.put_item(Item=\{'name': str(i),\})\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py", line 156, in __exit__\
+    self._flush()\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py", line 136, in _flush\
+    response = self._client.batch_write_item(\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py", line 357, in _api_call\
+    return self._make_api_call(operation_name, kwargs)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py", line 676, in _make_api_call\
+    raise error_class(parsed_response, operation_name)\
+botocore.exceptions.ClientError: An error occurred (ValidationException) when calling the BatchWriteItem operation: Provided list of item keys contains duplicates\
+(.venv) 
+\f1\b \cf6 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py update -o Google -n google\
+Current items in DynamoDB are: ['facebook', 'Google']\
+Update from Google to google\
+Traceback (most recent call last):\
+  File "./cfcli.py", line 86, in <module>\
+    cli()\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 829, in __call__\
+    return self.main(*args, **kwargs)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 782, in main\
+    rv = self.invoke(ctx)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 1259, in invoke\
+    return _process_result(sub_ctx.command.invoke(sub_ctx))\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 1066, in invoke\
+    return ctx.invoke(self.callback, **ctx.params)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 610, in invoke\
+    return callback(*args, **kwargs)\
+  File "./cfcli.py", line 79, in update\
+    item_update(old, new)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py", line 43, in item_update\
+    response_add = items_add(new_item)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py", line 31, in items_add\
+    batch.put_item(Item=\{'name': str(i),\})\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py", line 156, in __exit__\
+    self._flush()\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py", line 136, in _flush\
+    response = self._client.batch_write_item(\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py", line 357, in _api_call\
+    return self._make_api_call(operation_name, kwargs)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py", line 676, in _make_api_call\
+    raise error_class(parsed_response, operation_name)\
+botocore.exceptions.ClientError: An error occurred (ValidationException) when calling the BatchWriteItem operation: Provided list of item keys contains duplicates\
+(.venv) 
+\f1\b \cf6 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ipython\
+Python 3.8.6 (v3.8.6:db455296be, Sep 23 2020, 13:31:39) \
+Type 'copyright', 'credits' or 'license' for more information\
+IPython 7.19.0 -- An enhanced Interactive Python. Type '?' for help.\
+\
+\cf8 In [
+\f1\b \cf9 1
+\f0\b0 \cf8 ]: 
+\f1\b import
+\f0\b0 \cf2  
+\f1\b \cf10 subprocess
+\f0\b0 \cf2 \
+\cf8    ...: 
+\f1\b from
+\f0\b0 \cf2  
+\f1\b \cf10 ddb_ops
+\f0\b0 \cf2  
+\f1\b \cf8 import
+\f0\b0 \cf2  table_timestamp, item_add, items_add, items_delete,\
+\cf8    ...: \cf2 item_update, items_list\
+\cf8    ...: \cf2 \
+\
+\cf8 In [
+\f1\b \cf9 2
+\f0\b0 \cf8 ]: \cf2 old = \cf8 list\cf2 (old)\
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 NameError\cf2                                  Traceback (most recent call last)\
+\cf3 <ipython-input-2-837459898852>\cf2  in \cf4 <module>\cf2 \
+\cf3 ----> 1\cf6  \cf2 old \cf5 =\cf2  list\cf5 (\cf2 old\cf5 )\cf2 \
+\
+\cf6 NameError\cf2 : name 'old' is not defined\
+\
+\cf8 In [
+\f1\b \cf9 3
+\f0\b0 \cf8 ]: \cf2 old = \cf13 'google'\cf2 \
+\
+\cf8 In [
+\f1\b \cf9 4
+\f0\b0 \cf8 ]: \cf2 new \cf13 'Google'\cf2 \
+\cf4   File \cf3 "<ipython-input-4-cd35022fecc0>"\cf4 , line \cf3 1\cf2 \
+\cf6     new 'Google'\cf2 \
+        ^\
+\cf6 SyntaxError:\cf2  invalid syntax\
+\
+\
+\cf8 In [
+\f1\b \cf9 5
+\f0\b0 \cf8 ]: \cf2 new = \cf13 'Google'\cf2 \
+\
+\cf8 In [
+\f1\b \cf9 6
+\f0\b0 \cf8 ]: \cf2 old = \cf8 list\cf2 (old)\
+\
+\cf8 In [
+\f1\b \cf9 7
+\f0\b0 \cf8 ]: \cf2 ddb_ops.item_update(old, new)\
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 NameError\cf2                                  Traceback (most recent call last)\
+\cf3 <ipython-input-7-a2bc4b9a1213>\cf2  in \cf4 <module>\cf2 \
+\cf3 ----> 1\cf6  \cf2 ddb_ops\cf5 .\cf2 item_update\cf5 (\cf2 old\cf5 ,\cf2  new\cf5 )\cf2 \
+\
+\cf6 NameError\cf2 : name 'ddb_ops' is not defined\
+\
+\cf8 In [
+\f1\b \cf9 8
+\f0\b0 \cf8 ]: \cf2 item_update(old, new)\
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 ClientError\cf2                                Traceback (most recent call last)\
+\cf3 <ipython-input-8-ff8d39097320>\cf2  in \cf4 <module>\cf2 \
+\cf3 ----> 1\cf6  \cf2 item_update\cf5 (\cf2 old\cf5 ,\cf2  new\cf5 )\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py\cf2  in \cf4 item_update\cf5 (old_item, new_item)\cf2 \
+
+\f1\b \cf3      41
+\f0\b0 \cf2  \cf3 def\cf2  item_update\cf5 (\cf2 old_item\cf5 ,\cf2  new_item\cf5 ):\cf2 \
+
+\f1\b \cf3      42
+\f0\b0 \cf2      response_delete \cf5 =\cf2  items_delete\cf5 (\cf2 old_item\cf5 )\cf2 \
+\cf3 ---> 43\cf6      \cf2 response_add \cf5 =\cf2  items_add\cf5 (\cf2 new_item\cf5 )\cf2 \
+
+\f1\b \cf3      44
+\f0\b0 \cf2      \cf3 return\cf2  response_delete\cf5 ,\cf2  response_add\
+
+\f1\b \cf3      45
+\f0\b0 \cf2  \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py\cf2  in \cf4 items_add\cf5 (list_items)\cf2 \
+
+\f1\b \cf3      29
+\f0\b0 \cf2          \cf3 with\cf2  table\cf5 .\cf2 batch_writer\cf5 ()\cf2  \cf3 as\cf2  batch\cf5 :\cf2 \
+
+\f1\b \cf3      30
+\f0\b0 \cf2              \cf3 for\cf2  i \cf3 in\cf2  list_items\cf5 :\cf2 \
+\cf3 ---> 31\cf6                  \cf2 batch\cf5 .\cf2 put_item\cf5 (\cf2 Item\cf5 =\{'name':\cf2  str\cf5 (\cf2 i\cf5 ),\})\cf2 \
+
+\f1\b \cf3      32
+\f0\b0 \cf2  \
+
+\f1\b \cf3      33
+\f0\b0 \cf2  \cf3 def\cf2  items_delete\cf5 (\cf2 list_items\cf5 ):\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py\cf2  in \cf4 __exit__\cf5 (self, exc_type, exc_value, tb)\cf2 \
+
+\f1\b \cf3     154
+\f0\b0 \cf2          \cf6 # until there's nothing left in our items buffer.\cf2 \
+
+\f1\b \cf3     155
+\f0\b0 \cf2          \cf3 while\cf2  self\cf5 .\cf2 _items_buffer\cf5 :\cf2 \
+\cf3 --> 156\cf6              \cf2 self\cf5 .\cf2 _flush\cf5 ()\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py\cf2  in \cf4 _flush\cf5 (self)\cf2 \
+
+\f1\b \cf3     134
+\f0\b0 \cf2          items_to_send \cf5 =\cf2  self\cf5 .\cf2 _items_buffer\cf5 [:\cf2 self\cf5 .\cf2 _flush_amount\cf5 ]\cf2 \
+
+\f1\b \cf3     135
+\f0\b0 \cf2          self\cf5 .\cf2 _items_buffer \cf5 =\cf2  self\cf5 .\cf2 _items_buffer\cf5 [\cf2 self\cf5 .\cf2 _flush_amount\cf5 :]\cf2 \
+\cf3 --> 136\cf6          response = self._client.batch_write_item(\cf2 \
+
+\f1\b \cf3     137
+\f0\b0 \cf2              RequestItems=\{self._table_name: items_to_send\})\
+
+\f1\b \cf3     138
+\f0\b0 \cf2          unprocessed_items \cf5 =\cf2  response\cf5 ['UnprocessedItems']\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py\cf2  in \cf4 _api_call\cf5 (self, *args, **kwargs)\cf2 \
+
+\f1\b \cf3     355
+\f0\b0 \cf2                      "%s() only accepts keyword arguments." % py_operation_name)\
+
+\f1\b \cf3     356
+\f0\b0 \cf2              \cf6 # The "self" in this scope is referring to the BaseClient.\cf2 \
+\cf3 --> 357\cf6              \cf3 return\cf2  self\cf5 .\cf2 _make_api_call\cf5 (\cf2 operation_name\cf5 ,\cf2  kwargs\cf5 )\cf2 \
+
+\f1\b \cf3     358
+\f0\b0 \cf2  \
+
+\f1\b \cf3     359
+\f0\b0 \cf2          _api_call\cf5 .\cf2 __name__ \cf5 =\cf2  str\cf5 (\cf2 py_operation_name\cf5 )\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py\cf2  in \cf4 _make_api_call\cf5 (self, operation_name, api_params)\cf2 \
+
+\f1\b \cf3     674
+\f0\b0 \cf2              error_code \cf5 =\cf2  parsed_response\cf5 .\cf2 get\cf5 ("Error",\cf2  \cf5 \{\}).\cf2 get\cf5 ("Code")\cf2 \
+
+\f1\b \cf3     675
+\f0\b0 \cf2              error_class \cf5 =\cf2  self\cf5 .\cf2 exceptions\cf5 .\cf2 from_code\cf5 (\cf2 error_code\cf5 )\cf2 \
+\cf3 --> 676\cf6              \cf3 raise\cf2  error_class\cf5 (\cf2 parsed_response\cf5 ,\cf2  operation_name\cf5 )\cf2 \
+
+\f1\b \cf3     677
+\f0\b0 \cf2          \cf3 else\cf5 :\cf2 \
+
+\f1\b \cf3     678
+\f0\b0 \cf2              \cf3 return\cf2  parsed_response\
+\
+\cf6 ClientError\cf2 : An error occurred (ValidationException) when calling the BatchWriteItem operation: Provided list of item keys contains duplicates\
+\
+\cf8 In [
+\f1\b \cf9 9
+\f0\b0 \cf8 ]: \cf2 item_update(old, new)\
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 ClientError\cf2                                Traceback (most recent call last)\
+\cf3 <ipython-input-9-ff8d39097320>\cf2  in \cf4 <module>\cf2 \
+\cf3 ----> 1\cf6  \cf2 item_update\cf5 (\cf2 old\cf5 ,\cf2  new\cf5 )\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py\cf2  in \cf4 item_update\cf5 (old_item, new_item)\cf2 \
+
+\f1\b \cf3      41
+\f0\b0 \cf2  \
+
+\f1\b \cf3      42
+\f0\b0 \cf2  \cf6 # unused\cf2 \
+\cf3 ---> 43\cf6  \cf3 def\cf2  item_add\cf5 (\cf2 item\cf5 ):\cf2 \
+
+\f1\b \cf3      44
+\f0\b0 \cf2      response \cf5 =\cf2  table\cf5 .\cf2 put_item\cf5 (\cf2 Item\cf5 =\{'name':\cf2  item\cf5 ,\})\cf2 \
+
+\f1\b \cf3      45
+\f0\b0 \cf2      \cf3 return\cf2  response\
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py\cf2  in \cf4 items_add\cf5 (list_items)\cf2 \
+
+\f1\b \cf3      29
+\f0\b0 \cf2          \cf3 with\cf2  table\cf5 .\cf2 batch_writer\cf5 ()\cf2  \cf3 as\cf2  batch\cf5 :\cf2 \
+
+\f1\b \cf3      30
+\f0\b0 \cf2              \cf3 for\cf2  i \cf3 in\cf2  list_items\cf5 :\cf2 \
+\cf3 ---> 31\cf6                  \cf2 batch\cf5 .\cf2 put_item\cf5 (\cf2 Item\cf5 =\{'name':\cf2  str\cf5 (\cf2 i\cf5 ),\})\cf2 \
+
+\f1\b \cf3      32
+\f0\b0 \cf2  \
+
+\f1\b \cf3      33
+\f0\b0 \cf2  \cf3 def\cf2  items_delete\cf5 (\cf2 list_items\cf5 ):\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py\cf2  in \cf4 __exit__\cf5 (self, exc_type, exc_value, tb)\cf2 \
+
+\f1\b \cf3     154
+\f0\b0 \cf2          \cf6 # until there's nothing left in our items buffer.\cf2 \
+
+\f1\b \cf3     155
+\f0\b0 \cf2          \cf3 while\cf2  self\cf5 .\cf2 _items_buffer\cf5 :\cf2 \
+\cf3 --> 156\cf6              \cf2 self\cf5 .\cf2 _flush\cf5 ()\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py\cf2  in \cf4 _flush\cf5 (self)\cf2 \
+
+\f1\b \cf3     134
+\f0\b0 \cf2          items_to_send \cf5 =\cf2  self\cf5 .\cf2 _items_buffer\cf5 [:\cf2 self\cf5 .\cf2 _flush_amount\cf5 ]\cf2 \
+
+\f1\b \cf3     135
+\f0\b0 \cf2          self\cf5 .\cf2 _items_buffer \cf5 =\cf2  self\cf5 .\cf2 _items_buffer\cf5 [\cf2 self\cf5 .\cf2 _flush_amount\cf5 :]\cf2 \
+\cf3 --> 136\cf6          response = self._client.batch_write_item(\cf2 \
+
+\f1\b \cf3     137
+\f0\b0 \cf2              RequestItems=\{self._table_name: items_to_send\})\
+
+\f1\b \cf3     138
+\f0\b0 \cf2          unprocessed_items \cf5 =\cf2  response\cf5 ['UnprocessedItems']\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py\cf2  in \cf4 _api_call\cf5 (self, *args, **kwargs)\cf2 \
+
+\f1\b \cf3     355
+\f0\b0 \cf2                      "%s() only accepts keyword arguments." % py_operation_name)\
+
+\f1\b \cf3     356
+\f0\b0 \cf2              \cf6 # The "self" in this scope is referring to the BaseClient.\cf2 \
+\cf3 --> 357\cf6              \cf3 return\cf2  self\cf5 .\cf2 _make_api_call\cf5 (\cf2 operation_name\cf5 ,\cf2  kwargs\cf5 )\cf2 \
+
+\f1\b \cf3     358
+\f0\b0 \cf2  \
+
+\f1\b \cf3     359
+\f0\b0 \cf2          _api_call\cf5 .\cf2 __name__ \cf5 =\cf2  str\cf5 (\cf2 py_operation_name\cf5 )\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py\cf2  in \cf4 _make_api_call\cf5 (self, operation_name, api_params)\cf2 \
+
+\f1\b \cf3     674
+\f0\b0 \cf2              error_code \cf5 =\cf2  parsed_response\cf5 .\cf2 get\cf5 ("Error",\cf2  \cf5 \{\}).\cf2 get\cf5 ("Code")\cf2 \
+
+\f1\b \cf3     675
+\f0\b0 \cf2              error_class \cf5 =\cf2  self\cf5 .\cf2 exceptions\cf5 .\cf2 from_code\cf5 (\cf2 error_code\cf5 )\cf2 \
+\cf3 --> 676\cf6              \cf3 raise\cf2  error_class\cf5 (\cf2 parsed_response\cf5 ,\cf2  operation_name\cf5 )\cf2 \
+
+\f1\b \cf3     677
+\f0\b0 \cf2          \cf3 else\cf5 :\cf2 \
+
+\f1\b \cf3     678
+\f0\b0 \cf2              \cf3 return\cf2  parsed_response\
+\
+\cf6 ClientError\cf2 : An error occurred (ValidationException) when calling the BatchWriteItem operation: Provided list of item keys contains duplicates\
+\
+\cf8 In [
+\f1\b \cf9 10
+\f0\b0 \cf8 ]: \cf2 items_delete(old)\
+\
+\cf8 In [
+\f1\b \cf9 11
+\f0\b0 \cf8 ]: \cf2 items_add(new)\
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 ClientError\cf2                                Traceback (most recent call last)\
+\cf3 <ipython-input-11-8fe23d95f65c>\cf2  in \cf4 <module>\cf2 \
+\cf3 ----> 1\cf6  \cf2 items_add\cf5 (\cf2 new\cf5 )\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py\cf2  in \cf4 items_add\cf5 (list_items)\cf2 \
+
+\f1\b \cf3      29
+\f0\b0 \cf2          \cf3 with\cf2  table\cf5 .\cf2 batch_writer\cf5 ()\cf2  \cf3 as\cf2  batch\cf5 :\cf2 \
+
+\f1\b \cf3      30
+\f0\b0 \cf2              \cf3 for\cf2  i \cf3 in\cf2  list_items\cf5 :\cf2 \
+\cf3 ---> 31\cf6                  \cf2 batch\cf5 .\cf2 put_item\cf5 (\cf2 Item\cf5 =\{'name':\cf2  str\cf5 (\cf2 i\cf5 ),\})\cf2 \
+
+\f1\b \cf3      32
+\f0\b0 \cf2  \
+
+\f1\b \cf3      33
+\f0\b0 \cf2  \cf3 def\cf2  items_delete\cf5 (\cf2 list_items\cf5 ):\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py\cf2  in \cf4 __exit__\cf5 (self, exc_type, exc_value, tb)\cf2 \
+
+\f1\b \cf3     154
+\f0\b0 \cf2          \cf6 # until there's nothing left in our items buffer.\cf2 \
+
+\f1\b \cf3     155
+\f0\b0 \cf2          \cf3 while\cf2  self\cf5 .\cf2 _items_buffer\cf5 :\cf2 \
+\cf3 --> 156\cf6              \cf2 self\cf5 .\cf2 _flush\cf5 ()\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py\cf2  in \cf4 _flush\cf5 (self)\cf2 \
+
+\f1\b \cf3     134
+\f0\b0 \cf2          items_to_send \cf5 =\cf2  self\cf5 .\cf2 _items_buffer\cf5 [:\cf2 self\cf5 .\cf2 _flush_amount\cf5 ]\cf2 \
+
+\f1\b \cf3     135
+\f0\b0 \cf2          self\cf5 .\cf2 _items_buffer \cf5 =\cf2  self\cf5 .\cf2 _items_buffer\cf5 [\cf2 self\cf5 .\cf2 _flush_amount\cf5 :]\cf2 \
+\cf3 --> 136\cf6          response = self._client.batch_write_item(\cf2 \
+
+\f1\b \cf3     137
+\f0\b0 \cf2              RequestItems=\{self._table_name: items_to_send\})\
+
+\f1\b \cf3     138
+\f0\b0 \cf2          unprocessed_items \cf5 =\cf2  response\cf5 ['UnprocessedItems']\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py\cf2  in \cf4 _api_call\cf5 (self, *args, **kwargs)\cf2 \
+
+\f1\b \cf3     355
+\f0\b0 \cf2                      "%s() only accepts keyword arguments." % py_operation_name)\
+
+\f1\b \cf3     356
+\f0\b0 \cf2              \cf6 # The "self" in this scope is referring to the BaseClient.\cf2 \
+\cf3 --> 357\cf6              \cf3 return\cf2  self\cf5 .\cf2 _make_api_call\cf5 (\cf2 operation_name\cf5 ,\cf2  kwargs\cf5 )\cf2 \
+
+\f1\b \cf3     358
+\f0\b0 \cf2  \
+
+\f1\b \cf3     359
+\f0\b0 \cf2          _api_call\cf5 .\cf2 __name__ \cf5 =\cf2  str\cf5 (\cf2 py_operation_name\cf5 )\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py\cf2  in \cf4 _make_api_call\cf5 (self, operation_name, api_params)\cf2 \
+
+\f1\b \cf3     674
+\f0\b0 \cf2              error_code \cf5 =\cf2  parsed_response\cf5 .\cf2 get\cf5 ("Error",\cf2  \cf5 \{\}).\cf2 get\cf5 ("Code")\cf2 \
+
+\f1\b \cf3     675
+\f0\b0 \cf2              error_class \cf5 =\cf2  self\cf5 .\cf2 exceptions\cf5 .\cf2 from_code\cf5 (\cf2 error_code\cf5 )\cf2 \
+\cf3 --> 676\cf6              \cf3 raise\cf2  error_class\cf5 (\cf2 parsed_response\cf5 ,\cf2  operation_name\cf5 )\cf2 \
+
+\f1\b \cf3     677
+\f0\b0 \cf2          \cf3 else\cf5 :\cf2 \
+
+\f1\b \cf3     678
+\f0\b0 \cf2              \cf3 return\cf2  parsed_response\
+\
+\cf6 ClientError\cf2 : An error occurred (ValidationException) when calling the BatchWriteItem operation: Provided list of item keys contains duplicates\
+\
+\cf8 In [
+\f1\b \cf9 12
+\f0\b0 \cf8 ]: \cf2 new\
+\cf11 Out[
+\f1\b \cf12 12
+\f0\b0 \cf11 ]: \cf2 'Google'\
+\
+\cf8 In [
+\f1\b \cf9 13
+\f0\b0 \cf8 ]: \cf2 old\
+\cf11 Out[
+\f1\b \cf12 13
+\f0\b0 \cf11 ]: \cf2 ['g', 'o', 'o', 'g', 'l', 'e']\
+\
+\cf8 In [
+\f1\b \cf9 14
+\f0\b0 \cf8 ]: \cf2 [\cf13 'Google'\cf2 ]\
+\cf11 Out[
+\f1\b \cf12 14
+\f0\b0 \cf11 ]: \cf2 ['Google']\
+\
+\cf8 In [
+\f1\b \cf9 15
+\f0\b0 \cf8 ]: \cf2 old = \cf13 'Google'\cf2 \
+\
+\cf8 In [
+\f1\b \cf9 16
+\f0\b0 \cf8 ]: \cf2 [old]\
+\cf11 Out[
+\f1\b \cf12 16
+\f0\b0 \cf11 ]: \cf2 ['Google']\
+\
+\cf8 In [
+\f1\b \cf9 17
+\f0\b0 \cf8 ]: \cf2 old = [old]\
+\
+\cf8 In [
+\f1\b \cf9 18
+\f0\b0 \cf8 ]: \cf2 items_delete(old)\
+\
+\cf8 In [
+\f1\b \cf9 19
+\f0\b0 \cf8 ]: \cf2 items_add(new)\
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 ClientError\cf2                                Traceback (most recent call last)\
+\cf3 <ipython-input-19-8fe23d95f65c>\cf2  in \cf4 <module>\cf2 \
+\cf3 ----> 1\cf6  \cf2 items_add\cf5 (\cf2 new\cf5 )\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py\cf2  in \cf4 items_add\cf5 (list_items)\cf2 \
+
+\f1\b \cf3      29
+\f0\b0 \cf2          \cf3 with\cf2  table\cf5 .\cf2 batch_writer\cf5 ()\cf2  \cf3 as\cf2  batch\cf5 :\cf2 \
+
+\f1\b \cf3      30
+\f0\b0 \cf2              \cf3 for\cf2  i \cf3 in\cf2  list_items\cf5 :\cf2 \
+\cf3 ---> 31\cf6                  \cf2 batch\cf5 .\cf2 put_item\cf5 (\cf2 Item\cf5 =\{'name':\cf2  str\cf5 (\cf2 i\cf5 ),\})\cf2 \
+
+\f1\b \cf3      32
+\f0\b0 \cf2  \
+
+\f1\b \cf3      33
+\f0\b0 \cf2  \cf3 def\cf2  items_delete\cf5 (\cf2 list_items\cf5 ):\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py\cf2  in \cf4 __exit__\cf5 (self, exc_type, exc_value, tb)\cf2 \
+
+\f1\b \cf3     154
+\f0\b0 \cf2          \cf6 # until there's nothing left in our items buffer.\cf2 \
+
+\f1\b \cf3     155
+\f0\b0 \cf2          \cf3 while\cf2  self\cf5 .\cf2 _items_buffer\cf5 :\cf2 \
+\cf3 --> 156\cf6              \cf2 self\cf5 .\cf2 _flush\cf5 ()\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py\cf2  in \cf4 _flush\cf5 (self)\cf2 \
+
+\f1\b \cf3     134
+\f0\b0 \cf2          items_to_send \cf5 =\cf2  self\cf5 .\cf2 _items_buffer\cf5 [:\cf2 self\cf5 .\cf2 _flush_amount\cf5 ]\cf2 \
+
+\f1\b \cf3     135
+\f0\b0 \cf2          self\cf5 .\cf2 _items_buffer \cf5 =\cf2  self\cf5 .\cf2 _items_buffer\cf5 [\cf2 self\cf5 .\cf2 _flush_amount\cf5 :]\cf2 \
+\cf3 --> 136\cf6          response = self._client.batch_write_item(\cf2 \
+
+\f1\b \cf3     137
+\f0\b0 \cf2              RequestItems=\{self._table_name: items_to_send\})\
+
+\f1\b \cf3     138
+\f0\b0 \cf2          unprocessed_items \cf5 =\cf2  response\cf5 ['UnprocessedItems']\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py\cf2  in \cf4 _api_call\cf5 (self, *args, **kwargs)\cf2 \
+
+\f1\b \cf3     355
+\f0\b0 \cf2                      "%s() only accepts keyword arguments." % py_operation_name)\
+
+\f1\b \cf3     356
+\f0\b0 \cf2              \cf6 # The "self" in this scope is referring to the BaseClient.\cf2 \
+\cf3 --> 357\cf6              \cf3 return\cf2  self\cf5 .\cf2 _make_api_call\cf5 (\cf2 operation_name\cf5 ,\cf2  kwargs\cf5 )\cf2 \
+
+\f1\b \cf3     358
+\f0\b0 \cf2  \
+
+\f1\b \cf3     359
+\f0\b0 \cf2          _api_call\cf5 .\cf2 __name__ \cf5 =\cf2  str\cf5 (\cf2 py_operation_name\cf5 )\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py\cf2  in \cf4 _make_api_call\cf5 (self, operation_name, api_params)\cf2 \
+
+\f1\b \cf3     674
+\f0\b0 \cf2              error_code \cf5 =\cf2  parsed_response\cf5 .\cf2 get\cf5 ("Error",\cf2  \cf5 \{\}).\cf2 get\cf5 ("Code")\cf2 \
+
+\f1\b \cf3     675
+\f0\b0 \cf2              error_class \cf5 =\cf2  self\cf5 .\cf2 exceptions\cf5 .\cf2 from_code\cf5 (\cf2 error_code\cf5 )\cf2 \
+\cf3 --> 676\cf6              \cf3 raise\cf2  error_class\cf5 (\cf2 parsed_response\cf5 ,\cf2  operation_name\cf5 )\cf2 \
+
+\f1\b \cf3     677
+\f0\b0 \cf2          \cf3 else\cf5 :\cf2 \
+
+\f1\b \cf3     678
+\f0\b0 \cf2              \cf3 return\cf2  parsed_response\
+\
+\cf6 ClientError\cf2 : An error occurred (ValidationException) when calling the BatchWriteItem operation: Provided list of item keys contains duplicates\
+\
+\cf8 In [
+\f1\b \cf9 20
+\f0\b0 \cf8 ]: \cf2 new\
+\cf11 Out[
+\f1\b \cf12 20
+\f0\b0 \cf11 ]: \cf2 'Google'\
+\
+\cf8 In [
+\f1\b \cf9 21
+\f0\b0 \cf8 ]: \cf2 new = \cf13 'google'\cf2 \
+\
+\cf8 In [
+\f1\b \cf9 22
+\f0\b0 \cf8 ]: \cf2 items_add(new)\
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 ClientError\cf2                                Traceback (most recent call last)\
+\cf3 <ipython-input-22-8fe23d95f65c>\cf2  in \cf4 <module>\cf2 \
+\cf3 ----> 1\cf6  \cf2 items_add\cf5 (\cf2 new\cf5 )\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py\cf2  in \cf4 items_add\cf5 (list_items)\cf2 \
+
+\f1\b \cf3      29
+\f0\b0 \cf2          \cf3 with\cf2  table\cf5 .\cf2 batch_writer\cf5 ()\cf2  \cf3 as\cf2  batch\cf5 :\cf2 \
+
+\f1\b \cf3      30
+\f0\b0 \cf2              \cf3 for\cf2  i \cf3 in\cf2  list_items\cf5 :\cf2 \
+\cf3 ---> 31\cf6                  \cf2 batch\cf5 .\cf2 put_item\cf5 (\cf2 Item\cf5 =\{'name':\cf2  str\cf5 (\cf2 i\cf5 ),\})\cf2 \
+
+\f1\b \cf3      32
+\f0\b0 \cf2  \
+
+\f1\b \cf3      33
+\f0\b0 \cf2  \cf3 def\cf2  items_delete\cf5 (\cf2 list_items\cf5 ):\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py\cf2  in \cf4 __exit__\cf5 (self, exc_type, exc_value, tb)\cf2 \
+
+\f1\b \cf3     154
+\f0\b0 \cf2          \cf6 # until there's nothing left in our items buffer.\cf2 \
+
+\f1\b \cf3     155
+\f0\b0 \cf2          \cf3 while\cf2  self\cf5 .\cf2 _items_buffer\cf5 :\cf2 \
+\cf3 --> 156\cf6              \cf2 self\cf5 .\cf2 _flush\cf5 ()\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/dynamodb/table.py\cf2  in \cf4 _flush\cf5 (self)\cf2 \
+
+\f1\b \cf3     134
+\f0\b0 \cf2          items_to_send \cf5 =\cf2  self\cf5 .\cf2 _items_buffer\cf5 [:\cf2 self\cf5 .\cf2 _flush_amount\cf5 ]\cf2 \
+
+\f1\b \cf3     135
+\f0\b0 \cf2          self\cf5 .\cf2 _items_buffer \cf5 =\cf2  self\cf5 .\cf2 _items_buffer\cf5 [\cf2 self\cf5 .\cf2 _flush_amount\cf5 :]\cf2 \
+\cf3 --> 136\cf6          response = self._client.batch_write_item(\cf2 \
+
+\f1\b \cf3     137
+\f0\b0 \cf2              RequestItems=\{self._table_name: items_to_send\})\
+
+\f1\b \cf3     138
+\f0\b0 \cf2          unprocessed_items \cf5 =\cf2  response\cf5 ['UnprocessedItems']\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py\cf2  in \cf4 _api_call\cf5 (self, *args, **kwargs)\cf2 \
+
+\f1\b \cf3     355
+\f0\b0 \cf2                      "%s() only accepts keyword arguments." % py_operation_name)\
+
+\f1\b \cf3     356
+\f0\b0 \cf2              \cf6 # The "self" in this scope is referring to the BaseClient.\cf2 \
+\cf3 --> 357\cf6              \cf3 return\cf2  self\cf5 .\cf2 _make_api_call\cf5 (\cf2 operation_name\cf5 ,\cf2  kwargs\cf5 )\cf2 \
+
+\f1\b \cf3     358
+\f0\b0 \cf2  \
+
+\f1\b \cf3     359
+\f0\b0 \cf2          _api_call\cf5 .\cf2 __name__ \cf5 =\cf2  str\cf5 (\cf2 py_operation_name\cf5 )\cf2 \
+\
+\cf3 ~/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py\cf2  in \cf4 _make_api_call\cf5 (self, operation_name, api_params)\cf2 \
+
+\f1\b \cf3     674
+\f0\b0 \cf2              error_code \cf5 =\cf2  parsed_response\cf5 .\cf2 get\cf5 ("Error",\cf2  \cf5 \{\}).\cf2 get\cf5 ("Code")\cf2 \
+
+\f1\b \cf3     675
+\f0\b0 \cf2              error_class \cf5 =\cf2  self\cf5 .\cf2 exceptions\cf5 .\cf2 from_code\cf5 (\cf2 error_code\cf5 )\cf2 \
+\cf3 --> 676\cf6              \cf3 raise\cf2  error_class\cf5 (\cf2 parsed_response\cf5 ,\cf2  operation_name\cf5 )\cf2 \
+
+\f1\b \cf3     677
+\f0\b0 \cf2          \cf3 else\cf5 :\cf2 \
+
+\f1\b \cf3     678
+\f0\b0 \cf2              \cf3 return\cf2  parsed_response\
+\
+\cf6 ClientError\cf2 : An error occurred (ValidationException) when calling the BatchWriteItem operation: Provided list of item keys contains duplicates\
+\
+\cf8 In [
+\f1\b \cf9 23
+\f0\b0 \cf8 ]: \cf2 ddb.ops.item_add(new)\
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 NameError\cf2                                  Traceback (most recent call last)\
+\cf3 <ipython-input-23-f41e94c495f9>\cf2  in \cf4 <module>\cf2 \
+\cf3 ----> 1\cf6  \cf2 ddb\cf5 .\cf2 ops\cf5 .\cf2 item_add\cf5 (\cf2 new\cf5 )\cf2 \
+\
+\cf6 NameError\cf2 : name 'ddb' is not defined\
+\
+\cf8 In [
+\f1\b \cf9 24
+\f0\b0 \cf8 ]: 
+\f1\b import
+\f0\b0 \cf2  
+\f1\b \cf10 ddb
+\f0\b0 \cf2 \
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 ModuleNotFoundError\cf2                        Traceback (most recent call last)\
+\cf3 <ipython-input-24-48f5150d89cf>\cf2  in \cf4 <module>\cf2 \
+\cf3 ----> 1\cf6  \cf3 import\cf2  ddb\
+\
+\cf6 ModuleNotFoundError\cf2 : No module named 'ddb'\
+\
+\cf8 In [
+\f1\b \cf9 25
+\f0\b0 \cf8 ]: 
+\f1\b import
+\f0\b0 \cf2  
+\f1\b \cf10 ddb_ops
+\f0\b0 \cf2 \
+\
+\cf8 In [
+\f1\b \cf9 26
+\f0\b0 \cf8 ]: \cf2 ddb.ops.item_add(new)\
+\cf6 ---------------------------------------------------------------------------\cf2 \
+\cf6 NameError\cf2                                  Traceback (most recent call last)\
+\cf3 <ipython-input-26-f41e94c495f9>\cf2  in \cf4 <module>\cf2 \
+\cf3 ----> 1\cf6  \cf2 ddb\cf5 .\cf2 ops\cf5 .\cf2 item_add\cf5 (\cf2 new\cf5 )\cf2 \
+\
+\cf6 NameError\cf2 : name 'ddb' is not defined\
+\
+\cf8 In [
+\f1\b \cf9 27
+\f0\b0 \cf8 ]: \cf2 ddb_ops.item_add(new)\
+\cf11 Out[
+\f1\b \cf12 27
+\f0\b0 \cf11 ]: \cf2 \
+\{'ResponseMetadata': \{'RequestId': 'D5O0FJQ0N0E94IK4INF38UC8ONVV4KQNSO5AEMVJF66Q9ASUAAJG',\
+  'HTTPStatusCode': 200,\
+  'HTTPHeaders': \{'server': 'Server',\
+   'date': 'Wed, 25 Nov 2020 05:46:26 GMT',\
+   'content-type': 'application/x-amz-json-1.0',\
+   'content-length': '2',\
+   'connection': 'keep-alive',\
+   'x-amzn-requestid': 'D5O0FJQ0N0E94IK4INF38UC8ONVV4KQNSO5AEMVJF66Q9ASUAAJG',\
+   'x-amz-crc32': '2745614147'\},\
+  'RetryAttempts': 0\}\}\
+\
+\cf8 In [
+\f1\b \cf9 28
+\f0\b0 \cf8 ]: \cf2 old = \cf13 'google'\cf2 \
+\
+\cf8 In [
+\f1\b \cf9 29
+\f0\b0 \cf8 ]: \cf2 old = [old]\
+\
+\cf8 In [
+\f1\b \cf9 30
+\f0\b0 \cf8 ]: \cf2 new = \cf13 'Google'\cf2 \
+\
+\cf8 In [
+\f1\b \cf9 31
+\f0\b0 \cf8 ]: \cf2 items_delete(old)\
+\
+\cf8 In [
+\f1\b \cf9 32
+\f0\b0 \cf8 ]: \cf2 ddb_ops.item_add(new)\
+\cf11 Out[
+\f1\b \cf12 32
+\f0\b0 \cf11 ]: \cf2 \
+\{'ResponseMetadata': \{'RequestId': 'RA2I81EU9J30PC2QJ691CBIIG3VV4KQNSO5AEMVJF66Q9ASUAAJG',\
+  'HTTPStatusCode': 200,\
+  'HTTPHeaders': \{'server': 'Server',\
+   'date': 'Wed, 25 Nov 2020 05:48:10 GMT',\
+   'content-type': 'application/x-amz-json-1.0',\
+   'content-length': '2',\
+   'connection': 'keep-alive',\
+   'x-amzn-requestid': 'RA2I81EU9J30PC2QJ691CBIIG3VV4KQNSO5AEMVJF66Q9ASUAAJG',\
+   'x-amz-crc32': '2745614147'\},\
+  'RetryAttempts': 0\}\}\
+\
+\cf8 In [
+\f1\b \cf9 33
+\f0\b0 \cf8 ]: \cf2 exit\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ipython\
+Python 3.8.6 (v3.8.6:db455296be, Sep 23 2020, 13:31:39) \
+Type 'copyright', 'credits' or 'license' for more information\
+IPython 7.19.0 -- An enhanced Interactive Python. Type '?' for help.\
+\
+\cf8 In [
+\f1\b \cf9 1
+\f0\b0 \cf8 ]: 
+\f1\b from
+\f0\b0 \cf2  
+\f1\b \cf10 ddb_ops
+\f0\b0 \cf2  
+\f1\b \cf8 import
+\f0\b0 \cf2  table_timestamp, item_add, items_add, items_delete,\
+\cf8    ...: \cf2 item_update, items_list\
+\cf8    ...: \cf2 \
+\
+\cf8 In [
+\f1\b \cf9 2
+\f0\b0 \cf8 ]: \cf2 old = \cf13 'Google'\cf2 \
+\
+\cf8 In [
+\f1\b \cf9 3
+\f0\b0 \cf8 ]: \cf2 new = \cf13 'google'\cf2 \
+\
+\cf8 In [
+\f1\b \cf9 4
+\f0\b0 \cf8 ]: \cf2 old = [old]\
+\
+\cf8 In [
+\f1\b \cf9 5
+\f0\b0 \cf8 ]: \cf2 items_delete(old)\
+\
+\cf8 In [
+\f1\b \cf9 6
+\f0\b0 \cf8 ]: \cf2 item_add(new)\
+\cf11 Out[
+\f1\b \cf12 6
+\f0\b0 \cf11 ]: \cf2 \
+\{'ResponseMetadata': \{'RequestId': 'SAKIJEJP8HKS5UJSFDCFBFGIMJVV4KQNSO5AEMVJF66Q9ASUAAJG',\
+  'HTTPStatusCode': 200,\
+  'HTTPHeaders': \{'server': 'Server',\
+   'date': 'Wed, 25 Nov 2020 05:51:34 GMT',\
+   'content-type': 'application/x-amz-json-1.0',\
+   'content-length': '2',\
+   'connection': 'keep-alive',\
+   'x-amzn-requestid': 'SAKIJEJP8HKS5UJSFDCFBFGIMJVV4KQNSO5AEMVJF66Q9ASUAAJG',\
+   'x-amz-crc32': '2745614147'\},\
+  'RetryAttempts': 0\}\}\
+\
+\cf8 In [
+\f1\b \cf9 7
+\f0\b0 \cf8 ]: \cf2 old = \cf13 'google'\cf2 \
+\
+\cf8 In [
+\f1\b \cf9 8
+\f0\b0 \cf8 ]: \cf2 new = \cf13 'Google'\cf2 \
+\
+\cf8 In [
+\f1\b \cf9 9
+\f0\b0 \cf8 ]: \cf2 item_update(old, new)\
+\
+\cf8 In [
+\f1\b \cf9 10
+\f0\b0 \cf8 ]: \cf2 exit\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py update -o google -n Google\
+Current items in DynamoDB are: ['facebook', 'Google']\
+Update from google to Google\
+Traceback (most recent call last):\
+  File "./cfcli.py", line 86, in <module>\
+    cli()\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 829, in __call__\
+    return self.main(*args, **kwargs)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 782, in main\
+    rv = self.invoke(ctx)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 1259, in invoke\
+    return _process_result(sub_ctx.command.invoke(sub_ctx))\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 1066, in invoke\
+    return ctx.invoke(self.callback, **ctx.params)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/click/core.py", line 610, in invoke\
+    return callback(*args, **kwargs)\
+  File "./cfcli.py", line 79, in update\
+    item_update(old, new)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py", line 39, in item_update\
+    response_delete = items_delete(old_item)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/ddb_ops.py", line 35, in items_delete\
+    table.delete_item(Key=\{'name': i,\})\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/resources/factory.py", line 520, in do_action\
+    response = action(self, *args, **kwargs)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/boto3/resources/action.py", line 83, in __call__\
+    response = getattr(parent.meta.client, operation_name)(*args, **params)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py", line 357, in _api_call\
+    return self._make_api_call(operation_name, kwargs)\
+  File "/Users/stevedepp/Documents/Personal/MSDS/498/FP/fp-cloud-formation-clt/.venv/lib/python3.8/site-packages/botocore/client.py", line 676, in _make_api_call\
+    raise error_class(parsed_response, operation_name)\
+botocore.exceptions.ClientError: An error occurred (ValidationException) when calling the DeleteItem operation: The provided key element does not match the schema\
+(.venv) 
+\f1\b \cf6 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py update -o google -n Google\
+Current items in DynamoDB are: ['facebook', 'Google']\
+Update from google to Google\
+full list will be ['facebook', 'Google']\
+delete: s3://fangsentiment-depp/['facebook']_sentiment.csv\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./cfcli.py update -o Google -n google\
+Current items in DynamoDB are: ['facebook', 'Google']\
+Update from Google to google\
+full list will be ['facebook', 'google']\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  ./5-cleanup.sh \
+Deleted depp-498-fp stack.\
+Delete deployment artifacts and bucket (lambda-artifacts-1cb1eedf26327698)? (y/n)y\
+delete: s3://lambda-artifacts-1cb1eedf26327698/7357b8b01e192c6efa21313397e40671\
+delete: s3://lambda-artifacts-1cb1eedf26327698/9ed1f3dbce0e4a3aaad22f25bae0bee3\
+delete: s3://lambda-artifacts-1cb1eedf26327698/92ee9dea01708526d7ae1b4b5fabf5f6\
+delete: s3://lambda-artifacts-1cb1eedf26327698/f97f0602f8f2af57612a5baaa524de70\
+remove_bucket: lambda-artifacts-1cb1eedf26327698\
+Delete function log group (/aws/lambda/ServerlessProducer)? (y/n)y\
+Delete function log group (/aws/lambda/ProducerAI)? (y/n)y\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  git status\
+On branch main\
+Your branch is up to date with 'origin/main'.\
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf6 modified:   cfcli.py\cf2 \
+	\cf6 modified:   ddb_ops.py\cf2 \
+	\cf6 modified:   template.yml\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf6 .DS_Store\cf2 \
+	\cf6 cos.txt\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  git add *\
+The following paths are ignored by one of your .gitignore files:\
+__pycache__\
+lib\
+Use -f if you really want to add them.\
+(.venv) 
+\f1\b \cf6 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  git commit -m 'various'\
+[main 1161b42] various\
+ 4 files changed, 117 insertions(+), 62 deletions(-)\
+ rewrite cfcli.py (72%)\
+ create mode 100644 cos.txt\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  git push   \
+Enumerating objects: 10, done.\
+Counting objects: 100% (10/10), done.\
+Delta compression using up to 12 threads\
+Compressing objects: 100% (5/5), done.\
+Writing objects: 100% (6/6), 1.61 KiB | 1.61 MiB/s, done.\
+Total 6 (delta 3), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.\
+To https://github.com/stevedepp/fp-cloud-formation-clt.git\
+   fff73ec..1161b42  main -> main\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  nano README.md \
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  git add *\
+The following paths are ignored by one of your .gitignore files:\
+__pycache__\
+lib\
+Use -f if you really want to add them.\
+(.venv) 
+\f1\b \cf6 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  git commit -m 'update README todo'\
+[main 7d76e17] update README todo\
+ 1 file changed, 2 insertions(+), 2 deletions(-)\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  git push\
+Enumerating objects: 5, done.\
+Counting objects: 100% (5/5), done.\
+Delta compression using up to 12 threads\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (3/3), 321 bytes | 321.00 KiB/s, done.\
+Total 3 (delta 2), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.\
+To https://github.com/stevedepp/fp-cloud-formation-clt.git\
+   1161b42..7d76e17  main -> main\
+(.venv) 
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  \
+\cf15 \cb16   [Restored Nov 26, 2020 at 12:14:31 PM]\cf2 \
+\cb1 Last login: Thu Nov 26 12:14:28 on console\
+Restored session: Thu Nov 26 12:13:39 EST 2020\
+
+\f1\b \cf3 \uc0\u10140   \cf4 fp-cloud-formation-clt
+\f0\b0 \cf2  
+\f1\b \cf5 git:(\cf6 main\cf5 ) \cf7 \uc0\u10007 
+\f0\b0 \cf2  \
+}

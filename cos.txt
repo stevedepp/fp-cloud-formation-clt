@@ -1,2 +1,4 @@
 facebook
+amazon
+netflix
 google

@@ -80,5 +80,10 @@ def update(old, new):
         click.echo(f"full list will be {items_list_after}")
         subprocess.run(['aws', 's3', 'rm', 's3://fangsentiment-depp', '--recursive'])
 
+@cli.command("teardown")
+def end():
+    # change to make infra and save/publish time
+    subprocess.run(['make','teardown'])
+
 if __name__ == "__main__":
     cli()

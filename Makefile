@@ -21,7 +21,7 @@ deploy:
 	./3-deploy.sh
 
 data:
-	./unused_code/4-init-data.sh
+	./.unused/4-init-data.sh
 
 infra: install bucket build deploy
 
