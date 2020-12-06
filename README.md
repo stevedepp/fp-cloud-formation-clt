@@ -24,7 +24,7 @@ S3 (*fangsentiment-depp*)
 
 #
 
-- [x] getting coing
+- [x] getting going
 
         mkdir folder_name
         cd folder_name
