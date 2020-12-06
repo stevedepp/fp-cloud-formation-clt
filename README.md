@@ -107,39 +107,39 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 -   remove ```pandas``` and ```numpy``` from ```ProducerAI``` layer folder; AWS linux requires its flavor of ```pandas``` which is dependent on ```numpy```.
 -   curl to ```pandas-0.24.1``` and ```numpy 1.16.1``` for ```manylinux1_x86_64.whl and unzip to ```ProducerAI``` layer folder, deleting ```__pycache__``` and any ```*.dist-info``` files.
 
-`#!/bin/bash`  
-`set -eo pipefail`  
+	`#!/bin/bash`  
+	`set -eo pipefail`  
 
-`rm -rf packageServerlessProducer`  
-`rm -rf packageProducerAI`  
+	`rm -rf packageServerlessProducer`  
+	`rm -rf packageProducerAI`  
 
-`pip install --target ./packageServerlessProducer/python -r ./ServerlessProducer/requirements.txt --use-feature=2020-resolver`  
-`pip install --target ./packageProducerAI/python -r ./ProducerAI/requirements.txt --use-feature=2020-resolver`  
+	`pip install --target ./packageServerlessProducer/python -r ./ServerlessProducer/requirements.txt --use-feature=2020-resolver`  
+	`pip install --target ./packageProducerAI/python -r ./ProducerAI/requirements.txt --use-feature=2020-resolver`  
 
-`rm -rf ./packageProducerAI/python/pandas`  
-`rm -rf ./packageProducerAI/python/numpy`  
+	`rm -rf ./packageProducerAI/python/pandas`  
+	`rm -rf ./packageProducerAI/python/numpy`  
 
-`curl -O https://files.pythonhosted.org/packages/e6/de/a0d3defd8f338eaf53ef716e40ef6d6c277c35d50e09b586e170169cdf0d/pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl`  
-`curl -O https://files.pythonhosted.org/packages/f5/bf/4981bcbee43934f0adb8f764a1e70ab0ee5a448f6505bd04a87a2fda2a8b/numpy-1.16.1-cp36-cp36m-manylinux1_x86_64.whl`  
+	`curl -O https://files.pythonhosted.org/packages/e6/de/a0d3defd8f338eaf53ef716e40ef6d6c277c35d50e09b586e170169cdf0d/pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl`  
+	`curl -O https://files.pythonhosted.org/packages/f5/bf/4981bcbee43934f0adb8f764a1e70ab0ee5a448f6505bd04a87a2fda2a8b/numpy-1.16.1-cp36-cp36m-manylinux1_x86_64.whl`  
 
-`unzip pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl -d packageProducerAI/python/`  
-`unzip numpy-1.16.1-cp36-cp36m-manylinux1_x86_64.whl -d packageProducerAI/python/`  
+	`unzip pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl -d packageProducerAI/python/`  
+	`unzip numpy-1.16.1-cp36-cp36m-manylinux1_x86_64.whl -d packageProducerAI/python/`  
 
-`rm -r packageProducerAI/python/__pycache__`  
-`rm -r packageProducerAI/python/*.dist-info`  
+	`rm -r packageProducerAI/python/__pycache__`  
+	`rm -r packageProducerAI/python/*.dist-info`  
 
-`rm pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl`  
-`rm numpy-1.16.1-cp36-cp36m-manylinux1_x86_64.whl`  
+	`rm pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl`  
+	`rm numpy-1.16.1-cp36-cp36m-manylinux1_x86_64.whl`  
 
 ### ```3-deploy.sh```
 -   employ ```aws cloudformation package``` to package local artifacts of stack, e.g. lambda dependencies, into AWS bucket and via the macro template.yaml return a copy of template ```out.yml``` which replaces references to local artifacts with the S3 location.  
 -   employ ```aws cloudformation deploy``` to deploy the stack. 
 
-`#!/bin/bash`  
-`set -eo pipefail`  
-`ARTIFACT_BUCKET=$(cat bucket-name.txt)`  
-`aws cloudformation package --template-file template.yml --s3-bucket $ARTIFACT_BUCKET --output-template-file out.yml`  
-`aws cloudformation deploy --template-file out.yml --stack-name depp-498-fp --capabilities CAPABILITY_NAMED_IAM`  
+	`#!/bin/bash`  
+	`set -eo pipefail`  
+	`ARTIFACT_BUCKET=$(cat bucket-name.txt)`  
+	`aws cloudformation package --template-file template.yml --s3-bucket $ARTIFACT_BUCKET --output-template-file out.yml`  
+	`aws cloudformation deploy --template-file out.yml --stack-name depp-498-fp --capabilities CAPABILITY_NAMED_IAM`  
 
 
 ### ```4-init-data.sh```
@@ -149,10 +149,10 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 -   deletion is next step
 -   keep initialization possible in shell by keeing the if main caller at bottom.
 
-`#!/bin/bash`  
-`./ddb_items_init.py > request.json`  
-`aws dynamodb batch-write-item --request-items file://request.json`  
-`rm request.json`  
+	`#!/bin/bash`  
+	`./ddb_items_init.py > request.json`  
+	`aws dynamodb batch-write-item --request-items file://request.json`  
+	`rm request.json`  
 
 ### ```5-cleanip.sh```
 
