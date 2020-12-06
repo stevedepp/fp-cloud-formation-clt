@@ -49,11 +49,16 @@
 
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/38410965/101272549-3410cd00-375b-11eb-876e-ed171e5f4001.png">
 
+    ./cfcli.py teardown
+
+<img width="682" alt="image" src="https://user-images.githubusercontent.com/38410965/101272564-599dd680-375b-11eb-8894-9e850927f9ea.png">
+
+unfortunately, teardown results in a lot of  
+- [x] questions: please answer `y`
+- [x] popups: please type `q` and hit the `return` key
 
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/38410965/101272561-5276c880-375b-11eb-94b5-d71be7630615.png">
 
-
-<img width="682" alt="image" src="https://user-images.githubusercontent.com/38410965/101272564-599dd680-375b-11eb-8894-9e850927f9ea.png">
 
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/38410965/101272566-602c4e00-375b-11eb-91c2-ecf88364ece9.png">
 
