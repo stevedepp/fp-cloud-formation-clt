@@ -42,8 +42,8 @@
 
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/38410965/101272523-fdd34d80-375a-11eb-8adc-91fe5ac44245.png">
 
-./cfcli.py update -old amazon -new Amazon
-./cfcli.py update -o amazon -n Amazon
+    ./cfcli.py update -old amazon -new Amazon
+    ./cfcli.py update -o amazon -n Amazon
 
 (since amazon isn't there, amazon is added)
 
