@@ -345,6 +345,7 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 	-	takes 2 arguments
 		-	`--old` or `-o` will take a current name to be changed
 		-	`--new` or `-n` will take the replacement for old name
+	-	ignores a name if not in table
 	- 	reports back the old table form, new table form and table transaction
 
 -	`./cfcli.py teardown`
