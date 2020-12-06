@@ -1,5 +1,5 @@
-# title
-building ser...
+# Serverless AI Data Engineering Pipeline
+building serverless pipeline from dynamo db to lambda to sqs to lambda to aws comprehend to s3 
 
 <img width="423" alt="Al Data Engineering" src="https://user-images.githubusercontent.com/38410965/101269508-893de600-373d-11eb-9d52-a393e4070d67.png">
 
