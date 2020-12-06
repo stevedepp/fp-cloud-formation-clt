@@ -57,6 +57,8 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
         
 ## features
 
+- [x] speedy hands-free build in 4 minutes 20 seconds
+- [x] speedy hands-free teardown in 2 minutes 30 seconds
 - [x] source code in github
 - [x] automated dependencies
 - [x] encryption in transit
