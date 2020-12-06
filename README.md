@@ -248,7 +248,8 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 	@cli.command("make-infra")
 	def hello():
 	    # change to make infra and save/publish time
-	    subprocess.run(['make', 'infra'])
+	    subprocess.run(['make', 'install'])
+    	    subprocess.run(['make', 'infra'])
 
 	@cli.command("add")
 	@click.option('--file', help='File containig a column of names')
