@@ -22,22 +22,26 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 
 - [x] some database operations
 
-    - [x[ adding some names
+    - [x] adding names
     
-    - [x] adding a name
+        ./cfcli.py add --file ./cos.txt
+        ./cfcli.py add -f ./cos.txt  
+        ./cfcli.py add -item ibm -item microsoft
+        ./cfcli.py add -i ibm -i microsoft
 
-- [x] removing some database names
-
-    - [x] removing some names
+    - [x] removing names
     
-    - [x] removig a name
+        ./cfcli.py remove --file cos.txt
+        ./cfcli.py remove --f cos.txt
+        ./cfcli.py remove -item amazon -item google
+        ./cfcli.py remove -i amazon -i google
 
-- [x] updating a database name
+    - [x] updating a database name
 
+        ./cfcli.py update -old netflix -new Netflix
+        ./cfcli.py update -o netflix -n Netflix
 
 - [x] tearing it down:
-
-
 
         ./cfcli.py teardown 
         
