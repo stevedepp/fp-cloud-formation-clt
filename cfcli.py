@@ -13,9 +13,8 @@ def cli():
 
 @cli.command("make-infra")
 def hello():
-    # change to make infra and save/publish time
-    subprocess.run(['make', 'install'])
     subprocess.run(['make', 'infra'])
+    
 @cli.command("add")
 @click.option('--file', '-f', help='File containig a column of names')
 @click.option('--item', '-i', multiple=True, help='One item via --item or several separated by -i')
