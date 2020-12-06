@@ -1,4 +1,4 @@
-## serverless ai data engineering pipeline
+### serverless ai data engineering pipeline
 building serverless pipeline from dynamo db to lambda to sqs to lambda to aws comprehend to s3 
 
 
@@ -37,7 +37,8 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 
 #
 
-## to do:
+### to do:
+
 - [ ] CICD such as git actions or circleci
 - [ ] flask to see the output in a webpage with json pretty
 - [ ] total cost of ownership estimate
@@ -59,7 +60,9 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 - [x] makes sure IAM policies are deleted when teardown occurs
 - [ ] use CF designer for presentation
 
-## code comments:
+#
+
+### code comments:
 
 Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli/
 
