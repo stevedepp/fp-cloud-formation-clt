@@ -338,6 +338,10 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 -	`./cfcli.py teardown`
 	-	removes all aws resources
 
+[quickstart](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/README.md#quickstart-commands)
+#
+
+
 ### ```template.yml```
 
 	AWSTemplateFormatVersion: '2010-09-09'
