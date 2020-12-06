@@ -14,7 +14,7 @@ def cli():
 @cli.command("make-infra")
 def hello():
     # change to make infra and save/publish time
-    subprocess.run(['make', 'infra'])
+    subprocess.run(['make', 'install', '&&', 'make', 'infra'])
 
 @cli.command("add")
 @click.option('--file', '-f', help='File containig a column of names')
