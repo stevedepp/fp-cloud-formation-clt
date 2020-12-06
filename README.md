@@ -31,9 +31,6 @@ building ser...
 
 ## architecture diagram
 
-## evolution
-- [x]
-
 ## to do:
 - [x] encryption in transit
 - [x] code in github
@@ -324,12 +321,31 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 	if __name__ == "__main__":
 	    cli()
 
--	tab
--   3
+-	click library employed for command line tool menus and logging
+-	./cfcli.py make-infra  --> install requirements, builds and deploys aws resources from cloud formation template
+-	./cfcli.py add 
+	-	takes 1 of 2 both not both arguments as names to add
+		-	--file or -f will take a text file containing a column of names
+		-	--item or -i will take a single name in-line folling --item or -i
+	-	finds names currently in table 
+	-	from current names + new names, computes unique total set 
+	-	adds the net difference unique total set - current names
+	- 	reports back the old table form, new table form and table transaction
+	
+-	./cfcli.py remove
+	-	takes 1 of 2 both not both arguments as names to add
+		-	--file or -f will take a text file containing a column of names
+		-	--item or -i will take a single name in-line folling --item or -i
+	-	finds names currently in table
+	-	ignores a name to be removed if not in table
+	-	removes names
+	- 	reports back the old table form, new table form and table transaction
 
-### ```ddb_init.py```
-
-### ```ddb_items.py```
+-	./cfcli.py update
+	-	takes 2 arguments
+		-	--old or -o will take a current name to be changed
+		-	--new or -n will take the replacement for old name
+	- 	reports back the old table form, new table form and table transaction
 
 ### ```template.yml```
 
@@ -350,13 +366,6 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 -   lint
 -   test
 -   all
-
-
-
-## startup:
-
-### source .venv/bin/activate
-### follow order of scripts
 
 
 
@@ -385,12 +394,3 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 ### Comprehend
 
 ### S3 bucket
-
-
-
-## notes:
-
--   pip message: --use-feature=2020-resolver? error message with jupyter installation on ubuntu
-https://stackoverflow.com/questions/63277123/what-is-use-feature-2020-resolver-error-message-with-jupyter-installation-on
-
--   requests 2.24.0 requires urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1, but you'll have urllib3 1.26.2 which is incompatible.
