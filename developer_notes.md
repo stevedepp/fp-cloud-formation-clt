@@ -338,7 +338,9 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 -	`./cfcli.py teardown`
 	-	removes all aws resources
 
-[quickstart](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/README.md#quickstart-commands)
+[quickstart](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/README.md#quickstart-commands)  
+[home](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/README.md#serverless-ai-data-engineering-pipeline)
+
 #
 
 
