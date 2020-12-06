@@ -171,64 +171,65 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 
 ### ```5-cleanip.sh```
 
-	`#!/bin/bash`  
-	`set -eo pipefail`  
-	`STACK=depp-498-fp`  
+	#!/bin/bash
+	set -eo pipefail
+	STACK=depp-498-fp
 
-	`if [[ $# -eq 1 ]] ; then`  
-	`    STACK=$1`  
-	`    echo "Deleting stack $STACK"`  
-	`fi`  
+	if [[ $# -eq 1 ]] ; then
+	    STACK=$1
+	    echo "Deleting stack $STACK"
+	fi
 
-	`FUNCTION1=$(aws cloudformation describe-stack-resource --stack-name $STACK --logical-resource-id ServerlessProducer --query 'StackResourceDetail.PhysicalResourceId' --output text)`  
+	FUNCTION1=$(aws cloudformation describe-stack-resource --stack-name $STACK --logical-resource-id ServerlessProducer --query 'StackResourceDetail.PhysicalResourceId' --output text)
 
-	`FUNCTION2=$(aws cloudformation describe-stack-resource --stack-name $STACK --logical-resource-id ProducerAI --query 'StackResourceDetail.PhysicalResourceId' --output text)`  
+	FUNCTION2=$(aws cloudformation describe-stack-resource --stack-name $STACK --logical-resource-id ProducerAI --query 'StackResourceDetail.PhysicalResourceId' --output text)
 
-	`aws s3 rm s3://fangsentiment-depp --recursive`  
+	aws s3 rm s3://fangsentiment-depp --recursive
 
-	`aws cloudformation delete-stack --stack-name $STACK`  
-	`echo "Deleted $STACK stack."`  
+	aws cloudformation delete-stack --stack-name $STACK
+	echo "Deleted $STACK stack."
 
-	`if [ -f bucket-name.txt ]; then`  
-	`    ARTIFACT_BUCKET=$(cat bucket-name.txt)`  
-	`    if [[ ! $ARTIFACT_BUCKET =~ lambda-artifacts-[a-z0-9]{16} ]] ; then`  
-	`        echo "Bucket was not created by this application. Skipping."`  
-	`    else`  
-	`        while true; do`  
-	`            read -p "Delete deployment artifacts and bucket ($ARTIFACT_BUCKET)? (y/n)" response`  
-	`            case $response in`  
-	`                [Yy]* ) aws s3 rb --force s3://$ARTIFACT_BUCKET; rm bucket-name.txt; break;;`  
-	`                [Nn]* ) break;;`  
-	`                * ) echo "Response must start with y or n.";;`  
-	`            esac`  
-	`        done`  
-	`    fi`  
-	`fi`  
+	if [ -f bucket-name.txt ]; then
+	    ARTIFACT_BUCKET=$(cat bucket-name.txt)
+	    if [[ ! $ARTIFACT_BUCKET =~ lambda-artifacts-[a-z0-9]{16} ]] ; then
+		echo "Bucket was not created by this application. Skipping."
+	    else
+		while true; do
+		    read -p "Delete deployment artifacts and bucket ($ARTIFACT_BUCKET)? (y/n)" response
+		    case $response in
+			[Yy]* ) aws s3 rb --force s3://$ARTIFACT_BUCKET; rm bucket-name.txt; break;;
+			[Nn]* ) break;;
+			* ) echo "Response must start with y or n.";;
+		    esac
+		done
+	    fi
+	fi
 
-	`rm -f out.yml`  
-	`rm -f function/*.pyc`  
-	`rm -f bucket-name.txt`  
-	`rm -rf packageProducerAI`  
-	`rm -rf packageServerlessProducer`  
-	`rm -rf function/__pycache__`  
+	rm -f out.yml
+	rm -f function/*.pyc
+	rm -f bucket-name.txt
+	rm -rf packageProducerAI
+	rm -rf packageServerlessProducer
+	rm -rf function/__pycache__
 
-	`while true; do`  
-	`    read -p "Delete function log group (/aws/lambda/$FUNCTION1)? (y/n)" response`  
-	`    case $response in`  
-	`        [Yy]* ) aws logs delete-log-group --log-group-name /aws/lambda/$FUNCTION1; break;;`  
-	`        [Nn]* ) break;;`  
-	`        * ) echo "Response must start with y or n.";;`  
-	`    esac`  
-	`done`  
+	while true; do
+	    read -p "Delete function log group (/aws/lambda/$FUNCTION1)? (y/n)" response
+	    case $response in
+		[Yy]* ) aws logs delete-log-group --log-group-name /aws/lambda/$FUNCTION1; break;;
+		[Nn]* ) break;;
+		* ) echo "Response must start with y or n.";;
+	    esac
+	done
 
-	`while true; do`  
-	`    read -p "Delete function log group (/aws/lambda/$FUNCTION2)? (y/n)" response`  
-	`    case $response in`  
-	`        [Yy]* ) aws logs delete-log-group --log-group-name /aws/lambda/$FUNCTION2; break;;`  
-	`        [Nn]* ) break;;`  
-	`        * ) echo "Response must start with y or n.";;`  
-	`    esac`  
-	`done`  
+	while true; do
+	    read -p "Delete function log group (/aws/lambda/$FUNCTION2)? (y/n)" response
+	    case $response in
+		[Yy]* ) aws logs delete-log-group --log-group-name /aws/lambda/$FUNCTION2; break;;
+		[Nn]* ) break;;
+		* ) echo "Response must start with y or n.";;
+	    esac
+	done
+ 
 
 #
 
@@ -239,6 +240,7 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 	import lib
 	import sys
 	import subprocess
+
 	from ddb_ops import table_timestamp, item_add, items_add, items_delete, item_update, items_list
 
 	@click.version_option(lib.__version__)
@@ -248,12 +250,11 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 
 	@cli.command("make-infra")
 	def hello():
-	    # change to make infra and save/publish time
 	    subprocess.run(['make', 'install'])
-    	    subprocess.run(['make', 'infra'])
+	    subprocess.run(['make', 'infra'])
 
 	@cli.command("add")
-	@click.option('--file', help='File containig a column of names')
+	@click.option('--file', '-f', help='File containig a column of names')
 	@click.option('--item', '-i', multiple=True, help='One item via --item or several separated by -i')
 	def add(file, item):
 	    if not file and not item:
@@ -277,7 +278,7 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 		click.echo(f"full list will be {items_list_after}")
 
 	@cli.command("remove")
-	@click.option('--file', help='File containig a column of names')
+	@click.option('--file', '-f', help='File containig a column of names')
 	@click.option('--item', '-i', multiple=True, help='One item via --item or several separated by -i')
 	def delete(file, item):
 	    if not file and not item:
@@ -323,6 +324,7 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 
 	if __name__ == "__main__":
 	    cli()
+
 
 -	click library employed for command line tool menus and logging
 -	`./cfcli.py make-infra`  --> install requirements, builds and deploys aws resources from cloud formation template
