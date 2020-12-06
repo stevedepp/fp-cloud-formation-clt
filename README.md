@@ -94,11 +94,11 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 -   BUCKET_NAME saved to bucket-name.txt
 -   create bucket via ```aws s3 mb```
 
-	`#!/bin/bash`
-	`BUCKET_ID=$(dd if=/dev/random bs=8 count=1 2>/dev/null | od -An -tx1 | tr -d ' \t\n')`
-	`BUCKET_NAME=lambda-artifacts-$BUCKET_ID`
-	`echo $BUCKET_NAME > bucket-name.txt`
-	`aws s3 mb s3://$BUCKET_NAME`
+	`#!/bin/bash`  
+	`BUCKET_ID=$(dd if=/dev/random bs=8 count=1 2>/dev/null | od -An -tx1 | tr -d ' \t\n')`  
+	`BUCKET_NAME=lambda-artifacts-$BUCKET_ID`  
+	`echo $BUCKET_NAME > bucket-name.txt`  
+	`aws s3 mb s3://$BUCKET_NAME`  
 
 
 ### ```2-build-layer.sh```
@@ -107,39 +107,39 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 -   remove ```pandas``` and ```numpy``` from ```ProducerAI``` layer folder; AWS linux requires its flavor of ```pandas``` which is dependent on ```numpy```.
 -   curl to ```pandas-0.24.1``` and ```numpy 1.16.1``` for ```manylinux1_x86_64.whl and unzip to ```ProducerAI``` layer folder, deleting ```__pycache__``` and any ```*.dist-info``` files.
 
-`#!/bin/bash`
-`set -eo pipefail`
+`#!/bin/bash`  
+`set -eo pipefail`  
 
-`rm -rf packageServerlessProducer`
-`rm -rf packageProducerAI`
+`rm -rf packageServerlessProducer`  
+`rm -rf packageProducerAI`  
 
-`pip install --target ./packageServerlessProducer/python -r ./ServerlessProducer/requirements.txt --use-feature=2020-resolver`
-`pip install --target ./packageProducerAI/python -r ./ProducerAI/requirements.txt --use-feature=2020-resolver`
+`pip install --target ./packageServerlessProducer/python -r ./ServerlessProducer/requirements.txt --use-feature=2020-resolver`  
+`pip install --target ./packageProducerAI/python -r ./ProducerAI/requirements.txt --use-feature=2020-resolver`  
 
-`rm -rf ./packageProducerAI/python/pandas`
-`rm -rf ./packageProducerAI/python/numpy`
+`rm -rf ./packageProducerAI/python/pandas`  
+`rm -rf ./packageProducerAI/python/numpy`  
 
-`curl -O https://files.pythonhosted.org/packages/e6/de/a0d3defd8f338eaf53ef716e40ef6d6c277c35d50e09b586e170169cdf0d/pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl`
-`curl -O https://files.pythonhosted.org/packages/f5/bf/4981bcbee43934f0adb8f764a1e70ab0ee5a448f6505bd04a87a2fda2a8b/numpy-1.16.1-cp36-cp36m-manylinux1_x86_64.whl`
+`curl -O https://files.pythonhosted.org/packages/e6/de/a0d3defd8f338eaf53ef716e40ef6d6c277c35d50e09b586e170169cdf0d/pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl`  
+`curl -O https://files.pythonhosted.org/packages/f5/bf/4981bcbee43934f0adb8f764a1e70ab0ee5a448f6505bd04a87a2fda2a8b/numpy-1.16.1-cp36-cp36m-manylinux1_x86_64.whl`  
 
-`unzip pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl -d packageProducerAI/python/`
-`unzip numpy-1.16.1-cp36-cp36m-manylinux1_x86_64.whl -d packageProducerAI/python/`
+`unzip pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl -d packageProducerAI/python/`  
+`unzip numpy-1.16.1-cp36-cp36m-manylinux1_x86_64.whl -d packageProducerAI/python/`  
 
-`rm -r packageProducerAI/python/__pycache__`
-`rm -r packageProducerAI/python/*.dist-info`
+`rm -r packageProducerAI/python/__pycache__`  
+`rm -r packageProducerAI/python/*.dist-info`  
 
-`rm pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl`
-`rm numpy-1.16.1-cp36-cp36m-manylinux1_x86_64.whl`
+`rm pandas-0.24.1-cp36-cp36m-manylinux1_x86_64.whl`  
+`rm numpy-1.16.1-cp36-cp36m-manylinux1_x86_64.whl`  
 
 ### ```3-deploy.sh```
 -   employ ```aws cloudformation package``` to package local artifacts of stack, e.g. lambda dependencies, into AWS bucket and via the macro template.yaml return a copy of template ```out.yml``` which replaces references to local artifacts with the S3 location.  
 -   employ ```aws cloudformation deploy``` to deploy the stack. 
 
-`#!/bin/bash`
-`set -eo pipefail`
-`ARTIFACT_BUCKET=$(cat bucket-name.txt)`
-`aws cloudformation package --template-file template.yml --s3-bucket $ARTIFACT_BUCKET --output-template-file out.yml`
-`aws cloudformation deploy --template-file out.yml --stack-name depp-498-fp --capabilities CAPABILITY_NAMED_IAM`
+`#!/bin/bash`  
+`set -eo pipefail`  
+`ARTIFACT_BUCKET=$(cat bucket-name.txt)`  
+`aws cloudformation package --template-file template.yml --s3-bucket $ARTIFACT_BUCKET --output-template-file out.yml`  
+`aws cloudformation deploy --template-file out.yml --stack-name depp-498-fp --capabilities CAPABILITY_NAMED_IAM`  
 
 
 ### ```4-init-data.sh```
@@ -149,71 +149,71 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 -   deletion is next step
 -   keep initialization possible in shell by keeing the if main caller at bottom.
 
-`#!/bin/bash`
-`./ddb_items_init.py > request.json`
-`aws dynamodb batch-write-item --request-items file://request.json`
-`rm request.json`
+`#!/bin/bash`  
+`./ddb_items_init.py > request.json`  
+`aws dynamodb batch-write-item --request-items file://request.json`  
+`rm request.json`  
 
 ### ```5-cleanip.sh```
 
-`#!/bin/bash`
-`set -eo pipefail`
-`STACK=depp-498-fp`
+`#!/bin/bash`  
+`set -eo pipefail`  
+`STACK=depp-498-fp`  
 
-`if [[ $# -eq 1 ]] ; then`
-`    STACK=$1`
-`    echo "Deleting stack $STACK"`
-`fi`
+`if [[ $# -eq 1 ]] ; then`  
+`    STACK=$1`  
+`    echo "Deleting stack $STACK"`  
+`fi`  
 
-`FUNCTION1=$(aws cloudformation describe-stack-resource --stack-name $STACK --logical-resource-id ServerlessProducer --query 'StackResourceDetail.PhysicalResourceId' --output text)`
+`FUNCTION1=$(aws cloudformation describe-stack-resource --stack-name $STACK --logical-resource-id ServerlessProducer --query 'StackResourceDetail.PhysicalResourceId' --output text)`  
 
-`FUNCTION2=$(aws cloudformation describe-stack-resource --stack-name $STACK --logical-resource-id ProducerAI --query 'StackResourceDetail.PhysicalResourceId' --output text)`
+`FUNCTION2=$(aws cloudformation describe-stack-resource --stack-name $STACK --logical-resource-id ProducerAI --query 'StackResourceDetail.PhysicalResourceId' --output text)`  
 
-`aws s3 rm s3://fangsentiment-depp --recursive`
+`aws s3 rm s3://fangsentiment-depp --recursive`  
 
-`aws cloudformation delete-stack --stack-name $STACK`
-`echo "Deleted $STACK stack."`
+`aws cloudformation delete-stack --stack-name $STACK`  
+`echo "Deleted $STACK stack."`  
 
-`if [ -f bucket-name.txt ]; then`
-`    ARTIFACT_BUCKET=$(cat bucket-name.txt)`
-`    if [[ ! $ARTIFACT_BUCKET =~ lambda-artifacts-[a-z0-9]{16} ]] ; then`
-`        echo "Bucket was not created by this application. Skipping."`
-`    else`
-`        while true; do`
-`            read -p "Delete deployment artifacts and bucket ($ARTIFACT_BUCKET)? (y/n)" response`
-`            case $response in`
-`                [Yy]* ) aws s3 rb --force s3://$ARTIFACT_BUCKET; rm bucket-name.txt; break;;`
-`                [Nn]* ) break;;`
-`                * ) echo "Response must start with y or n.";;`
-`            esac`
-`        done`
-`    fi`
-`fi`
+`if [ -f bucket-name.txt ]; then`  
+`    ARTIFACT_BUCKET=$(cat bucket-name.txt)`  
+`    if [[ ! $ARTIFACT_BUCKET =~ lambda-artifacts-[a-z0-9]{16} ]] ; then`  
+`        echo "Bucket was not created by this application. Skipping."`  
+`    else`  
+`        while true; do`  
+`            read -p "Delete deployment artifacts and bucket ($ARTIFACT_BUCKET)? (y/n)" response`  
+`            case $response in`  
+`                [Yy]* ) aws s3 rb --force s3://$ARTIFACT_BUCKET; rm bucket-name.txt; break;;`  
+`                [Nn]* ) break;;`  
+`                * ) echo "Response must start with y or n.";;`  
+`            esac`  
+`        done`  
+`    fi`  
+`fi`  
 
-`rm -f out.yml`
-`rm -f function/*.pyc`
-`rm -f bucket-name.txt`
-`rm -rf packageProducerAI`
-`rm -rf packageServerlessProducer`
-`rm -rf function/__pycache__`
+`rm -f out.yml`  
+`rm -f function/*.pyc`  
+`rm -f bucket-name.txt`  
+`rm -rf packageProducerAI`  
+`rm -rf packageServerlessProducer`  
+`rm -rf function/__pycache__`  
 
-`while true; do`
-`    read -p "Delete function log group (/aws/lambda/$FUNCTION1)? (y/n)" response`
-`    case $response in`
-`        [Yy]* ) aws logs delete-log-group --log-group-name /aws/lambda/$FUNCTION1; break;;`
-`        [Nn]* ) break;;`
-`        * ) echo "Response must start with y or n.";;`
-`    esac`
-`done`
+`while true; do`  
+`    read -p "Delete function log group (/aws/lambda/$FUNCTION1)? (y/n)" response`  
+`    case $response in`  
+`        [Yy]* ) aws logs delete-log-group --log-group-name /aws/lambda/$FUNCTION1; break;;`  
+`        [Nn]* ) break;;`  
+`        * ) echo "Response must start with y or n.";;`  
+`    esac`  
+`done`  
 
-`while true; do`
-`    read -p "Delete function log group (/aws/lambda/$FUNCTION2)? (y/n)" response`
-`    case $response in`
-`        [Yy]* ) aws logs delete-log-group --log-group-name /aws/lambda/$FUNCTION2; break;;`
-`        [Nn]* ) break;;`
-`        * ) echo "Response must start with y or n.";;`
-`    esac`
-`done`
+`while true; do`  
+`    read -p "Delete function log group (/aws/lambda/$FUNCTION2)? (y/n)" response`  
+`    case $response in`  
+`        [Yy]* ) aws logs delete-log-group --log-group-name /aws/lambda/$FUNCTION2; break;;`  
+`        [Nn]* ) break;;`  
+`        * ) echo "Response must start with y or n.";;`  
+`    esac`  
+`done`  
 
 
 ### ```cfcli.py```
