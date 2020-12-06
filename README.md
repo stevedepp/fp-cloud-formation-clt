@@ -57,6 +57,17 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
         
 ## features
 
+- [x] source code in github
+- [x] automated dependencies
+- [x] encryption in transit
+- [x] principle of least privelege via IAM roles' policies
+- [x] python based command line tool (CLT) framework
+- [x] simple CLT commands
+- [x] CLT logging via click
+- [x] db operations logging via python-json-logger
+- [x] infrastructure as code logging via aws cloud formation (CF) console
+- [x] CF logging via lambda monitoring and cloud watch
+- [x] CICD via infrastructure as code
 
 ## developer comments are [here](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/developer_notes.md#developer-notes)
 
