@@ -2,6 +2,7 @@
 building serverless pipeline from dynamo db to lambda to sqs to lambda to aws comprehend to s3 
 
 ### screenshots
+(full terminal session of this example is [here[(https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/terminal_session.rtf).
 
 #
 
