@@ -52,7 +52,10 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 
         ./cfcli.py teardown 
         
-        
+### features
+
+
+### developer comments are [here](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/developer_notes.md#developer-notes)
 
 
 
