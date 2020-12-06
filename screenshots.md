@@ -1,3 +1,10 @@
+# Serverless AI Data Engineering Pipeline
+building serverless pipeline from dynamo db to lambda to sqs to lambda to aws comprehend to s3 
+
+## screenshots
+
+#
+
     mkdir folder_name
     cd folder_name
     git clone https://github.com/stevedepp/fp-cloud-formation-clt.git
