@@ -35,7 +35,10 @@
 
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/38410965/101272494-c8c6fb00-375a-11eb-8366-18b682e7bc6e.png">
 
+./cfcli.py remove -i amazon
+./cfcli.py remove -item amazon
 
+(but amazon isn't there so it is ignored} 
 
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/38410965/101272523-fdd34d80-375a-11eb-8adc-91fe5ac44245.png">
 
