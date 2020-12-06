@@ -57,6 +57,8 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 
         ./cfcli.py teardown 
         
+[screenshots](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/screenshots.md#serverless-ai-data-engineering-pipeline)
+
 ## features
 
 - [x] speedy hands-free build in 4 minutes 20 seconds
