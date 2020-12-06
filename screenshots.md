@@ -38,19 +38,19 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/38410965/101272479-95846c00-375a-11eb-8432-7e45081300fe.png">
 
-    ./cfcli.py update -old netflix -new Netflix
+    ./cfcli.py update --old netflix -new Netflix
     ./cfcli.py update -o netflix -n Netflix
 
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/38410965/101272494-c8c6fb00-375a-11eb-8366-18b682e7bc6e.png">
 
     ./cfcli.py remove -i amazon
-    ./cfcli.py remove -item amazon
+    ./cfcli.py remove --item amazon
 
 (but amazon isn't there so amazon is ignored)
 
 <img width="682" alt="image" src="https://user-images.githubusercontent.com/38410965/101272523-fdd34d80-375a-11eb-8adc-91fe5ac44245.png">
 
-    ./cfcli.py update -old amazon -new Amazon
+    ./cfcli.py update --old amazon -new Amazon
     ./cfcli.py update -o amazon -n Amazon
 
 (since amazon isn't there, amazon is added)
