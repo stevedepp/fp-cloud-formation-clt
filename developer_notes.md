@@ -336,23 +336,206 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 
 ### ```template.yml```
 
+	AWSTemplateFormatVersion: '2010-09-09'
+	Transform: 'AWS::Serverless-2016-10-31'
+	Description: An AWS Lambda application that calls the Lambda API.
+	Resources:
+	  ServerlessProducer:
+	    Type: AWS::Serverless::Function
+	    Properties:
+	      Handler: lambda_function.lambda_handler
+	      Runtime: python3.6
+	      FunctionName: ServerlessProducer
+	      Role: !GetAtt ServerlessProducerRole.Arn
+	      CodeUri: ServerlessProducer/.
+	      Description: Call the AWS Lambda API
+	      Timeout: 10
+	      Layers:
+		- !Ref libsServerlessProducer
+	  libsServerlessProducer:
+	    Type: AWS::Serverless::LayerVersion
+	    Properties:
+	      LayerName: libServerlessProducer
+	      Description: Dependencies for ServerlessProducer Lambda.
+	      ContentUri: packageServerlessProducer/.
+	      CompatibleRuntimes:
+		- python3.6
+
+	  ProducerAI:
+	    Type: AWS::Serverless::Function
+	    Properties:
+	      Handler: lambda_function.lambda_handler
+	      Runtime: python3.6
+	      FunctionName: ProducerAI
+	      Role: !GetAtt ProducerAIRole.Arn
+	      CodeUri: ProducerAI/.
+	      Description: Call the AWS Lambda API
+	      Timeout: 10
+	      Layers:
+		- !Ref libsProducerAI
+	  libsProducerAI:
+	    Type: AWS::Serverless::LayerVersion
+	    Properties:
+	      LayerName: libProducerAI
+	      Description: Dependencies for ProducerAI Lambda.
+	      ContentUri: packageProducerAI/.
+	      CompatibleRuntimes:
+		- python3.6
+
+	  Producer:
+	    Type: AWS::SQS::Queue
+	    Properties:
+	      QueueName: producer
+	      DelaySeconds: 0
+	      VisibilityTimeout: 120
+
+	  ProducerAIRole:
+	    Type: AWS::IAM::Role
+	    Properties:
+	      RoleName: ProducerAIRole
+	      AssumeRolePolicyDocument:
+		Statement:
+		  - Effect: Allow
+		    Principal:
+		      Service: lambda.amazonaws.com
+		    Action: sts:AssumeRole
+	      Policies:
+		- PolicyName: AdministratorAccess
+		  PolicyDocument:
+		    Version: '2012-10-17'
+		    Statement:
+		      - Effect: Allow
+			Action:
+			  - 's3:PutObject'
+			  - 'cloudwatch:DescribeAlarmHistory'
+			  - 'cloudwatch:DescribeAlarmsForMetric'
+			  - 'cloudwatch:DescribeAlarms'
+			  - 'cloudwatch:GetMetricStatistics'
+			  - 'cloudwatch:ListMetrics'
+			  - 'logs:CreateLogGroup'
+			  - 'logs:CreateLogStream'
+			  - 'logs:PutLogEvents'
+			  - 'comprehend:*'
+			Resource: '*'
+		      - Effect: Allow
+			Action:
+			  - 's3:PutObject'
+			Resource: 'arn:aws:s3:::fangsentiment-depp'
+		      - Effect: Allow
+			Action:
+			  - 'sqs:DeleteMessage'
+			  - 'sqs:GetQueueUrl'
+			  - 'sqs:ReceiveMessage'
+			  - 'sqs:GetQueueAttributes'
+			Resource: 'arn:aws:sqs:us-east-1:606363841935:producer'
+
+	  ServerlessProducerRole:
+	    Type: AWS::IAM::Role
+	    Properties:
+	      RoleName: ServerlessProducerRole
+	      AssumeRolePolicyDocument:
+		Statement:
+		  - Effect: Allow
+		    Principal:
+		      Service: lambda.amazonaws.com
+		    Action: sts:AssumeRole
+	      Policies:
+		- PolicyName: AdministratorAccess2
+		  PolicyDocument:
+		    Version: '2012-10-17'
+		    Statement:
+		      - Effect: Allow
+			Action:
+			  - 'cloudwatch:DescribeAlarmHistory'
+			  - 'cloudwatch:DescribeAlarmsForMetric'
+			  - 'cloudwatch:DescribeAlarms'
+			  - 'cloudwatch:GetMetricStatistics'
+			  - 'cloudwatch:ListMetrics'
+			  - 'logs:CreateLogGroup'
+			  - 'logs:CreateLogStream'
+			  - 'logs:PutLogEvents'
+			Resource: '*'
+		      - Effect: Allow
+			Action:
+			  - 'sqs:GetQueueUrl'
+			  - 'sqs:SendMessage'
+			Resource:
+			- !GetAtt Producer.Arn
+		      - Effect: Allow
+			Action: 'dynamodb:Scan'
+			Resource:
+			- !GetAtt fangTable.Arn
+
+	  fangTable:
+	    Type: AWS::DynamoDB::Table
+	    Properties:
+	      AttributeDefinitions:
+		-
+		  AttributeName: "name"
+		  AttributeType: "S"
+	      KeySchema:
+		-
+		  AttributeName: "name"
+		  KeyType: "HASH"
+	      ProvisionedThroughput:
+		ReadCapacityUnits: "5"
+		WriteCapacityUnits: "5"
+	      TableName: "fang"
+
+	  Producer:
+	    Type: AWS::SQS::Queue
+	    Properties:
+	      QueueName: producer
+	      DelaySeconds: 0
+	      VisibilityTimeout: 120
+
+	  fangsentimentdepp:
+	    Type: AWS::S3::Bucket
+	    Properties:
+	      BucketName: fangsentiment-depp
+	      AccessControl: BucketOwnerFullControl
+	      WebsiteConfiguration:
+		IndexDocument: index.html
+		ErrorDocument: error.html
+
+	  5MinuteTimer:
+	    Type: AWS::Events::Rule
+	    Properties:
+	      Name: "5MinuteTimer"
+	      Description: "This plays every 5 minutes"
+	      ScheduleExpression: "rate(5 minutes)"
+	      State: "ENABLED"
+	      Targets:
+		-
+		  Arn:
+		    Fn::GetAtt:
+		      - "ServerlessProducer"
+		      - "Arn"
+		  Id: "ServerlessProducer"
+
+	  ProducerAIEventSourceMapping:
+	    Type: AWS::Lambda::EventSourceMapping
+	    Properties:
+	      BatchSize: 10
+	      Enabled: true
+	      EventSourceArn: !GetAtt Producer.Arn
+	      FunctionName: !GetAtt ProducerAI.Arn
+
+	  5MinuteTimerPermission2Lambda:
+	    Type: AWS::Lambda::Permission
+	    Properties:
+	      FunctionName: !Ref "ServerlessProducer"
+	      Action: "lambda:InvokeFunction"
+	      Principal: "events.amazonaws.com"
+	      SourceArn:
+		Fn::GetAtt:
+		  - "5MinuteTimer"
+		  - "Arn"
+
+
 ### ```ServerlessProducer/lambda_function.py```
 
 ### ```producerAI/lambda_function.py```
-
-### ```make```
--   setup
--   env
--   install
--   bucket
--   build
--   deploy
--   data
--   infra
--   teardown
--   lint
--   test
--   all
 
 
 
