@@ -151,7 +151,7 @@ Code assumes the environment is equipped with AWS CLI https://aws.amazon.com/cli
 
 #
 
-### ```5-cleanip.sh```
+### ```5-cleanup.sh```
 
 	#!/bin/bash
 	set -eo pipefail
