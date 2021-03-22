@@ -18,6 +18,7 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
   - [x] success: sqs queue, dynamo db, lambda, iam policies, s3 bucket 
   - [x] 24 mins 35 seconds
   - [x] challenge is time to build slowing evolution 
+  - [x] demo video / notes [here](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/week_4.md)
   
 - [x] **week 5:** AWS serverless application model (SAM) 
   - [x] python SDK for cloud formation
