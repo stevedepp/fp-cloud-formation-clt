@@ -28,6 +28,7 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 - [x] **week 7:** cloud formation via templates
   - [x] success: easier to code and visualize solution structure
   - [x] challenge: lambda dependencies
+  (demo video / notes [here](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/week_7.md))
 
 - [x] **week 8:** lambda layers
   - [x] 4 minutes 45 seconds to build  
