@@ -12,6 +12,13 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
         resource = DynamoDB -> EventBridge -> Lambda -> SQS -> Lambda -> AWS comprehend -> S3  
         name = fang -> 5minutetimer -> serverlessproducer -> producer -> comprehend -> fangsentiment-depp
 
+
+#
+
+## demo video   
+please click the video to hear sound.
+![demo](https://user-images.githubusercontent.com/38410965/111991585-dbd3c000-8aea-11eb-86b2-52f2af0b9a27.mp4)
+
 #
 
 ## quickstart commands
