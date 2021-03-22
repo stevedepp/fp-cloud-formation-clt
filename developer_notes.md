@@ -25,7 +25,7 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
   - [x] succes: 3 minutes 17 seconds to build
   - [x] challenge: getting one resource to see another
 
-- [x] **week 6:** Quick update:   
+- [x] **week 6:** quick update:   
   - [x] AWS service consoles  
   - [x] AWS CLI  
   - [x] AWS SDK (Boto3)   
