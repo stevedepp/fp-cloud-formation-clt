@@ -24,6 +24,13 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
   - [x] sqs queue, dynamo db, lambda, iam policies, s3 bucket 
   - [x] succes: 3 minutes 17 seconds to build
   - [x] challenge: getting one resource to see another
+
+- [x] **week 6:** Quick update:   
+  - [x] AWS service consoles  
+  - [x] AWS CLI  
+  - [x] AWS SDK (Boto3)   
+  - [x] AWS Serverless Application Model (SAM)   
+  - [x] demo video / notes [here](https://github.com/stevedepp/p4do-aws-cf-demo/blob/main/README.md)
   
 - [x] **week 7:** cloud formation via templates
   - [x] success: easier to code and visualize solution structure
