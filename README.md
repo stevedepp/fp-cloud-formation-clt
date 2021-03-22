@@ -16,7 +16,8 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 #
 
 ## demo video   
-please click the video to hear sound.
+please click the video to hear sound.  
+
 ![demo](https://user-images.githubusercontent.com/38410965/111991585-dbd3c000-8aea-11eb-86b2-52f2af0b9a27.mp4)
 
 #
