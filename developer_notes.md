@@ -34,6 +34,8 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
   - [x] 4 minutes 45 seconds to build  
   - [x] success: lambda layers for dependencies
   - [x] challenge: 
+  - [x] demo video / notes [here](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/week_8.md)
+
   
 - [x] **week 9** CLT for db operations and IAM policy tightening
   - [x] success: CLT adds, deletes, updates in item or batch format
