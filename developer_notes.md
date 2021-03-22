@@ -27,7 +27,7 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
   - [x] challenge: getting one resource to see another
   - [x] demo video / notes [here](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/week_5.md)
 
-- [x] **week 6:** quick update:   
+- [x] **week 6:** review of technologies explored:   
   - [x] AWS service consoles  
   - [x] AWS CLI  
   - [x] AWS SDK (Boto3)   
