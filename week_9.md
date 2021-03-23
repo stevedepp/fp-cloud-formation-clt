@@ -26,6 +26,7 @@ fang —> 5minutetimer —> serverlessproducer —> producer —> producerai —
 <img width="423" alt="Al Data Engineering" src="https://user-images.githubusercontent.com/38410965/112216488-efb91800-8bf7-11eb-8dd0-b8b17eccfc1c.png">
 
 
+> **transcript for slide 9.2**
 
 ### Working infra  
 
@@ -35,6 +36,7 @@ fang —> 5minutetimer —> serverlessproducer —> producer —> producerai —
 <img width="682" alt="Collecting boto3" src="https://user-images.githubusercontent.com/38410965/112215687-07dc6780-8bf7-11eb-90b5-f91a5833e99c.png">
 
 
+> **transcript for slide 9.3**
 
 ### Working infra
 
@@ -46,6 +48,7 @@ fang —> 5minutetimer —> serverlessproducer —> producer —> producerai —
 
 
 
+> **transcript for slide 9.4**
 3
 ### Tighten up IAM
 
@@ -69,6 +72,7 @@ fang —> 5minutetimer —> serverlessproducer —> producer —> producerai —
 
 
 
+> **transcript for slide 9.5**
 4
 ### ServerlessProducer - IAM - start with code to see permissions needed  
 
@@ -83,6 +87,7 @@ fang —> 5minutetimer —> serverlessproducer —> producer —> producerai —
 
 
 
+> **transcript for slide 9.6**
 5.1
 ### ServerlessProducer - LambdaExecutionRole2 role name  
 
@@ -92,6 +97,7 @@ fang —> 5minutetimer —> serverlessproducer —> producer —> producerai —
 
 
 
+> **transcript for slide 9.7**
 5.2
 ### ServerlessProducer - LambdaExecutionRole2 role - AdministrativeAccess policy  
 
@@ -104,6 +110,7 @@ has permissions under “AdministrativeAccess” policy
 
 
 
+> **transcript for slide 9.8**
 5.3
 ### ServerlessProducer - LambdaExecutionRole2 role - new policy  
 
@@ -113,6 +120,7 @@ has permissions under “AdministrativeAccess” policy
 
 
 
+> **transcript for slide 9.9**
 5.4
 ### ServerlessProducer - LambdaExecutionRole2 role - new policy  
 
@@ -122,6 +130,7 @@ has permissions under “AdministrativeAccess” policy
 
 
 
+> **transcript for slide 9.10**
 5.5
 ### ServerlessProducer - LambdaExecutionRole2 role - new policy  
 
@@ -131,6 +140,7 @@ has permissions under “AdministrativeAccess” policy
 
 
 
+> **transcript for slide 9.11**
 5.6.0 
 ### ServerlessProducer - LambdaExecutionRole2 role - new policy. 
 
@@ -140,6 +150,7 @@ has permissions under “AdministrativeAccess” policy
 
 
 
+> **transcript for slide 9.12**
 5.6.1
 
 ### ServerlessProducer - LambdaExecutionRole2 role - new policy  
@@ -150,6 +161,7 @@ has permissions under “AdministrativeAccess” policy
 
 
 
+> **transcript for slide 9.13**
 5.6.2
 ### ServerlessProducer - LambdaExecutionRole2 role - new policy  
 
@@ -160,6 +172,7 @@ has permissions under “AdministrativeAccess” policy
 
 
 
+> **transcript for slide 9.14**
 5.6.3
 ### ServerlessProducer - LambdaExecutionRole2 role - new policy
 
@@ -169,6 +182,7 @@ has permissions under “AdministrativeAccess” policy
 
 
 
+> **transcript for slide 9.15**
 5.6.4
 ### ServerlessProducer - LambdaExecutionRole2 role - new policy
 
@@ -182,6 +196,7 @@ If AWS cannot find a resource and you don’t know the resource, you can click �
 
 
 
+> **transcript for slide 9.16**
 5.6.5
 ### ServerlessProducer - LambdaExecutionRole2 role - new policy
 
@@ -191,6 +206,7 @@ If AWS cannot find a resource and you don’t know the resource, you can click �
 
 
 
+> **transcript for slide 9.17**
 5.6.6
 ### ServerlessProducer - LambdaExecutionRole2 role - new policy
 
@@ -200,6 +216,7 @@ If AWS cannot find a resource and you don’t know the resource, you can click �
 
 
 
+> **transcript for slide 9.18**
 5.6.7
 ### ServerlessProducer - LambdaExecutionRole2 role - new policy
 
@@ -211,6 +228,7 @@ For example, ProducerAI
 
 
 
+> **transcript for slide 9.19**
 5.6.8 
 ### ServerlessProducer - LambdaExecutionRole2 role - new policy
 
@@ -224,6 +242,7 @@ The lambda “ProduceAI” needs permissions to “GetQueueAttributes” and ”
 
 
 
+> **transcript for slide 9.20**
 5.6.9
 ### ServerlessProducer - LambdaExecutionRole2 role - new policy
 
@@ -234,6 +253,7 @@ The lambda “ProduceAI” needs permissions to “GetQueueAttributes” and ”
 
 
 
+> **transcript for slide 9.21**
 5.6.10
 ### ServerlessProducer - LambdaExecutionRole2 role - LambdaTighter policy
 
@@ -244,6 +264,7 @@ The lambda “ProduceAI” needs permissions to “GetQueueAttributes” and ”
 
 
 
+> **transcript for slide 9.22**
 5.6.11
 ### ServerlessProducer - LambdaExecutionRole2 role - LambdaTighter policy
 
@@ -253,6 +274,7 @@ The lambda “ProduceAI” needs permissions to “GetQueueAttributes” and ”
 
 
 
+> **transcript for slide 9.23**
 5.6.12 
 ### ServerlessProducer - LambdaExecutionRole2 role - LambdaTighter policy
 
@@ -262,6 +284,7 @@ The lambda “ProduceAI” needs permissions to “GetQueueAttributes” and ”
 
 
 
+> **transcript for slide 9.24**
 5.6.13
 ### ServerlessProducer - LambdaExecutionRole2 role - LambdaTighter policy
 
@@ -272,6 +295,7 @@ Here you can edit with the menus used so far or directly in JSON format.
 
 
 
+> **transcript for slide 9.25**
 5.6.14
 ### ServerlessProducer - LambdaExecutionRole2 role - LambdaTighter policy
 
@@ -281,6 +305,7 @@ These two lines just mean that the policy was produced using the menu driven met
 
 
 
+> **transcript for slide 9.26**
 5.6.15
 ServerlessProducer - LambdaExecutionRole2 role - LambdaTighter policy
 
@@ -290,6 +315,7 @@ This policy will “Allow” …
 
 
 
+> **transcript for slide 9.27**
 5.6.16
 ### ServerlessProducer - LambdaExecutionRole2 role - LambdaTighter policy
 
@@ -299,6 +325,7 @@ This policy will “Allow” …
 
 
 
+> **transcript for slide 9.28**
 5.6.17
 ### ServerlessProducer - LambdaExecutionRole2 role - LambdaTighter policy
 
@@ -311,6 +338,7 @@ This policy will “Allow” …
 
 
 
+> **transcript for slide 9.29**
 5.6.18 
 ### ServerlessProducer - LambdaExecutionRole2 role - LambdaTighter policy
 
@@ -321,6 +349,7 @@ LmabdaExecutionRole2 now has a tighter IAM policy limiting it to 4 actions on 3 
 
 
 
+> **transcript for slide 9.30**
 5.7 
 ServerlessProducer - IAM policy - test it out!
 
@@ -330,6 +359,7 @@ Yay!
 
 
 
+> **transcript for slide 9.31**
 5.81 
 ### ServerlessProducer - IAM policy - monitoring & logging
 
@@ -339,6 +369,7 @@ Yay!
 
 
 
+> **transcript for slide 9.32**
 5.82 
 ### ServerlessProducer - IAM policy - monitoring & logging
 
@@ -348,6 +379,7 @@ Yay!
 
 
 
+> **transcript for slide 9.33**
 6
 ### Review - It is kinda fun
 
@@ -356,6 +388,7 @@ Yay!
 - [x] test your lambda function 
 
 
+> **transcript for slide 9.34**
 ### One hair pull
 
 I could not figure out how to set up IAM policy for “AWS comprehend”.   
@@ -366,6 +399,7 @@ It is possible there is a very long lag for permissions set up in the ML arena.
 <img width="912" alt="Pasted Graphic 42" src="https://user-images.githubusercontent.com/38410965/112222220-d23b7c80-8bfe-11eb-9b2b-7b7d48175b98.png">
 
 
+> **transcript for slide 9.35**
 6.1 
 ### Hair pull
 
