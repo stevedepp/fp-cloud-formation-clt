@@ -225,6 +225,7 @@ If AWS cannot find a resource and you don’t know the resource, you can click �
 ### ServerlessProducer - LambdaExecutionRole2 role - new policy
 
 - [x] click on the arrow “Read”  
+
 With your architecture you might experiment with “Read” or “Tagging” depending on your code’s needs.  
 For example, ProducerAI  
 
@@ -238,8 +239,10 @@ For example, ProducerAI
 
 - [x] click on the arrow “Read” and click “GetQueueURL”  
 - [x] click on the arrow “Write” and click “SendMessage”   
+
 With your architecture you might experiment with “Tagging” depending on your code’s needs.  
 The lambda “ProduceAI” needs permissions to “GetQueueAttributes” and ”DeleteMessage”.  
+
 - [x] click on the arrow “Write” and click “SendMessage”.  
 
 <img width="984" alt="Pasted Graphic 27" src="https://user-images.githubusercontent.com/38410965/112221257-9a800500-8bfd-11eb-968c-d6ccfee93576.png">
