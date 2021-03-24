@@ -356,8 +356,8 @@ LmabdaExecutionRole2 now has a tighter IAM policy limiting it to 4 actions on 3 
 #
 
 > **transcript for slide 9.30**
-5.7 
-ServerlessProducer - IAM policy - test it out!
+5.7  
+### ServerlessProducer - IAM policy - test it out!
 
 Yay!
 
@@ -395,7 +395,6 @@ Yay!
 
 #
 
-> **transcript for slide 9.34**
 ### One hair pull
 
 I could not figure out how to set up IAM policy for “AWS comprehend”.   
@@ -407,7 +406,7 @@ It is possible there is a very long lag for permissions set up in the ML arena.
 
 #
 
-> **transcript for slide 9.35**
+> **transcript for slide 9.34**
 6.1 
 ### Hair pull
 
