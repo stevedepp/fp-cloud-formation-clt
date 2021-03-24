@@ -190,7 +190,9 @@ has permissions under “AdministrativeAccess” policy
 
 AWS is telling you that you should assign specific resources / assets to these permissions.  
 AWS will not add this policy if you do not add a specific resource or all resources.   
-- [x] click on “Any in this account”  
+
+- [x] click on “Any in this account”    
+
 AWS finds the DynamoDB resources in your accounts and applies “scan” to them.   
 If AWS cannot find a resource and you don’t know the resource, you can click “All resources” and get a benign warning.    
 
