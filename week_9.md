@@ -82,14 +82,14 @@ fang —> 5minutetimer —> serverlessproducer —> producer —> producerai —
 - gets names from a DynamoDB table: scan  
 - puts those names in an SQS Queue: get_queue / send_message  
 
-	**DynamoDB —> EventBridge —>  Lambda —> SQS —>**
+	**DynamoDB —> EventBridge —>  Lambda —> SQS —>**   
 	fang —> 5minutetimer —> serverlessproducer —> producer —>
 
 <img width="734" alt="lambda_function py" src="https://user-images.githubusercontent.com/38410965/112215979-61dd2d00-8bf7-11eb-9f78-1e0bfb090f08.png">
 
 #
 
-> **transcript for slide 9.6**
+> **transcript for slide 9.6** 
 5.1
 ### ServerlessProducer - LambdaExecutionRole2 role name  
 
@@ -99,8 +99,8 @@ fang —> 5minutetimer —> serverlessproducer —> producer —> producerai —
 
 #
 
-> **transcript for slide 9.7**
-5.2
+> **transcript for slide 9.7**   
+5.2   
 ### ServerlessProducer - LambdaExecutionRole2 role - AdministrativeAccess policy  
 
 ServerlessProducer in the role of “LambdaExecutionRole2”   
@@ -112,7 +112,7 @@ has permissions under “AdministrativeAccess” policy
 
 #
 
-> **transcript for slide 9.8**
+> **transcript for slide 9.8**   
 5.3
 ### ServerlessProducer - LambdaExecutionRole2 role - new policy  
 
