@@ -67,7 +67,7 @@ fang —> 5minutetimer —> serverlessproducer —> producer —> producerai —
 - performs some machine learning on them  
 - sends that result to S3  
 
-	**SQS —> Lambda —> AWS comprehend —> S3**
+	**SQS —> Lambda —> AWS comprehend —> S3**     
 	producer —> producerai —> comprehend —> fangsentiment-depp
 
 <img width="423" alt="Al Data Engineering" src="https://user-images.githubusercontent.com/38410965/112215930-512cb700-8bf7-11eb-9319-e7868954ceaa.png">
