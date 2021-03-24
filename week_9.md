@@ -313,8 +313,8 @@ These two lines just mean that the policy was produced using the menu driven met
 #
 
 > **transcript for slide 9.26**
-5.6.15
-ServerlessProducer - LambdaExecutionRole2 role - LambdaTighter policy
+5.6.15   
+### ServerlessProducer - LambdaExecutionRole2 role - LambdaTighter policy
 
 This policy will “Allow” …
 
@@ -323,7 +323,7 @@ This policy will “Allow” …
 #
 
 > **transcript for slide 9.27**
-5.6.16
+5.6.16   
 ### ServerlessProducer - LambdaExecutionRole2 role - LambdaTighter policy
 
 … to do these four “Actions” …
@@ -333,7 +333,7 @@ This policy will “Allow” …
 #
 
 > **transcript for slide 9.28**
-5.6.17
+5.6.17   
 ### ServerlessProducer - LambdaExecutionRole2 role - LambdaTighter policy
 
 … these “Resources” …   
