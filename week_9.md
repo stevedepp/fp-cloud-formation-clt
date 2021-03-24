@@ -55,8 +55,8 @@ fang —> 5minutetimer —> serverlessproducer —> producer —> producerai —
 ### Tighten up IAM
 
 **ServerlessProducer**  
-- gets names from a DynamoDB table  
-- puts those names in an SQS Queue  
+  - gets names from a DynamoDB table  
+  - puts those names in an SQS Queue  
 
 	**DynamoDB —> EventBridge —>  Lambda —> SQS —>**  
 	fang —> 5minutetimer —> serverlessproducer —> producer —>  
