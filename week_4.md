@@ -54,21 +54,21 @@ fang —> serverlessproducer —> producer —> producerai —> comprehend —> 
 ￼<img width="105" alt="2435 60" src="https://user-images.githubusercontent.com/38410965/113622880-8db2d680-962b-11eb-9053-6f3294c310d4.png">
 
 **nimble —> Cloud9**   
-	-	GitHub   
-	-	structure of dependencies   
-	-	lambda venv   
+ - GitHub   
+ - structure of dependencies   
+ - lambda venv   
 **need —> Lambda monitoring & CloudWatch logs**   
-	-	structured search   
-	-	relevancy window   
+ - structured search   
+ - relevancy window   
 **appreciate**    
--	test    
-	-	locally inside Cloud9   
-	-	via SQS   
-	-	via Lambda   
--	deploy   
-	-	test lambda —> “” if not deployed   
-	-	test lambda —> null if deployed   
--	cloud formation   
+- test    
+  - locally inside Cloud9   
+  - via SQS   
+  - via Lambda   
+- deploy   
+  - test lambda —> “” if not deployed   
+  - test lambda —> null if deployed   
+- cloud formation   
 
 <img width="906" alt="Stacks (4)" src="https://user-images.githubusercontent.com/38410965/113622905-960b1180-962b-11eb-93b4-36bf2a4accb3.png">
 
@@ -79,10 +79,10 @@ fang —> serverlessproducer —> producer —> producerai —> comprehend —> 
 ### resources - diy   
 
 **Cloud 9**   
--	serverlessproducer   
--	producerai   
--	venv   
--	GitHub integration   
+- serverlessproducer   
+- producerai   
+- venv   
+- GitHub integration   
 
 <img width="947" alt="console aws amazon com" src="https://user-images.githubusercontent.com/38410965/113622949-a7ecb480-962b-11eb-9fa3-f3bcbed20134.png">
 
@@ -94,11 +94,11 @@ fang —> serverlessproducer —> producer —> producerai —> comprehend —> 
 
 **Lambda functions**   
 
--	serverlessproducer   
-	-	SQS trigger   
+- serverlessproducer   
+  - SQS trigger   
 
--	producerai   
-	-	EventBridge trigger   
+- producerai   
+  - EventBridge trigger   
 
 <img width="502" alt="fina" src="https://user-images.githubusercontent.com/38410965/113623044-ca7ecd80-962b-11eb-8022-79a3d3381f26.png">
 
@@ -123,8 +123,8 @@ fang —> serverlessproducer —> producer —> producerai —> comprehend —> 
 ### resources - diy   
 
 **Dynamo DB**    
--	1 table       
-	-	9 items   
+- 1 table       
+  - 9 items   
 
 <img width="768" alt="console aws amazon com" src="https://user-images.githubusercontent.com/38410965/113623177-fe59f300-962b-11eb-8132-3cadababf8a0.png">
 
@@ -136,8 +136,8 @@ fang —> serverlessproducer —> producer —> producerai —> comprehend —> 
 
 **S3**    
 one bucket each for    
--	Cloud 9   
--	fangsentiment   
+- Cloud 9   
+- fangsentiment   
 
 <img width="931" alt="53 buckets" src="https://user-images.githubusercontent.com/38410965/113623254-16317700-962c-11eb-9390-9f076c3320a3.png">
 
@@ -148,8 +148,8 @@ one bucket each for
 ### resources - batteries included   
 
 **CloudWatch**   
--	logs for development   
--	logs for operation   
+- logs for development   
+- logs for operation   
 
 <img width="850" alt="CloudW" src="https://user-images.githubusercontent.com/38410965/113623304-2cd7ce00-962c-11eb-8b88-ae205b2810cd.png">
 
@@ -161,8 +161,8 @@ will affect TCO.
 ### resources - batteries included   
 
 **Cloud Formation**    
--	one for each Lambda   
--	one for Cloud 9   
+- one for each Lambda   
+- one for Cloud 9   
 
 <img width="686" alt="console ans amazon com" src="https://user-images.githubusercontent.com/38410965/113623379-46791580-962c-11eb-8af8-9d882093dd45.png">
 
@@ -172,9 +172,9 @@ will affect TCO.
 
 ### hiccups
 
--	Git Hub & name / guid   
--	installing dependencies into wrong folder   
--	bucket writing <— bucket creating   
+- Git Hub & name / guid   
+- installing dependencies into wrong folder   
+- bucket writing <— bucket creating   
 
 #
 
@@ -185,24 +185,24 @@ will affect TCO.
 
 ### next macro steps:    
 **week 5**   
--	data encryption in transit   
--	store code in GitHub instead of copy/paste in code   
--	automate dependencies   
--	tighten role for “principle of least security”   
--	Continuous Integration / Continuous Delivery (CICD)   
--	Monitoring (email notification)   
--	Total Cost of Ownership (TCO)   
+- data encryption in transit   
+- store code in GitHub instead of copy/paste in code   
+- automate dependencies   
+- tighten role for “principle of least security”   
+- Continuous Integration / Continuous Delivery (CICD)   
+- Monitoring (email notification)   
+- Total Cost of Ownership (TCO)   
 **week 6**   
--	Nominate extended features + incremental TCO   
--	Nominate domain application   
+- Nominate extended features + incremental TCO   
+- Nominate domain application   
 **week 7**   
--	Development release   
--	Handoff memorandum - Draft   
+- Development release   
+- Handoff memorandum - Draft   
 **week 8**   
--	Production release   
--	Handoff memorandum - Final   
+- Production release   
+- Handoff memorandum - Final   
 **week 9**   
--	Demo Video - Final   
+- Demo Video - Final   
 
 #
 
