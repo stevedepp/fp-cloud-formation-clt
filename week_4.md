@@ -184,6 +184,7 @@ will affect TCO.
 ### Week 4 update      
 
 ### next macro steps:    
+
 **week 5**   
 - data encryption in transit   
 - store code in GitHub instead of copy/paste in code   
@@ -192,15 +193,19 @@ will affect TCO.
 - Continuous Integration / Continuous Delivery (CICD)   
 - Monitoring (email notification)   
 - Total Cost of Ownership (TCO)   
+
 **week 6**   
 - Nominate extended features + incremental TCO   
 - Nominate domain application   
+
 **week 7**   
 - Development release   
 - Handoff memorandum - Draft   
+
 **week 8**   
 - Production release   
 - Handoff memorandum - Final   
+
 **week 9**   
 - Demo Video - Final   
 
