@@ -17,7 +17,7 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 - [x] **week 3:** quick build & planning
   - [x] 186 clicks to replicate architecture
   - [x] plans for weeks 4 - 9
-  - [x] [here](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/week_3.md)
+  - [x] demo video / transcript [here](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/week_3.md)
 
 - [x] **week 4:** cloud9 + aws management console for: 
   - [x] success: sqs queue, dynamo db, lambda, iam policies, s3 bucket 
