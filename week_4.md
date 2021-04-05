@@ -57,9 +57,11 @@ fang —> serverlessproducer —> producer —> producerai —> comprehend —> 
  - GitHub   
  - structure of dependencies   
  - lambda venv   
+
 **need —> Lambda monitoring & CloudWatch logs**   
  - structured search   
  - relevancy window   
+
 **appreciate**    
 - test    
   - locally inside Cloud9   
