@@ -6,6 +6,9 @@ please click the video to hear sound.
 
 #
 
+> Hello everyone this is Steve.  Thank you for watching my video.  This week i spent time reviewing the architecture for my project in detail with hopes to get it running.  As an update I will provide you with a broad overview of the 5 steps needed replicate the architecture.  You will recall my project is modeled after project 4.  To replicate this architecture ...
+
+
 **Steve Depp**   
 **MSDS 498-61**   
 
@@ -26,6 +29,9 @@ step 5: set up serverless application “producerai”
 <img width="423" alt="Al Data Engineering" src="https://user-images.githubusercontent.com/38410965/113616892-b2a34b80-9623-11eb-9fde-4e4e2ff8006a.png">
 
 #
+
+> I first set up a cloud 9 environment.  Then, set up and tested an SQS queue. Then, set up a Dynamo DB table.  And finally
+set up 2 serverless applications: ne that gets from DB and puts into SQS; the other that gets from SQS and delivers a transformed version to S3. All in about 186 clicks of the mouse and some typing.  
 
 ### Final project   
 ### Week 3 update:    
@@ -65,6 +71,8 @@ step 5: set up serverless application “producerai”
 
 #
 
+> This week i plan to run the template in AWS (probably this afternoon), set up in transit encryption, store the Lambda source code in Github, automate dependencies, and tighten up the role I am using presently to negotiate who Lambda talks with.  I will also do some research in to CICD: specifically what AWS offers and how I might possibly build code outside AWS and have it sourced automatically for monitoring I will look into how I can notify a user with email of important log messages and I will look into total cost of ownership.
+
 ### Final project   
 ### Week 3 update   
 
@@ -87,6 +95,8 @@ step 5: set up serverless application “producerai”
 - TCO   
 
 #
+
+> In ensuing weeks, I plan to implement CICD and monitoring in week 5 and work on extensions and formal deliverables in the following weeks if things go a bit more speedily, which they never do! 
 
 ### Final project
 ### Week 3 update
@@ -114,6 +124,8 @@ step 5: set up serverless application “producerai”
 - Demo Video - Final   
 
 #
+
+> I hope to explore some of my reach goals for this final project.
 
 ### Final project   
 #### Week 3 update   
