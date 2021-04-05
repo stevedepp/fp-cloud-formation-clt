@@ -96,16 +96,20 @@ step 5: set up serverless application “producerai”
 **week 5**   
 - Continuous Integration / Continuous Delivery (CICD)   
 - Monitoring (email notification)   
-- Total Cost of Ownership (TCO)      
+- Total Cost of Ownership (TCO)     
+ 
 **week 6**   
 - Nominate extended features + incremental TCO   
 - Nominate domain application   
+
 **week 7**   
 - Development release   
 - Handoff memorandum - Draft   
+
 **week 8**   
 - Production release   
 - Handoff memorandum - Final   
+
 **week 9**   
 - Demo Video - Final   
 
