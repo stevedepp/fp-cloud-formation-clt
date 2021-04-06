@@ -1,5 +1,5 @@
 
-demo video for week 3: *replicate architecture of project 4*     
+## demo video for week 3: *replicate architecture of project 4*     
 
 please click the video to hear sound or follow along with the transcript that's set just below the video.
 
