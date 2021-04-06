@@ -37,7 +37,7 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
   - [x] AWS CLI  
   - [x] AWS SDK (Boto3)   
   - [x] AWS Serverless Application Model (SAM)   
-  - [x] demo video, transcript and repository can be found [here](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/week_6.md).
+  - [x] demo video, transcript and repository can be found [here](https://github.com/stevedepp/p4do-aws-cf-demo/blob/main/README.md).
 
 - [x] **week 7:** cloud formation via templates
   - [x] success: easier to code and visualize solution structure
