@@ -54,7 +54,7 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
   - [x] success: CLT adds, deletes, updates in item or batch format
   - [x] success: all IAM roles' policies tightened to minimum priv
   - [x] challenge: AWS comprehend has carte blanche privileges      
-  - [x] demo video / notes [here](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/week_9.md)
+  - [x] demo video, transcript and repository can be found [here](https://github.com/stevedepp/fp-cloud-formation-clt-week-9/blob/main/README.md)
 
 #
 
