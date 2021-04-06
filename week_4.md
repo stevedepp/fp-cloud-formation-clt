@@ -1,5 +1,5 @@
 
-demo video for week 4: *replicate the hardware*     
+## demo video for week 4: *replicate the hardware*     
 
 please click the video to hear sound or follow along with the transcript that's set just below the video.
 
