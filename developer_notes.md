@@ -14,6 +14,11 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 
 ### evolution of development
 
+- [x] **week 2:** individual project selection: Project 4
+  - [x] Why project 4?
+  - [x] Extensions for project 4, milestones, deliverables, success criteria
+  - [x] demo video / transcript [here](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/week_2.md)
+
 - [x] **week 3:** quick build & planning
   - [x] 186 clicks to replicate architecture
   - [x] plans for weeks 4 - 9
