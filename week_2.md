@@ -6,9 +6,9 @@ please click the video to hear sound or follow along with the transcript and sli
 
 #
 
-> Hello everyone this is Steve.  
-Thank you for watching my demo video for the individual final project.  
-For this I have decided upon project 4: reproducing serverless data engineering arhitecture shown in Noah’s videos  
+> Hello everyone this is Steve, and  
+thank you for watching my demo video for the individual final project.  
+For this, I have decided upon project 4: reproducing serverless data engineering arhitecture shown in Noah’s videos,  
 and extending that design to other AI applications, including NLP.
 
 ### Steve Depp  
@@ -28,7 +28,7 @@ Also, this project incorporates many of the most prominent AWS services.
 I like this project because ...   
 it has hooks for other cloud services, ...  
 its open to a domain application, ...   
-and because it invites competitive comparisons with other providers such as GCP and Azure
+and because it invites competitive comparisons with other providers such as GCP and Azure.
 
 ### Why project 4?**
 
@@ -40,7 +40,7 @@ and because it invites competitive comparisons with other providers such as GCP 
 
 #
 
-> As for extensions, I am not sure what domain extension I would employ if any, but I am very eager to compare AWS, GCP and Azure service offerings and this project may be a way to do that.  I might also look to hang one of the other projects off project 4, e.g. the Flask app from project 1. 
+> As for extensions, I am not sure what domain extension I would employ, if any, but I am very eager to compare AWS, GCP and Azure service offerings and this project may be a way to do that.  I might also look to hang one of the other projects off project 4, e.g. the Flask app from project 1. 
 So presently a lot is undefined, but looking ahead to the next 10 weeks ...
 
 ### Extensions to project 4
@@ -112,7 +112,7 @@ I want to have CICD in place with a final release that is repeatable and automat
 
 #
 
->
+> Thank you for watchihg and please provide any feedback you can any way you can.  Thanks alot.  Bye.
 
 Thank you. 
 Please give feedback.
