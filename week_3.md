@@ -1,13 +1,10 @@
 
 ## demo video for week 3: *replicate architecture of project 4*     
 
-please click the video to hear sound or follow along with the transcript that's set just below the video.
+please unmute the video to hear sound or follow along with the transcript that's set just below the video.  video resolution improves at full screen.
 
 <video src="https://user-images.githubusercontent.com/38410965/112028923-13546380-8b0f-11eb-88ce-deec20aa2606.mp4" autoplay controls loop muted style="max-width: 730px;">
 </video>
-
-
-![demo](https://user-images.githubusercontent.com/38410965/112028923-13546380-8b0f-11eb-88ce-deec20aa2606.mp4)
 
 #
 
