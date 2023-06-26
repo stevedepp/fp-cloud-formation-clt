@@ -19,6 +19,9 @@ building serverless pipeline from dynamo db to lambda to sqs to lambda to aws co
 
 please click the video to hear sound or follow along with a transcript [here](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/demo_transcript.md).  
 
+<video src="https://user-images.githubusercontent.com/38410965/111991585-dbd3c000-8aea-11eb-86b2-52f2af0b9a27.mp4" autoplay controls loop muted style="max-width: 730px;">
+</video>
+
 seven additional videos and transcripts [here](https://github.com/stevedepp/fp-cloud-formation-clt/blob/main/developer_notes.md#evolution-of-development) breadcrumb the 9 week development path to this solution.
 
 ![demo](https://user-images.githubusercontent.com/38410965/111991585-dbd3c000-8aea-11eb-86b2-52f2af0b9a27.mp4)
