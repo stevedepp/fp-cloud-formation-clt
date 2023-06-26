@@ -1,13 +1,10 @@
 
 ## demo video for week 4: *replicate the hardware*     
 
-please click the video to hear sound or follow along with the transcript that's set just below the video.
+please unmute the video to hear sound or follow along with the transcript that's set just below the video.  Video resolution improves at full screen.
 
 <video src="https://user-images.githubusercontent.com/38410965/112003158-088dd480-8af7-11eb-921a-9a667e4ab2ee.mp4" autoplay controls loop muted style="max-width: 730px;">
 </video>
-
-
-![demo](https://user-images.githubusercontent.com/38410965/112003158-088dd480-8af7-11eb-921a-9a667e4ab2ee.mp4)
 
 #
 
