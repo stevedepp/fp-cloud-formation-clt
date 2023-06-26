@@ -5,9 +5,6 @@ please unmute the video to hear sound or follow along with the transcript and sl
 <video src="https://user-images.githubusercontent.com/38410965/112028893-0c2d5580-8b0f-11eb-8380-328735506cd6.mp4" autoplay controls loop muted style="max-width: 730px;">
 </video>
 
-
-![demo](https://user-images.githubusercontent.com/38410965/112028893-0c2d5580-8b0f-11eb-8380-328735506cd6.mp4)
-
 #
 
 > Hello everyone this is Steve, and  
